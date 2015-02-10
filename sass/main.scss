@@ -1,0 +1,209 @@
+@CHARSET "ISO-8859-1";
+
+@mixin input-placeholder {
+		&.placeholder { @content; }
+		&:-moz-placeholder { @content; }
+		&::-moz-placeholder { @content; }
+		&:-ms-input-placeholder { @content; }
+		&::-webkit-input-placeholder { @content; } 
+}
+
+$green: #3c5346;
+$red: #872633;
+$yellow: #dfb655;
+$black: #272328;
+$purple: #2a1f26;
+$white: #f9f9f9;
+$blue: #66B9E3; 
+$charcoal: #323232;
+
+$line-weight: 2px;
+$std-line-length: 20px;
+$hover-line-length:16px;
+$hover-horizontal-offset:15px;
+$hover-vertical-offset:7px;
+$line-color:rgba(80,80,80,.9);
+$hover-transition-duration: .2s;
+
+
+$default-text-shadow-color: rgba(70,70,70,.5);
+$default-text-shadow-blur: 6px;
+$default-text-shadow-v-offset: 2px;
+$default-text-shadow-h-offset: 2px;
+
+$OpenSans: "OpenSans", "OpenSans_IE";
+$OpenSansLt: "OpenSansLt", "OpenSansLt_IE";
+
+@import "compass/css3";
+
+@include font-face("OpenSans", font-files("//is.byu.edu/site/resources/fonts/OpenSans-regular.ttf", "//is.byu.edu/site/resources/fonts/OpenSans-regular.ttf", "//is.byu.edu/site/resources/fonts/OpenSans-regular.ttf", "//is.byu.edu/site/resources/fonts/OpenSans-regular.ttf"));
+@include font-face("OpenSansLt", font-files("//is.byu.edu/site/resources/fonts/opensans-light-webfont.ttf", "//is.byu.edu/site/resources/fonts/opensans-light-webfont.woff", "//is.byu.edu/site/resources/fonts/opensans-light-webfont.eot", "//is.byu.edu/site/resources/fonts/opensans-light-webfont.svg"));
+@include font-face("OpenSansLt_IE", font-files("//is.byu.edu/site/resources/fonts/opensans-light-webfont.ttf", "//is.byu.edu/site/resources/fonts/opensans-light-webfont.woff", "//is.byu.edu/site/resources/fonts/opensans-light-webfont.eot", "//is.byu.edu/site/resources/fonts/opensans-light-webfont.svg"));
+@include font-face("OpenSansLtCn", font-files("//is.byu.edu/site/resources/fonts/OpenSans-CondLight.ttf", "examples/bgrove.otf"));
+@include font-face("OpenSans_IE", font-files("//is.byu.edu/site/resources/fonts/opensans-regular-webfont.eot", "examples/bgrove.otf"));
+
+
+html, body {
+	width:100%;
+	padding:0;
+	margin:0;
+}
+
+body {
+	font-family:$OpenSansLt;
+}
+
+div, button{
+	padding:0;
+	margin:0;
+	border:0px;
+	
+}
+
+.section {
+		
+}
+
+p {
+	margin:0;
+	padding:0;
+}
+
+h1, h2, h3, h4 {
+	font-family:$OpenSansLt;
+	font-size:16px;
+	font-weight:400;
+	margin:0;
+	padding:0;
+}
+
+.corner-button{
+	display:block;
+	position:relative;
+	width:200px;
+	height:65px;
+	margin:300px auto;
+	background-color:rgba(0,0,0,0);
+	font-size:1.05rem;
+	letter-spacing:1.5px;
+	font-weight:200;
+
+	& .top-left-corner {
+		position:absolute;
+		top:0;
+		left:0;
+		
+		&:before{
+			display:block;
+			height:$line-weight;
+			width:$std-line-length;
+			content:"";
+			background-color:$line-color;
+			position:absolute;
+			top:0;
+			left:0;
+			@include transition-duration($hover-transition-duration);
+			
+		}
+		
+		&:after{
+			display:block;
+			width:$line-weight;
+			height:$std-line-length;
+			content:"";
+			background-color:$line-color;
+			position:absolute;
+			top:0;
+			left:0;
+			@include transition-duration($hover-transition-duration);
+			
+		}
+	}
+	
+	& .bottom-right-corner {
+		width:25px;
+		height:25px;
+		position:absolute;
+		bottom:0;
+		right:0;
+		
+		&:before{
+			display:block;
+			height:$line-weight;
+			width:$std-line-length;
+			content:"";
+			background-color:$line-color;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			@include transition-duration($hover-transition-duration);
+			
+		}
+		
+		&:after{
+			display:block;
+			width:$line-weight;
+			height:$std-line-length;
+			content:"";
+			background-color:$line-color;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			@include transition-duration($hover-transition-duration);
+			
+		}
+	}
+	
+	&:hover {
+		cursor:pointer;
+	
+		& .bottom-right-corner:before {
+			bottom: $hover-vertical-offset;
+			right: $hover-horizontal-offset;
+			width:$hover-line-length;
+		
+		}
+		
+		& .bottom-right-corner:after {
+			bottom: $hover-vertical-offset;
+			right: $hover-horizontal-offset;
+			height:$hover-line-length;
+		
+		}
+		
+		& .top-left-corner:before {
+			top:$hover-vertical-offset;
+			left:$hover-horizontal-offset;
+			width:$hover-line-length;
+			
+		}
+		
+		& .top-left-corner:after {
+			top:$hover-vertical-offset;
+			left:$hover-horizontal-offset;
+			height:$hover-line-length;
+		
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

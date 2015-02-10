@@ -1,0 +1,169 @@
+@CHARSET "ISO-8859-1";
+@font-face {
+  font-family: "OpenSans";
+  src: url(//is.byu.edu/site/resources/fonts/OpenSans-regular.ttf) format('truetype'), url(//is.byu.edu/site/resources/fonts/OpenSans-regular.ttf) format('truetype'), url(//is.byu.edu/site/resources/fonts/OpenSans-regular.ttf) format('truetype'), url(//is.byu.edu/site/resources/fonts/OpenSans-regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: "OpenSansLt";
+  src: url(//is.byu.edu/site/resources/fonts/opensans-light-webfont.ttf) format('truetype'), url(//is.byu.edu/site/resources/fonts/opensans-light-webfont.woff) format('woff'), url(//is.byu.edu/site/resources/fonts/opensans-light-webfont.eot) format('embedded-opentype'), url(//is.byu.edu/site/resources/fonts/opensans-light-webfont.svg) format('svg');
+}
+@font-face {
+  font-family: "OpenSansLt_IE";
+  src: url(//is.byu.edu/site/resources/fonts/opensans-light-webfont.ttf) format('truetype'), url(//is.byu.edu/site/resources/fonts/opensans-light-webfont.woff) format('woff'), url(//is.byu.edu/site/resources/fonts/opensans-light-webfont.eot) format('embedded-opentype'), url(//is.byu.edu/site/resources/fonts/opensans-light-webfont.svg) format('svg');
+}
+@font-face {
+  font-family: "OpenSansLtCn";
+  src: url(//is.byu.edu/site/resources/fonts/OpenSans-CondLight.ttf) format('truetype'), url('../fonts/examples/bgrove.otf') format('opentype');
+}
+@font-face {
+  font-family: "OpenSans_IE";
+  src: url(//is.byu.edu/site/resources/fonts/opensans-regular-webfont.eot) format('embedded-opentype'), url('../fonts/examples/bgrove.otf') format('opentype');
+}
+/* line 46, ../sass/main.scss */
+html, body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 52, ../sass/main.scss */
+body {
+  font-family: "OpenSansLt", "OpenSansLt_IE";
+}
+
+/* line 56, ../sass/main.scss */
+div, button {
+  padding: 0;
+  margin: 0;
+  border: 0px;
+}
+
+/* line 67, ../sass/main.scss */
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 72, ../sass/main.scss */
+h1, h2, h3, h4 {
+  font-family: "OpenSansLt", "OpenSansLt_IE";
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 80, ../sass/main.scss */
+.corner-button {
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 65px;
+  margin: 300px auto;
+  background-color: transparent;
+  font-size: 1.05rem;
+  letter-spacing: 1.5px;
+  font-weight: 200;
+}
+/* line 91, ../sass/main.scss */
+.corner-button .top-left-corner {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 96, ../sass/main.scss */
+.corner-button .top-left-corner:before {
+  display: block;
+  height: 2px;
+  width: 20px;
+  content: "";
+  background-color: rgba(80, 80, 80, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 109, ../sass/main.scss */
+.corner-button .top-left-corner:after {
+  display: block;
+  width: 2px;
+  height: 20px;
+  content: "";
+  background-color: rgba(80, 80, 80, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 123, ../sass/main.scss */
+.corner-button .bottom-right-corner {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+/* line 130, ../sass/main.scss */
+.corner-button .bottom-right-corner:before {
+  display: block;
+  height: 2px;
+  width: 20px;
+  content: "";
+  background-color: rgba(80, 80, 80, 0.9);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 143, ../sass/main.scss */
+.corner-button .bottom-right-corner:after {
+  display: block;
+  width: 2px;
+  height: 20px;
+  content: "";
+  background-color: rgba(80, 80, 80, 0.9);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 157, ../sass/main.scss */
+.corner-button:hover {
+  cursor: pointer;
+}
+/* line 160, ../sass/main.scss */
+.corner-button:hover .bottom-right-corner:before {
+  bottom: 7px;
+  right: 15px;
+  width: 16px;
+}
+/* line 167, ../sass/main.scss */
+.corner-button:hover .bottom-right-corner:after {
+  bottom: 7px;
+  right: 15px;
+  height: 16px;
+}
+/* line 174, ../sass/main.scss */
+.corner-button:hover .top-left-corner:before {
+  top: 7px;
+  left: 15px;
+  width: 16px;
+}
+/* line 181, ../sass/main.scss */
+.corner-button:hover .top-left-corner:after {
+  top: 7px;
+  left: 15px;
+  height: 16px;
+}
