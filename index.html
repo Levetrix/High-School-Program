@@ -2,25 +2,42 @@
 <html>
 <head>
 	<meta charset="ISO-8859-1">
-	<title>Hight School Programs</title>
+	<title>High School Programs</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="stylesheets/main.css" type="text/css" />
-	
-	<script type="text/javascript">
-		var debug = false;
-		attachForm("#contactForm",".clickhere", function( data, textStatus, jqXHR ){
-			if(debug){console.log("ajax connection done.")};
-			//	This is an example of a simple thing you could use to create a new element after your form. Placing a "placeholder" element provides you a natural way to move/place the response data where you want it. For flexibility of design, the way you've done it here is actually better. Therefore this is commented out.
-			//$('<div id="form-response">' + data.message + '</div>').insertAfter($("#contactForm"));
-			$("#form-submit").html('<img src="img/green-check-mark.png" class="form-success" />Thank you for your feedback! We appreciate your willingness to share your thoughts with us.').addClass("form-success");
-		}, false, debug);	//	The last two parameters are optional and here are set to their default values. They govern an optional setting if you supply null for the handler function and rely on the default setting there, and the debug setting which needs to be true to include debug information in the console.
-	</script>
+
 </head>
 <body>
+	<section class="programs-table">
+		<div class="program">
+			<h2>Program Title</h2>
+			<button class="side-button">More Info
+				<div class="top-left-corner"></div>
+				<div class="bottom-right-corner"></div>
+			</button>
+		</div>
+		<div class="program">
+			<h2>Program Title</h2>
+			<button class="side-button">More Info
+				<div class="top-left-corner"></div>
+				<div class="bottom-right-corner"></div>
+			</button>
+		</div>
+		<div class="program">
+			<h2>Program Title</h2>
+			<button class="side-button">More Info
+				<div class="top-left-corner"></div>
+				<div class="bottom-right-corner"></div>
+			</button>
+		</div>
+	</section>
 	<button class="corner-button">Button
 		<div class="top-left-corner"></div>
 		<div class="bottom-right-corner"></div>
-		
+	</button>
+	<button class="side-button">Button
+		<div class="top-left-corner"></div>
+		<div class="bottom-right-corner"></div>
 	</button>
 	
 	
