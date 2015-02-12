@@ -8,6 +8,65 @@
 		&::-webkit-input-placeholder { @content; } 
 }
 
+@function pow($number, $exp) {
+  $value: 1;
+  @if $exp > 0 {
+    @for $i from 1 through $exp {
+      $value: $value * $number;
+    }
+  }
+  @else if $exp < 0 {
+    @for $i from 1 through -$exp {
+      $value: $value / $number;
+    }
+  }
+  @return $value;
+}
+
+@function fact($number) {
+  $value: 1;
+  @if $number > 0 {
+    @for $i from 1 through $number {
+      $value: $value * $i;
+    }
+  }
+  @return $value;
+}
+
+@function pi() {
+  @return 3.14159265359;
+}
+
+@function rad($angle) {
+  $unit: unit($angle);
+  $unitless: $angle / ($angle * 0 + 1);
+  // If the angle has 'deg' as unit, convert to radians.
+  @if $unit == deg {
+    $unitless: $unitless / 180 * pi();
+  }
+  @return $unitless;
+}
+
+@function sin($angle) {
+  $sin: 0;
+  $angle: rad($angle);
+  // Iterate a bunch of times.
+  @for $i from 0 through 10 {
+    $sin: $sin + pow(-1, $i) * pow($angle, (2 * $i + 1)) / fact(2 * $i + 1);
+  }
+  @return $sin;
+}
+
+@function cos($angle) {
+  $cos: 0;
+  $angle: rad($angle);
+  // Iterate a bunch of times.
+  @for $i from 0 through 10 {
+    $cos: $cos + pow(-1, $i) * pow($angle, 2 * $i) / fact(2 * $i);
+  }
+  @return $cos;
+}
+
 $green: #3c5346;
 $red: #872633;
 $yellow: #dfb655;
@@ -16,6 +75,13 @@ $purple: #2a1f26;
 $white: #f9f9f9;
 $blue: #66B9E3; 
 $charcoal: #323232;
+
+$slant-line-angle:30deg;
+$slant-line-length:300px;
+$slant-line-height:(cos($slant-line-angle)) * $slant-line-length;
+$slant-line-width:(sin($slant-line-angle)) * $slant-line-length;
+
+
 
 $b1-width:200px;
 $b1-height:65px;
@@ -102,6 +168,7 @@ h2 {
 .programs-table {
 	width:1200px;
 	margin:0px auto;
+	margin-top:100px;
 	vertical-align:top;
 }
 
@@ -121,9 +188,9 @@ h2 {
 		left:0;
 		content:"";
 		width:2px;;
-		height:300px;
+		height:$slant-line-length;
 		background-color:rgba(80,80,80,.9);
-		@include rotate(30deg);
+		@include rotate($slant-line-angle);
 		z-index:1;
 	}
 	
@@ -134,12 +201,20 @@ h2 {
 		right:0;
 		content:"";
 		width:2px;;
-		height:300px;
+		height:$slant-line-length;
 		background-color:rgba(80,80,80,.9);
-		@include rotate(30deg);
+		@include rotate($slant-line-angle);
 		z-index:1;
 	}
 	
+	& .program-description-container {
+		position:absolute;
+		top:($slant-line-length + $slant-line-height) / 2;
+		left:-$slant-line-width / 2 - 1px;
+		height:200px;
+		width:100%;
+		border-left:2px solid black;
+	}
 }
 
 .corner-button{
