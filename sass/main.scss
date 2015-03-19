@@ -673,6 +673,11 @@ button {
 				//margin-bottom:1.5rem;
 			}
 			
+			& a {
+				color:#444;
+				text-decoration:none;
+			}
+			
 			& ul {
 				padding-left:1.25rem;
 				
@@ -701,8 +706,14 @@ button {
 			color:#ddd;
 			& button {
 				color:#ddd;
+				
 				& div:before,& div:after{
 					background-color:#ddd;
+				}
+				
+				& a {
+					color:#ddd;
+					text-decoration:none;
 				}
 			}
 		}
@@ -710,6 +721,14 @@ button {
 		&:nth-of-type(odd) .table-header:before,&:nth-of-type(odd) .program-description-container{
 			background-color:$byuBlue;
 			color:#ddd;
+			
+			& button {
+			
+				& a {
+					color:#ddd;
+					text-decoration:none;
+				}
+			}
 		}	
 	}
 }
