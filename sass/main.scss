@@ -789,9 +789,9 @@ $std-cat-line-bl-h:0;
 $std-cat-line-br-v:$std-cat-line-length / 2;
 $std-cat-line-br-h:0;
 
-$hover-cat-line-position:#{($std-cat-height - $std-cat-line-length) / 1.6};
-$hover-cat-line-length:($std-cat-height * .4);
-$hover-cat-transition-time:.1s;
+$hover-cat-line-length:($std-cat-height * .5);
+$hover-cat-line-position:#{($std-cat-height - $hover-cat-line-length) / 2};
+$hover-cat-transition-time:.2s;
 
 $hover-cat-line-tl-v:$hover-cat-line-length / 2;
 $hover-cat-line-tl-h:0;
@@ -801,8 +801,6 @@ $hover-cat-line-bl-v:$hover-cat-line-length / 2;
 $hover-cat-line-bl-h:0;
 $hover-cat-line-br-v:$hover-cat-line-length / 2;
 $hover-cat-line-br-h:0;
-
-
 		
 $stretch-cat-width:#{$std-cat-width * 2 + $std-cat-margin};
 $stretch-cat-height:#{$std-cat-height * 3 + $std-cat-margin * 2 + 16px};
@@ -814,6 +812,7 @@ $stretch-cat-delay:$stretch-cat-1step-time * .65;
 
 $collapse-cat-1step-time:$stretch-cat-1step-time * .75;
 $collapse-cat-2step-time:$stretch-cat-1step-time * .75;
+$collapse-cat-2step-time-height:$collapse-cat-2step-time;
 $collapse-cat-delay:$stretch-cat-delay * .75;
 
 
@@ -841,6 +840,43 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			margin-bottom:1rem;
 		}
 		
+		& .close-button{
+			display:none;
+			position:absolute;
+			top:8px;
+			right:-47px;
+			width:60px;
+			height:25px;
+			@include opacity(0);
+			
+			&:before{
+				content:"";
+				display:block;
+				position:absolute;
+				top:0;
+				right:50%;
+				width:2px;
+				height:100%;	
+				@include border-radius(1px);
+				@include skew(45deg);
+				background-color:#5a5a5a;
+			}
+			
+			&:after{
+				content:"";
+				display:block;
+				position:absolute;
+				top:0;
+				right:50%;
+				width:2px;
+				height:100%;	
+				@include border-radius(1px);
+				@include skew(-45deg);
+				background-color:#5a5a5a;
+			}
+			
+		}
+		
 		& > section {
 			vertical-align:top;
 			display:inline-block;
@@ -850,6 +886,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			
 			& .italicized {
 				margin-top:1.5em;
+				margin-bottom:.75rem;
 				font-style:italic;
 				display:inline-block;
 				height:2.5rem;
@@ -859,7 +896,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 				font-size:1rem;
 				color:#5a5a5a;
 				line-height:1.75rem;
-				margin-top:1.5rem;
+				margin-top:.75rem;
 			}
 			
 			& .classes {
@@ -867,7 +904,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 				letter-spacing:.25px;
 				
 				&.class-list {
-					margin-top:1.6rem
+					margin-top:1.05rem
 				}
 				
 				& a {
@@ -1021,7 +1058,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 	
 		&.corners {
 			//color:red;
-			@include transition(left $collapse-cat-1step-time  $collapse-cat-delay,width $collapse-cat-1step-time 0s  $collapse-cat-delay ease,height $collapse-cat-2step-time ease,top $collapse-cat-2step-time);
+			@include transition(left $collapse-cat-1step-time  $collapse-cat-delay,width $collapse-cat-1step-time 0s  $collapse-cat-delay ease,height $collapse-cat-2step-time-height ease,top $collapse-cat-2step-time);
 				
 			& .tr:after {
 				@include transition(width $collapse-cat-1step-time  $collapse-cat-delay);
@@ -1050,11 +1087,36 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 				height:2px;
 				bottom:0;
 			}
+			
+			& .close-button{
+				display:block;
+				@include transition(opacity .25s .0s, height .25s .0s);
+				@include opacity(0);
+				height:25px;
+			}
 		}
 		
 		
 		&.stretch {
 			z-index:1;
+			
+			& .close-button{
+				height:38px;
+				@include opacity(1);
+				@include transition(opacity .25s .5s, height .25s .5s);
+				
+				&:before{
+				height:100%;			
+				}
+				
+				&:after {
+				height:100%;				
+				}
+				
+				&:hover {
+					cursor:pointer;
+				}
+			}
 						
 			&:nth-of-type(4n - 3),&:nth-of-type(4n - 2),&:nth-of-type(4n - 1),&:nth-of-type(4n - 0){
 				top:-16px;

@@ -24,15 +24,17 @@ $(document).ready(function(){
 		//console.log(e.data);
 		console.log("exitHanlder being fired");
 		clickCollapse();
-		$(".course-category").off("click.offclick").on("click.ccclick",e.data,e.data.ch);
+		$(".course-category").off("click.ccclick").on("click.ccclick",e.data,e.data.ch);
+		e.stopPropagation();
 	}
 	var clickHander = function(e){
 		var $this = $(this);
 		//console.log(e.data);
 		clickExpand($this);
-		$(".course-category").off("click.ccclick").on("click.offclick",e.data,e.data.eh);
-		$this.off(".offclick");
+		$(".course-category").off("click.ccclick").on("click.ccclick",e.data,e.data.eh);
+		$this.off(".ccclick");
 	};
-	var data = {"key":"contents",eh:exitHandler,ch:clickHander};
-	$(".course-category").on("click.ccclick",data,clickHander);
+	var dataDefaultObject = {eh:exitHandler,ch:clickHander};
+	$(".course-category").on("click.ccclick",dataDefaultObject,clickHander);
+	$(".close-button").on("click.ccclick",dataDefaultObject,exitHandler);
 });
