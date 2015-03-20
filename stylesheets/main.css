@@ -313,7 +313,7 @@ button {
 /********************************** Q U A R T E R - B O X ***************************************************/
 /* line 441, ../sass/main.scss */
 .quad-container {
-  max-width: 1136.05px;
+  max-width: 980.72px;
   font-size: .875rem;
   text-align: left;
 }
@@ -324,10 +324,10 @@ button {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 256px;
+  width: 221px;
   min-height: 120px;
-  margin: 18.675px;
-  padding-top: 14.26px;
+  margin: 16.12px;
+  padding-top: 12.32px;
 }
 /* line 455, ../sass/main.scss */
 .quad-container .quarter:nth-of-type(4n - 3) {
@@ -344,10 +344,10 @@ button {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 549.35px;
+  width: 474.24px;
   height: 120px;
-  margin: 18.675px;
-  padding-top: 14.26px;
+  margin: 16.12px;
+  padding-top: 12.32px;
 }
 /* line 477, ../sass/main.scss */
 .quad-container .half:first-of-type {
@@ -369,7 +369,7 @@ button {
 /* line 500, ../sass/main.scss */
 #home-page #top-section {
   width: 100%;
-  height: 700px;
+  height: 400px;
   text-align: center;
   overflow: hidden;
   white-space: nowrap;
@@ -405,7 +405,7 @@ button {
   background-image: url("../img/locker.jpg");
   background-size: contain;
   background-position: left;
-  width: calc(50% - 328px);
+  width: calc(50% - 194px);
   height: 100%;
 }
 /* line 542, ../sass/main.scss */
@@ -449,7 +449,7 @@ button {
 }
 /* line 586, ../sass/main.scss */
 #home-page .programs-table {
-  width: 1200px;
+  width: 950px;
   margin: 4rem auto;
   vertical-align: top;
 }
@@ -517,7 +517,7 @@ button {
   -webkit-transform: skew(-30deg, 0);
   transform: skew(-30deg, 0);
   content: "";
-  height: 225px;
+  height: 175px;
   width: 100%;
   position: absolute;
   display: block;
@@ -525,19 +525,19 @@ button {
 }
 /* line 651, ../sass/main.scss */
 #home-page .program .table-header > *:first-child {
-  padding-top: 87.5px;
+  padding-top: 62.5px;
 }
 /* line 660, ../sass/main.scss */
 #home-page .program .program-description-container {
   position: absolute;
-  top: 225px;
-  left: -64.95191px;
+  top: 175px;
+  left: -50.51815px;
   min-height: 450px;
   width: 100%;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 2rem;
+  padding: 2rem 1.25rem;
   text-align: left;
   line-height: 1.5rem;
 }
@@ -643,9 +643,9 @@ button {
   text-align: left;
   padding-top: 4rem;
   font-weight: 200;
-  max-width: 256px;
+  max-width: 221px;
   white-space: nowrap;
-  padding-bottom: 20.675px;
+  padding-bottom: 18.12px;
   border-bottom: 2px solid #555;
 }
 
@@ -657,10 +657,11 @@ button {
 #course-category-container .course-category {
   position: absolute;
   height: 85px;
-  width: 256px;
+  width: 221px;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 0;
+  margin-top: 14px;
   padding: 0 .5rem;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -668,7 +669,7 @@ button {
   overflow: hidden;
   text-align: left;
 }
-/* line 853, ../sass/main.scss */
+/* line 854, ../sass/main.scss */
 #course-category-container .course-category h3 {
   display: block;
   text-align: center;
@@ -677,18 +678,18 @@ button {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
 }
-/* line 862, ../sass/main.scss */
+/* line 863, ../sass/main.scss */
 #course-category-container .course-category .close-button {
   display: none;
   position: absolute;
-  top: 8px;
+  top: 7px;
   right: -47px;
   width: 60px;
-  height: 25px;
+  height: 16px;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
 }
-/* line 871, ../sass/main.scss */
+/* line 872, ../sass/main.scss */
 #course-category-container .course-category .close-button:before {
   content: "";
   display: block;
@@ -706,7 +707,7 @@ button {
   transform: skew(45deg, 5deg);
   background-color: #5a5a5a;
 }
-/* line 884, ../sass/main.scss */
+/* line 885, ../sass/main.scss */
 #course-category-container .course-category .close-button:after {
   content: "";
   display: block;
@@ -724,7 +725,7 @@ button {
   transform: skew(-45deg, 5deg);
   background-color: #5a5a5a;
 }
-/* line 899, ../sass/main.scss */
+/* line 900, ../sass/main.scss */
 #course-category-container .course-category > section {
   vertical-align: top;
   display: inline-block;
@@ -732,7 +733,7 @@ button {
   margin: 0 1.25%;
   text-align: left;
 }
-/* line 906, ../sass/main.scss */
+/* line 907, ../sass/main.scss */
 #course-category-container .course-category > section .italicized {
   margin-top: 1.5em;
   margin-bottom: .75rem;
@@ -740,27 +741,27 @@ button {
   display: inline-block;
   height: 2.5rem;
 }
-/* line 914, ../sass/main.scss */
+/* line 915, ../sass/main.scss */
 #course-category-container .course-category > section .category {
   font-size: 1rem;
   color: #5a5a5a;
   line-height: 1.75rem;
   margin-top: .75rem;
 }
-/* line 921, ../sass/main.scss */
+/* line 922, ../sass/main.scss */
 #course-category-container .course-category > section .classes {
   font-weight: 200;
   letter-spacing: .25px;
 }
-/* line 925, ../sass/main.scss */
+/* line 926, ../sass/main.scss */
 #course-category-container .course-category > section .classes.class-list {
   margin-top: 1.05rem;
 }
-/* line 929, ../sass/main.scss */
+/* line 930, ../sass/main.scss */
 #course-category-container .course-category > section .classes a {
   color: #39b54a;
 }
-/* line 935, ../sass/main.scss */
+/* line 936, ../sass/main.scss */
 #course-category-container .course-category div:before, #course-category-container .course-category div:after {
   -moz-transition: height, 0.2s;
   -o-transition: height, 0.2s;
@@ -775,143 +776,143 @@ button {
   -webkit-transition: bottom, 0.2s;
   transition: bottom, 0.2s;
 }
-/* line 941, ../sass/main.scss */
+/* line 942, ../sass/main.scss */
 #course-category-container .course-category:nth-of-type(-n + 4) {
   top: 0;
 }
-/* line 945, ../sass/main.scss */
+/* line 946, ../sass/main.scss */
 #course-category-container .course-category:nth-of-type(-n + 8):nth-of-type(n + 5) {
   top: 125px;
 }
-/* line 949, ../sass/main.scss */
+/* line 950, ../sass/main.scss */
 #course-category-container .course-category:nth-of-type(-n + 12):nth-of-type(n + 9) {
   top: 250px;
 }
-/* line 953, ../sass/main.scss */
+/* line 954, ../sass/main.scss */
 #course-category-container .course-category:nth-of-type(4n - 3) {
   left: 0;
 }
-/* line 957, ../sass/main.scss */
+/* line 958, ../sass/main.scss */
 #course-category-container .course-category:nth-of-type(4n - 2) {
-  left: 293.35px;
+  left: 253.24px;
 }
-/* line 961, ../sass/main.scss */
+/* line 962, ../sass/main.scss */
 #course-category-container .course-category:nth-of-type(4n - 1) {
-  left: 586.7px;
+  left: 506.48px;
 }
-/* line 965, ../sass/main.scss */
+/* line 966, ../sass/main.scss */
 #course-category-container .course-category:nth-of-type(4n - 0) {
-  left: 880.05px;
+  left: 759.72px;
 }
-/* line 969, ../sass/main.scss */
+/* line 970, ../sass/main.scss */
 #course-category-container .course-category div {
   position: absolute;
 }
-/* line 972, ../sass/main.scss */
+/* line 973, ../sass/main.scss */
 #course-category-container .course-category div:before, #course-category-container .course-category div:after {
   content: "";
   display: block;
   position: absolute;
   background-color: #666;
 }
-/* line 980, ../sass/main.scss */
+/* line 981, ../sass/main.scss */
 #course-category-container .course-category .tl {
   top: 0;
   left: 0;
 }
-/* line 984, ../sass/main.scss */
+/* line 985, ../sass/main.scss */
 #course-category-container .course-category .tl:after {
   width: 0;
   height: 2px;
 }
-/* line 989, ../sass/main.scss */
+/* line 990, ../sass/main.scss */
 #course-category-container .course-category .tl:before {
   width: 2px;
   height: 28.05px;
   top: 14.45px;
 }
-/* line 996, ../sass/main.scss */
+/* line 997, ../sass/main.scss */
 #course-category-container .course-category .tr {
   top: 0;
   right: 2px;
 }
-/* line 1000, ../sass/main.scss */
+/* line 1001, ../sass/main.scss */
 #course-category-container .course-category .tr:after {
   right: 0;
   top: 0;
   width: 0;
   height: 2px;
 }
-/* line 1007, ../sass/main.scss */
+/* line 1008, ../sass/main.scss */
 #course-category-container .course-category .tr:before {
   width: 2px;
   height: 28.05px;
   top: 14.45px;
 }
-/* line 1014, ../sass/main.scss */
+/* line 1015, ../sass/main.scss */
 #course-category-container .course-category .bl {
   bottom: 0;
   left: 0;
 }
-/* line 1018, ../sass/main.scss */
+/* line 1019, ../sass/main.scss */
 #course-category-container .course-category .bl:after {
   width: 0;
   height: 2px;
 }
-/* line 1023, ../sass/main.scss */
+/* line 1024, ../sass/main.scss */
 #course-category-container .course-category .bl:before {
   width: 2px;
   height: 28.05px;
   bottom: 14.45px;
 }
-/* line 1030, ../sass/main.scss */
+/* line 1031, ../sass/main.scss */
 #course-category-container .course-category .br {
   bottom: 0;
   right: 2px;
 }
-/* line 1034, ../sass/main.scss */
+/* line 1035, ../sass/main.scss */
 #course-category-container .course-category .br:after {
   bottom: 0;
   right: 0;
   width: 0;
   height: 2px;
 }
-/* line 1041, ../sass/main.scss */
+/* line 1042, ../sass/main.scss */
 #course-category-container .course-category .br:before {
   width: 2px;
   height: 28.05px;
   bottom: 14.45px;
 }
-/* line 1048, ../sass/main.scss */
+/* line 1049, ../sass/main.scss */
 #course-category-container .course-category:hover {
   cursor: pointer;
 }
-/* line 1052, ../sass/main.scss */
+/* line 1053, ../sass/main.scss */
 #course-category-container .course-category:hover .tl:before {
   height: 21.25px;
   top: 21.25px;
 }
-/* line 1057, ../sass/main.scss */
+/* line 1058, ../sass/main.scss */
 #course-category-container .course-category:hover .tr:before {
   height: 21.25px;
   top: 21.25px;
 }
-/* line 1062, ../sass/main.scss */
+/* line 1063, ../sass/main.scss */
 #course-category-container .course-category:hover .bl:before {
   height: 21.25px;
   bottom: 21.25px;
 }
-/* line 1067, ../sass/main.scss */
+/* line 1068, ../sass/main.scss */
 #course-category-container .course-category:hover .br:before {
   height: 21.25px;
   bottom: 21.25px;
 }
-/* line 1073, ../sass/main.scss */
+/* line 1074, ../sass/main.scss */
 #course-category-container .course-category.fade {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=7);
   opacity: 0.065;
 }
-/* line 1078, ../sass/main.scss */
+/* line 1079, ../sass/main.scss */
 #course-category-container .course-category.corners {
   -moz-transition: left 0.375s 0.24375s, width 0.375s ease 0.24375s, height 0.375s ease, top 0.375s;
   -o-transition: left 0.375s 0.24375s, width 0.375s ease 0.24375s, height 0.375s ease, top 0.375s;
@@ -919,7 +920,7 @@ button {
   -webkit-transition-delay: 0.24375s, 0.24375s, 0s, 0s;
   transition: left 0.375s 0.24375s, width 0.375s ease 0.24375s, height 0.375s ease, top 0.375s;
 }
-/* line 1082, ../sass/main.scss */
+/* line 1083, ../sass/main.scss */
 #course-category-container .course-category.corners .tr:after {
   -moz-transition: width 0.375s 0.24375s;
   -o-transition: width 0.375s 0.24375s;
@@ -927,7 +928,7 @@ button {
   -webkit-transition-delay: 0.24375s;
   transition: width 0.375s 0.24375s;
 }
-/* line 1086, ../sass/main.scss */
+/* line 1087, ../sass/main.scss */
 #course-category-container .course-category.corners .br:after {
   -moz-transition: width 0.375s 0.24375s;
   -o-transition: width 0.375s 0.24375s;
@@ -935,27 +936,27 @@ button {
   -webkit-transition-delay: 0.24375s;
   transition: width 0.375s 0.24375s;
 }
-/* line 1090, ../sass/main.scss */
+/* line 1091, ../sass/main.scss */
 #course-category-container .course-category.corners .tl:before {
   height: 2px;
   top: 0;
 }
-/* line 1095, ../sass/main.scss */
+/* line 1096, ../sass/main.scss */
 #course-category-container .course-category.corners .tr:before {
   height: 2px;
   top: 0;
 }
-/* line 1100, ../sass/main.scss */
+/* line 1101, ../sass/main.scss */
 #course-category-container .course-category.corners .bl:before {
   height: 2px;
   bottom: 0;
 }
-/* line 1105, ../sass/main.scss */
+/* line 1106, ../sass/main.scss */
 #course-category-container .course-category.corners .br:before {
   height: 2px;
   bottom: 0;
 }
-/* line 1110, ../sass/main.scss */
+/* line 1111, ../sass/main.scss */
 #course-category-container .course-category.corners .close-button {
   display: block;
   -moz-transition: opacity 0.25s 0s, height 0.25s 0s;
@@ -965,15 +966,15 @@ button {
   transition: opacity 0.25s 0s, height 0.25s 0s;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-  height: 25px;
+  height: 16px;
 }
-/* line 1119, ../sass/main.scss */
+/* line 1120, ../sass/main.scss */
 #course-category-container .course-category.stretch {
   z-index: 1;
 }
-/* line 1122, ../sass/main.scss */
+/* line 1123, ../sass/main.scss */
 #course-category-container .course-category.stretch .close-button {
-  height: 38px;
+  height: 26px;
   filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
   opacity: 1;
   -moz-transition: opacity 0.25s 0.5s, height 0.25s 0.5s;
@@ -982,63 +983,63 @@ button {
   -webkit-transition-delay: 0.5s, 0.5s;
   transition: opacity 0.25s 0.5s, height 0.25s 0.5s;
 }
-/* line 1127, ../sass/main.scss */
+/* line 1128, ../sass/main.scss */
 #course-category-container .course-category.stretch .close-button:before {
   height: 100%;
 }
-/* line 1131, ../sass/main.scss */
+/* line 1132, ../sass/main.scss */
 #course-category-container .course-category.stretch .close-button:after {
   height: 100%;
 }
-/* line 1135, ../sass/main.scss */
+/* line 1136, ../sass/main.scss */
 #course-category-container .course-category.stretch .close-button:hover {
   cursor: pointer;
 }
-/* line 1140, ../sass/main.scss */
+/* line 1141, ../sass/main.scss */
 #course-category-container .course-category.stretch:nth-of-type(4n - 3), #course-category-container .course-category.stretch:nth-of-type(4n - 2), #course-category-container .course-category.stretch:nth-of-type(4n - 1), #course-category-container .course-category.stretch:nth-of-type(4n - 0) {
   top: -16px;
-  left: 256px;
-  height: 345.7px;
-  width: 624.05px;
+  left: 221px;
+  height: 335.48px;
+  width: 538.72px;
 }
-/* line 1146, ../sass/main.scss */
+/* line 1147, ../sass/main.scss */
 #course-category-container .course-category.stretch:nth-of-type(4n - 3) .tl:before, #course-category-container .course-category.stretch:nth-of-type(4n - 2) .tl:before, #course-category-container .course-category.stretch:nth-of-type(4n - 1) .tl:before, #course-category-container .course-category.stretch:nth-of-type(4n - 0) .tl:before {
   height: 0;
   top: 0px;
 }
-/* line 1151, ../sass/main.scss */
+/* line 1152, ../sass/main.scss */
 #course-category-container .course-category.stretch:nth-of-type(4n - 3) .tl:after, #course-category-container .course-category.stretch:nth-of-type(4n - 2) .tl:after, #course-category-container .course-category.stretch:nth-of-type(4n - 1) .tl:after, #course-category-container .course-category.stretch:nth-of-type(4n - 0) .tl:after {
   height: 0;
   top: 0px;
 }
-/* line 1156, ../sass/main.scss */
+/* line 1157, ../sass/main.scss */
 #course-category-container .course-category.stretch:nth-of-type(4n - 3) .tr:before, #course-category-container .course-category.stretch:nth-of-type(4n - 2) .tr:before, #course-category-container .course-category.stretch:nth-of-type(4n - 1) .tr:before, #course-category-container .course-category.stretch:nth-of-type(4n - 0) .tr:before {
   height: 0;
   top: 0;
 }
-/* line 1161, ../sass/main.scss */
+/* line 1162, ../sass/main.scss */
 #course-category-container .course-category.stretch:nth-of-type(4n - 3) .tr:after, #course-category-container .course-category.stretch:nth-of-type(4n - 2) .tr:after, #course-category-container .course-category.stretch:nth-of-type(4n - 1) .tr:after, #course-category-container .course-category.stretch:nth-of-type(4n - 0) .tr:after {
-  width: 624.05px;
+  width: 538.72px;
   height: 2px;
 }
-/* line 1166, ../sass/main.scss */
+/* line 1167, ../sass/main.scss */
 #course-category-container .course-category.stretch:nth-of-type(4n - 3) .bl:before, #course-category-container .course-category.stretch:nth-of-type(4n - 2) .bl:before, #course-category-container .course-category.stretch:nth-of-type(4n - 1) .bl:before, #course-category-container .course-category.stretch:nth-of-type(4n - 0) .bl:before {
   height: 0px;
   bottom: 0;
 }
-/* line 1171, ../sass/main.scss */
+/* line 1172, ../sass/main.scss */
 #course-category-container .course-category.stretch:nth-of-type(4n - 3) .br:after, #course-category-container .course-category.stretch:nth-of-type(4n - 2) .br:after, #course-category-container .course-category.stretch:nth-of-type(4n - 1) .br:after, #course-category-container .course-category.stretch:nth-of-type(4n - 0) .br:after {
-  width: 624.05px;
+  width: 538.72px;
   height: 2px;
   bottom: 0;
 }
-/* line 1177, ../sass/main.scss */
+/* line 1178, ../sass/main.scss */
 #course-category-container .course-category.stretch:nth-of-type(4n - 3) .br:before, #course-category-container .course-category.stretch:nth-of-type(4n - 2) .br:before, #course-category-container .course-category.stretch:nth-of-type(4n - 1) .br:before, #course-category-container .course-category.stretch:nth-of-type(4n - 0) .br:before {
   width: 2px;
   height: 0px;
   bottom: 0;
 }
-/* line 1184, ../sass/main.scss */
+/* line 1185, ../sass/main.scss */
 #course-category-container .course-category.stretch:nth-of-type(4n - 3), #course-category-container .course-category.stretch:nth-of-type(4n - 2) {
   -moz-transition: left 0.5s 0s, width 0.5s ease 0s, height 0.5s ease 0.325s, top 0.5s 0.325s;
   -o-transition: left 0.5s 0s, width 0.5s ease 0s, height 0.5s ease 0.325s, top 0.5s 0.325s;
@@ -1047,7 +1048,7 @@ button {
   transition: left 0.5s 0s, width 0.5s ease 0s, height 0.5s ease 0.325s, top 0.5s 0.325s;
   cursor: default;
 }
-/* line 1188, ../sass/main.scss */
+/* line 1189, ../sass/main.scss */
 #course-category-container .course-category.stretch:nth-of-type(4n - 3) .tr:after, #course-category-container .course-category.stretch:nth-of-type(4n - 2) .tr:after {
   -moz-transition: width 0.5s 0s;
   -o-transition: width 0.5s 0s;
@@ -1055,7 +1056,7 @@ button {
   -webkit-transition-delay: 0s;
   transition: width 0.5s 0s;
 }
-/* line 1192, ../sass/main.scss */
+/* line 1193, ../sass/main.scss */
 #course-category-container .course-category.stretch:nth-of-type(4n - 3) .br:after, #course-category-container .course-category.stretch:nth-of-type(4n - 2) .br:after {
   -moz-transition: width 0.5s 0s;
   -o-transition: width 0.5s 0s;
@@ -1063,7 +1064,7 @@ button {
   -webkit-transition-delay: 0s;
   transition: width 0.5s 0s;
 }
-/* line 1196, ../sass/main.scss */
+/* line 1197, ../sass/main.scss */
 #course-category-container .course-category.stretch:nth-of-type(4n - 3) .tr:before, #course-category-container .course-category.stretch:nth-of-type(4n - 2) .tr:before {
   -moz-transition: height 0.5s 0.325s;
   -o-transition: height 0.5s 0.325s;
@@ -1071,7 +1072,7 @@ button {
   -webkit-transition-delay: 0.325s;
   transition: height 0.5s 0.325s;
 }
-/* line 1201, ../sass/main.scss */
+/* line 1202, ../sass/main.scss */
 #course-category-container .course-category.stretch:nth-of-type(4n - 1), #course-category-container .course-category.stretch:nth-of-type(4n - 0) {
   -moz-transition: left 0.5s 0s, width 0.5s ease 0s, height 0.5s ease 0.325s, top 0.5s 0.325s;
   -o-transition: left 0.5s 0s, width 0.5s ease 0s, height 0.5s ease 0.325s, top 0.5s 0.325s;
@@ -1080,7 +1081,7 @@ button {
   transition: left 0.5s 0s, width 0.5s ease 0s, height 0.5s ease 0.325s, top 0.5s 0.325s;
   cursor: default;
 }
-/* line 1205, ../sass/main.scss */
+/* line 1206, ../sass/main.scss */
 #course-category-container .course-category.stretch:nth-of-type(4n - 1) .tr:after, #course-category-container .course-category.stretch:nth-of-type(4n - 0) .tr:after {
   -moz-transition: width 0.5s 0s;
   -o-transition: width 0.5s 0s;
@@ -1088,7 +1089,7 @@ button {
   -webkit-transition-delay: 0s;
   transition: width 0.5s 0s;
 }
-/* line 1209, ../sass/main.scss */
+/* line 1210, ../sass/main.scss */
 #course-category-container .course-category.stretch:nth-of-type(4n - 1) .br:after, #course-category-container .course-category.stretch:nth-of-type(4n - 0) .br:after {
   -moz-transition: width 0.5s 0s;
   -o-transition: width 0.5s 0s;
@@ -1096,7 +1097,7 @@ button {
   -webkit-transition-delay: 0s;
   transition: width 0.5s 0s;
 }
-/* line 1213, ../sass/main.scss */
+/* line 1214, ../sass/main.scss */
 #course-category-container .course-category.stretch:nth-of-type(4n - 1) .tr:before, #course-category-container .course-category.stretch:nth-of-type(4n - 0) .tr:before {
   -moz-transition: height 0.5s 0.325s;
   -o-transition: height 0.5s 0.325s;
