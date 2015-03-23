@@ -210,11 +210,18 @@ h3 {
 	font-size:1.575rem;
 }
 
+h4 {
+	font-size:1.35rem;
+}
+
 button {
 	font-family:"Open Sans";
 	font-weight:400;
 }
 
+.no-break {
+	white-space:nowrap;
+}
 
 
 /********************************** B U T T O N S ***************************************************/
@@ -470,7 +477,6 @@ button {
 		display:inline-block;
 		@include box-sizing(border-box);
 		width:#{$quarter-width * 2 + $med-gutter};
-		height:120px;
 		margin:#{$med-gutter / 2};
 		padding-top:$small-gutter;
 		
@@ -750,6 +756,7 @@ button {
 		background-repeat:no-repeat;
 		text-align:left;
 		padding:4rem;
+		padding-bottom:2rem;
 		
 		& h1 {
 			font-weight:400;
@@ -822,7 +829,7 @@ $hover-cat-line-br-v:$hover-cat-line-length / 2;
 $hover-cat-line-br-h:0;
 		
 $stretch-cat-width:#{$std-cat-width * 2 + $std-cat-margin};
-$stretch-cat-height:#{$std-cat-height * 3 + $std-cat-margin * 2 + 16px};
+$stretch-cat-height:#{$std-cat-height * 3 + $std-cat-margin * 3};
 $stretch-cat-width-length:#{($std-cat-width * 2 + $std-cat-margin * 3)};
 $stretch-cat-height-length:#{($std-cat-height * 2 + $std-cat-margin * 2)};
 $stretch-cat-1step-time:.5s;
@@ -858,6 +865,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			font-size:1.35rem;
 			margin-top:1.5rem;
 			margin-bottom:1rem;
+			line-height: 1.2em;
 		}
 		
 		& .close-button{
@@ -1220,10 +1228,131 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 	}
 }
 
+/**********************************                                          ****************************************************/
+/**********************************        R E S O U R C E S  P A G E        ***************************************************/
+/**********************************                                          ****************************************************/
+
+#resources {
+	display:inline-block;
+	
+	& #top-section {
+		padding:4rem;
+		
+		& h1 {
+			text-align:left;
+			font-weight:400;
+			color:$byuBlue;
+			margin-bottom:1rem;
+		}
+		
+		& h2 {
+			font-weight:200;
+			text-align:left;
+			border-bottom:2px solid #5a5a5a;
+			padding-bottom:.25rem;
+			margin-top:2rem;
+			max-width:#{$quarter-width * 2 + $med-gutter};
+			letter-spacing:1px;
+			color:$byuBlue;
+		}
+		
+		& .quad-container {
+			
+			& h4 {
+				font-weight:200;
+				color:#444;
+			}
+			
+			& .half {
+				margin-top:0;
+			}
+		}
+	}
+}
 
 
+/**********************************                                          ****************************************************/
+/**********************************       A P  C O U R S E S  P A G E        ***************************************************/
+/**********************************                                          ****************************************************/
 
-
+#ap {
+	display:inline-block;
+	
+	& #top-section {
+		padding:4rem;
+		
+		& h1 {
+			text-align:left;
+			font-weight:400;
+			color:$byuBlue;
+			margin-bottom:1rem;
+		}
+		
+		& .quad-container {
+			
+			& .half {
+				margin-top:0;
+				
+				& h2 {
+					font-weight:200;
+					text-align:left;
+					border-bottom:2px solid #5a5a5a;
+					padding-bottom:.25rem;
+					max-width:#{$quarter-width * 2 + $med-gutter};
+					letter-spacing:1px;
+					color:$byuBlue;
+					margin-bottom:1rem;
+				}
+			
+				& h4 {
+					display:block;
+					font-weight:200;
+					color:#444;
+					vertical-align:top;
+				}
+				
+				& a {
+					color:$actGreen;
+				}
+				
+				& > p {
+					line-height:1.4rem;
+				}
+				
+				& ul {
+					display:inline-block;
+					vertical-align:top;
+					margin-top:0;
+				
+					& li {
+						margin-bottom:.5rem;
+						
+						& p {
+						}
+					}
+					
+					&.course-list {
+						display:inline-block;
+						
+						& li {
+							margin-top:.25rem;
+							font-size:1.02rem;
+							font-weight:200;
+						}
+					}
+					
+					&.info-list {
+						margin-top:.45rem;
+						
+						& li {
+							line-height:1.4rem;
+						}
+					}
+				}
+			}	
+		}
+	}
+}
 
 
 
