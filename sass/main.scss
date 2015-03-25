@@ -167,6 +167,10 @@ body {
 	font-size:.9rem;
 	text-align:center;
 	color:#4a4a4a;
+	
+	& > div > section:last-of-type {	
+		margin-bottom:4rem;
+	}
 }
 
 div, button{
@@ -785,6 +789,7 @@ button {
 
 	#courses {
 		padding:0 4rem;
+		min-height:500px;
 		
 		& h2 {
 			text-align:left;
@@ -923,7 +928,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			& .category {
 				font-size:1rem;
 				color:#5a5a5a;
-				line-height:1.75rem;
+				line-height:1.15rem;
 				margin-top:.75rem;
 			}
 			
@@ -1263,8 +1268,21 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 				color:#444;
 			}
 			
-			& .half {
-				margin-top:0;
+			& .quarter {
+				& h4 {
+					text-align:center;
+				}
+				
+				& .half {
+					margin-top:0;
+				}
+				
+				& .icon {
+					width:100%;
+					margin:0;
+					padding:0;
+					margin-bottom:$small-gutter;
+				}
 			}
 		}
 	}

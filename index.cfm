@@ -1,16 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="ISO-8859-1">
-	<title>High School Programs</title>
+<cfset additionalHeaderData = '<title>High School Programs</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="stylesheets/main.css" type="text/css" />
+' />
 
-</head>
-<body>
+<cfinclude template="/site/template/header.cfm">
+
 <div id="home-page">
-	<nav>
-	</nav>
+	<cfinclude template="/site/template/header.cfm">
 	<section id="top-section">
 		<div class="lockers"></div><img id="header-image" src="img/Krystal_red.jpg" alt="Krystal" /><div class="lockers"></div>
 		<div class="header-container">
@@ -24,10 +20,6 @@
 		<div class="program">
 			<div class="table-header">
 				<h2>Standard Program</h2>
-				<!-- <button class="side-button">More Info
-					<div class="top-left-corner"></div>
-					<div class="bottom-right-corner"></div>
-				</button>  -->
 			</div>
 			<div class="program-description-container">
 				<ul>
@@ -46,10 +38,6 @@
 		</div><div class="program">
 			<div class="table-header">
 				<h2>Advanced Program</h2>
-				<!-- <button class="side-button">More Info
-					<div class="top-left-corner"></div>
-					<div class="bottom-right-corner"></div>
-				</button> -->
 			</div>
 			<div class="program-description-container">
 				<ul>
@@ -59,7 +47,7 @@
 					<li>Requires completion of higher-level math and english courses, as well as writing and literature courses</li>
 				</ul>
 				<div class="button-container">
-					<button class="side-button"><a href="programs/standard.html">More Info</a>
+					<button class="side-button"><a href="programs/advanced.html">More Info</a>
 						<div class="top-left-corner"></div>
 						<div class="bottom-right-corner"></div>
 					</button>
@@ -68,10 +56,6 @@
 		</div><div class="program">
 			<div class="table-header">
 				<h2>Adult Program</h2>
-				<!-- <button class="side-button">More Info
-					<div class="top-left-corner"></div>
-					<div class="bottom-right-corner"></div>
-				</button> -->
 			</div>
 			<div class="program-description-container">
 				<ul>
@@ -81,7 +65,7 @@
 					<li>Qualifies student to earn a high school diploma from the Provo (Utah) School District</li>
 				</ul>
 				<div class="button-container">
-					<button class="side-button"><a href="programs/standard.html">More Info</a>
+					<button class="side-button"><a href="programs/adult.html">More Info</a>
 						<div class="top-left-corner"></div>
 						<div class="bottom-right-corner"></div>
 					</button>
