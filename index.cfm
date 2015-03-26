@@ -28,10 +28,12 @@
 					<li>Grants an official high school transcript and letter of completion upon finishing the program</li>
 				</ul>
 				<div class="button-container">
-					<button class="side-button"><a href="programs/standard.html">More Info</a>
-						<div class="top-left-corner"></div>
-						<div class="bottom-right-corner"></div>
-					</button>
+					<a href="programs/standard.cfm">
+						<button class="side-button">More Info
+							<div class="top-left-corner"></div>
+							<div class="bottom-right-corner"></div>
+						</button>
+					</a>
 				</div>
 			</div>
 		</div><div class="program">
@@ -46,10 +48,12 @@
 					<li>Requires completion of higher-level math and english courses, as well as writing and literature courses</li>
 				</ul>
 				<div class="button-container">
-					<button class="side-button"><a href="programs/advanced.html">More Info</a>
-						<div class="top-left-corner"></div>
-						<div class="bottom-right-corner"></div>
-					</button>
+					<a href="programs/advanced.cfm">
+						<button class="side-button">More Info
+							<div class="top-left-corner"></div>
+							<div class="bottom-right-corner"></div>
+						</button>
+					</a>
 				</div>
 			</div>
 		</div><div class="program">
@@ -64,10 +68,12 @@
 					<li>Qualifies student to earn a high school diploma from the Provo (Utah) School District</li>
 				</ul>
 				<div class="button-container">
-					<button class="side-button"><a href="programs/adult.html">More Info</a>
-						<div class="top-left-corner"></div>
-						<div class="bottom-right-corner"></div>
-					</button>
+					<a href="programs/adult.cfm">
+						<button class="side-button">More Info
+							<div class="top-left-corner"></div>
+							<div class="bottom-right-corner"></div>
+						</button>
+					</a>
 				</div>
 			</div>
 		</div>

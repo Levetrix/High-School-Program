@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>AP Courses</title>
+<cfset additionalHeaderData = '<title>Program Resources</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="stylesheets/main.css" type="text/css" />
-	<script src="js/vendor/jquery-2.1.1.min.js"></script>
-	<script src="js/course_categories.js" ></script>
-	
-</head>
-<body>
+' />
+
+<cfinclude template="/site/template/header.cfm">
+
 <div id="ap">
 	<section id="top-section">
 		<h1>High School Programs</h1>

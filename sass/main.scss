@@ -163,10 +163,13 @@ html, body {
 
 body {
 	//font-family:'.HelveticaNeueDeskInterface-Regular';
-	font-family:"Open Sans";
-	font-size:.9rem;
-	text-align:center;
+	font:.9rem "Open Sans";
 	color:#4a4a4a;
+	background:#fff;
+		text-align:center;
+	& header > * {
+		text-align:left;
+	}
 	
 	& > div > section:last-of-type {	
 		margin-bottom:4rem;
@@ -184,6 +187,10 @@ section {
 	margin:0;
 	padding:0;	
 	@include box-sizing(border-box);
+}
+
+a {
+	color:$actGreen;
 }
 
 p {
@@ -704,7 +711,7 @@ button {
 				text-align:center;
 				width:100%;
 				left:0;
-				padding-bottom:1rem;
+				//padding-bottom:1rem;
 			}
 		}
 		
@@ -713,7 +720,11 @@ button {
 		}
 		
 		&:nth-of-type(odd) .table-header,&:nth-of-type(odd) .program-description-container,{
-			color:#ddd;
+			color:#eee;
+			
+			& h2 {
+				color:#eee;
+			}
 			& button {
 				color:#ddd;
 				
@@ -873,9 +884,10 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			line-height: 1.2em;
 		}
 		
-		& .close-button{
+		& figure.close-button{
 			display:none;
 			position:absolute;
+			margin:14.4px 40px;
 			top:7px;
 			right:-47px;
 			width:60px;
@@ -930,6 +942,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 				color:#5a5a5a;
 				line-height:1.15rem;
 				margin-top:.75rem;
+				padding:0;
 			}
 			
 			& .classes {
@@ -1265,7 +1278,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			
 			& h4 {
 				font-weight:200;
-				color:#444;
+				color:#3a3a3a;
 			}
 			
 			& .quarter {
@@ -1282,6 +1295,12 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 					margin:0;
 					padding:0;
 					margin-bottom:$small-gutter;
+					fill:#4a4a4a;
+					@include transition(fill .15s);
+					
+					&:hover {
+						fill:$actGreen;
+					}
 				}
 			}
 		}
