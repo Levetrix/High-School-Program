@@ -1,13 +1,73 @@
-<cfset additionalHeaderData = '<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="no-js oldie lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js oldie lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js oldie lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+  <!-- <![endif]-->
+  <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
-	<title>Advanced Program</title>
-	<link rel="stylesheet" href="../stylesheets/main.css" type="text/css" />
+	<title>Standard Program</title>
+	<link rel="stylesheet" href="../stylesheets/base.css" type="text/css" />
+	<link rel="stylesheet" href="../stylesheets/responsive.css" type="text/css" />
 	<script src="../js/vendor/jquery-2.1.1.min.js"></script>
 	<script src="../js/course_categories.js" ></script>
-' />
+	<script src="../js/script.min.js" ></script>
+	<script src="../js/modernizr.js" ></script>
+	<script src="../js/init.js" ></script>
+	<link rel="stylesheet" href="/site/template/css/plugins/socialmedia.css">
+	<script>
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-2108793-1']);
+	  _gaq.push(['_trackPageview']);
 
-<cfinclude template="/site/template/header.cfm">
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
 
+	</script><script src="/site/programs/ACT_Camp/js/modernizr.js"></script>
+    <script src="/site/programs/ACT_Camp/js/init.js"></script> 
+	<link rel="stylesheet" href="../stylesheets/main.css" type="text/css" />
+    <link rel="shortcut icon" href="template/img/favicon.ico" />
+    <link rel="stylesheet" href="//cloud.typography.com/75214/740862/css/fonts.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an<strong>outdated</strong>browser. Please<a href="http://browsehappy.com/">upgrade your browser</a>or<a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a>to improve your experience.</p>
+    <![endif]-->
+    <header id="main-header" role="banner">
+      <div id="header-top" class="wrapper">
+        <div id="logo">
+          <h2><a href="http://is.byu.edu/" class="byu">BYU Independent Study</a></h2>
+        </div>
+        <!-- This should link to your organization's home page-->
+        <h1><a id="site-name" href="//is.byu.edu" title="BYU Independent Study" class="visuallyhidden">ACT Camp</a></h1><a href="https://is.byu.edu/o2/index.cfm?event=public.login&loginService=IS_LOGIN" class="sign-in button">Sign in</a>
+      </div>
+    </header>
+    <div id="search-menu">
+      <div id="search-container" role="search">
+        <!--
+        The default search form, linking to BYU's search page. If a user does not have javascript enabled, they'll get this form.
+        If they have javascript, this content will be replaced with Google's custom search (from the script at the bottom of the page).
+        -->
+        <form id="basic-search" action="http://home.byu.edu/home/search" role="form">
+          <label for="search" class="visuallyhidden">Search</label>
+          <input id="search" type="search" name="search">
+          <input id="search-submit" type="submit" value="Search">
+        </form>
+        <!-- This container holds the Google custom search, if enabled-->
+        <div class="gcse-wrapper">
+          <gcse:search></gcse:search>
+        </div>
+      </div><a href="#primary-nav" class="menu-button">Menu</a>
+    </div>
+    <div id="content" role="main" class="wrapper clearfix one-sidebar">
+          <main id="main-content">
+       				
 <div id="programs">
 	<section id="top-section">
 		<h1>Advanced Program</h1>
@@ -18,9 +78,7 @@
 		<div class="quad-container">
 			<div class="half">
 				<p>Students meet program requirements by successfully completing 24 credit hours in specified subject areas. After successfully completing all program requirements, students recieve an official transcript and letter of completion.</p>
-			</div><div class="half">
-				<p>The Standard and Advanced programs are for high-school-age students preparing for college or the job market. Upon completing these programs, students are issued an official transcript rather than a diploma. This official transcript can be used to applpy to colleges and universities or as proof of high school completion for potential employers.</p>
-			</div>
+			</div><div class="half"></div>
 		</div>
 	</section>
 	<section id="courses">
@@ -267,7 +325,211 @@
 		</div>
 	</section>
 </div>
-</body>
+</main>
+    </div>
+
+    <div class="nav-container">
+      <!-- Primary Nav-->
+      <nav id="primary-nav" role="navigation">
+        <ul>
+          <!--li><a href="">About</a>
+            <div class="mega">
+              <ul class="links">
+                <li class="featured">
+                  <ul>
+                    <li><a href="">Featured Link 1</a></li>
+                    <li><a href="">Featured Link 2</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Menu item 1</a></li>
+                <li><a href="#">Menu item 2</a>
+                  <ul class="sublinks">
+                    <li><a href="">Submenu item 1</a></li>
+                    <li><a href="">Submenu item 2</a></li>
+                    <li><a href="">Submenu item 3</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Menu item 3</a></li>
+                <li><a href="">Menu item 4</a></li>
+                <li><a href="">Menu item 5</a></li>
+                <li><a href="">Menu item 6</a></li>
+              </ul>
+              <div class="highlight"><a href="#"><img src="images/menu/menu1.jpg" alt="Menu image 1"></a>
+                <p><a href="#">Picture Link</a></p>
+                <p>Text text text text text.</p>
+              </div>
+              <div class="highlight"><a href="#"><img src="images/menu/menu2.jpg" alt="Menu image 2"></a>
+                <p><a href="#">Picture Link</a></p>
+                <p>Text text text text text.</p>
+              </div>
+            </div>
+          </li>
+          <li><a href="">Double Mega Dropdown Menu</a>
+            <div class="mega">
+              <ul class="links double">
+                <li class="featured">
+                  <ul>
+                    <li><a href="">Featured Link 1</a></li>
+                    <li><a href="">Featured Link 2</a></li>
+                  </ul>
+                </li>
+                <li class="left">
+                  <ul>
+                    <li><a href="#">Menu item 1</a></li>
+                    <li><a href="#">Menu item 2</a>
+                      <ul class="sublinks">
+                        <li><a href="">Submenu item 1</a></li>
+                        <li><a href="">Submenu item 2</a></li>
+                        <li><a href="">Submenu item 3</a></li>
+                        <li><a href="">Submenu item 4</a></li>
+                        <li><a href="">Submenu item 5</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="">Menu item 3</a></li>
+                    <li><a href="">Menu item 4</a></li>
+                    <li><a href="">Menu item 5</a></li>
+                    <li><a href="">Menu item 6</a></li>
+                  </ul>
+                </li>
+                <li class="left">
+                  <ul>
+                    <li><a href="">Menu item 7</a></li>
+                    <li><a href="">Menu item 8</a></li>
+                    <li><a href="">Menu item 9</a></li>
+                    <li><a href="">Menu item 10</a></li>
+                    <li><a href="">Menu item 11</a></li>
+                    <li><a href="">Menu item 12</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <div class="highlight"><a href="#"><img src="images/menu/menu1.jpg" alt="Menu image 3"></a>
+                <p><a href="#">Picture Link</a></p>
+                <p>Text text text text text.</p>
+              </div>
+              <div class="highlight"><a href="#"><img src="images/menu/menu2.jpg" alt="Menu image 4"></a>
+                <p><a href="#">Picture Link</a></p>
+                <p>Text text text text text.</p>
+              </div>
+            </div>
+          </li>
+          <li><a href="">Basic Dropdown Menu</a>
+            <div class="sub">
+              <ul class="links">
+                <li><a href="">Menu item 1</a></li>
+                <li><a href="">Menu item 2</a></li>
+                <li><a href="">Menu item 3</a></li>
+                <li><a href="">Menu item 4</a></li>
+              </ul>
+            </div>
+          </li-->
+          <!--<li><a href="#" class="single current">Current tab</a></li>-->
+					          <li><a href="/site/programs/ACT_Camp/about" class="single">About</a><div class="sub"><ul class="links">	<li><a href="/site/programs/ACT_Camp/about/">About Us</a></li>	<li><a href="/site/programs/ACT_Camp/about/contact">Contact Us</a></li>	<li><a href="/site/programs/ACT_Camp/about/policies">Policies and General Information</a></li>	<li><a href="/site/programs/ACT_Camp/about/dress_and_appearance">Dress and Appearance</a></li>	<li><a href="/site/programs/ACT_Camp/about/FAQ">FAQ</a></li>	<li><a href="/site/programs/ACT_Camp/about/transportation">Airport Transportation</a></li></ul></div>
+</li>
+          <li><a href="/site/programs/ACT_Camp/register" class="single">Registration</a></li>
+          <li><a href="program" class="single">Program</a><div class="sub"><ul class="links">	<li><a href="/site/programs/ACT_Camp/program/housing_and_food">Housing and Food</a></li>	<li><a href="/site/programs/ACT_Camp/program/schedule">Schedule</a></li>	<li><a href="/site/programs/ACT_Camp/program/speakers">Speakers</a></li></ul></div>
+</li>
+        </ul>
+      </nav>
+      <!-- Secondary Nav-->
+      <nav id="secondary-nav" role="navigation">
+				<ul>
+					<li><a href="#">Students</a>
+						<ul class="sub" style="">
+							<li><a href="/site/contactus/student_support.cfm">Get Help</a></li>
+							<li><a href="/site/courses/coursepolicies.cfm">Policies</a></li>
+							<li><a href="/site/about/FAQ.cfm">General FAQs</a></li>
+							<li><a href="/o2/index.cfm?event=public.login&amp;loginService=IS_LOGIN">Check My Grades</a></li>
+							<li><a href="/site/courses/submitin.cfm" target="_blank">Submit Assignment</a></li>
+							<li><a href="/site/support/find-testing-center.cfm">Find Testing Center</a></li>
+							<li><a href="/site/courses/ordertrans.cfm">Request Transcript</a></li>
+							<li><a href="/site/about/ferpa.cfm">Privacy</a></li>
+							<li><a href="/site/financial/scholarship.cfm">Scholarships</a></li>
+						</ul>
+          </li>
+          <li><a href="#">Parents</a>
+					
+						<ul class="sub" style="">
+							<li><a href="/site/about/what-is.cfm">About Us</a></li>
+							<li><a href="/site/courses/tuition.cfm">Tuition</a></li>
+							<li><a href="/site/courses/index.cfm">Course Catalog</a></li>
+							<li><a href="/site/programs/HighSchoolProgram.cfm">High School Programs</a></li>
+						</ul>					
+          </li>
+          <li><a href="#">Educators</a>
+
+						<ul class="sub" style="right: 0px;">
+							<li><a href="/site/support/studentsprogress.cfm">Check Students' Progress</a></li>
+							<li><a href="/site/courses/index.cfm">View Course Catalog</a></li>
+							<li><a href="/site/financial/rewards.cfm">Rewards Program</a></li>
+							<li><a href="/site/programs/purchase/index.cfm">Purchase Orders</a></li>
+							<li><a href="/site/support/counselorfaq.cfm">Counselor FAQ</a></li>
+							<li><a href="/site/support/proctorcert.cfm">Proctor Certification</a></li>
+							<li><a href="/site/support/accessibility.cfm">Accessibility</a></li>
+							<li><a href="/site/support/accommodations.cfm">Accommodations</a></li>
+							<li><a href="/site/contactus/counselor_support.cfm">Contact State Representative</a></li>
+							<li><a href="/site/courses/order.cfm">Request Catalog</a></li>
+							<li><a href="/site/courses/preview.cfm">Course Preview Request</a></li>
+							<li><a href="/site/about/newsletter.cfm">Newsletter Sign Up</a></li>
+						</ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <footer id="page-footer" role="contentinfo">
+      <div id="footer-links">
+        <div class="wrapper">
+          <div class="col alpha">
+            <h2>Mailing Address</h2>
+						<p>
+							BYU Independent Study<br />
+							120 Morris Center<br />
+							Provo, UT 84602-0300
+						</p>
+            <h2>Feedback</h2><a href="http://survey.qualtrics.com/SE/?SID=SV_7R63qDSiWruINzm">Website Survey</a>
+          </div>
+          <div class="col">
+            <h2>Customer Support</h2>
+						<p>
+							Mon - Fri 8am - 6pm<br />
+							1-800-914-8931<br />
+							1-801-422-2868<br />
+							Email: <a href="mailto:indstudy@byu.edu">indstudy@byu.edu</a>
+          </div>
+          <div class="col">
+            <h2>Technical Support</h2>
+						<p>
+							Mon - Fri 8am - 6pm<br />
+							1-877-897-8085<br />
+							1-801-422-8524<br />
+							Email: <a href="mailto:istech@byu.edu">istech@byu.edu</a>
+          </div>
+          <div class="col">
+            <h2>Program Office</h2>
+						<p>
+							Mon - Fri 8am - 6pm<br />
+							1-801-422-5078<br />
+							Email: <a href="mailto:joseph.roberson@byu.edu">joseph.roberson@byu.edu</a>
+          </div>
+                  </div>
+      </div>
+      <div id="footer-bottom">
+        <div class="wrapper clearfix">
+          					<a href="http://ce.byu.edu/" target="_blank" class="ir">Continuing Education</a>
+					<a href="http://byu.edu/" target="_blank" class="ir"><img src="/site/images/BYUwordmark.png" alt="link to www.byu.edu"></a>
+					<a href="http://home.byu.edu/home/copyright" target="_blank" class="ir">Copyright© 2013, All Rights Reserved</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      /* Google Analytics: change UA-XXXXX-X to be your site's ID. UA-2108793-1 */
+      var _gaq=[['_setAccount', pageSettings.google_analytics_key],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+    <!--CONTENT END
+    -->
+  </body>
 </html>
 
 

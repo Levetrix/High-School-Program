@@ -102,8 +102,7 @@
 		</div> -->
 	</section>
 </div>
-</body>
-</html>
+<cfinclude template="/site/template/footer.cfm">
 
 
 
