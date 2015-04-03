@@ -1689,6 +1689,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 		margin-top:14px;
 		padding:0 .5rem;
 		@include box-sizing(border-box);
+		@include transition(opacity .2s);
 		overflow:hidden;
 		text-align:left;
 		
@@ -1707,7 +1708,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			position:absolute;
 			margin:14.4px 40px;
 			top:7px;
-			right:-47px;
+			right:-54px;
 			width:60px;
 			height:16px;
 			@include opacity(0);
@@ -2159,7 +2160,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 				position:absolute;
 				margin:14.4px 40px;
 				top:7px;
-				right:-47px;
+				right:-54px;
 				width:60px;
 				height:16px;
 				@include opacity(0);
@@ -2439,7 +2440,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 					top:-16px;
 					left:#{$std-cat-width};
 					height:$stretch-cat-height;
-					width:#{$std-cat-width * 2 + $std-cat-margin * 3};
+					width:#{$std-cat-width * 2 + $std-cat-margin * 2};
 					
 					& .tl:before {
 						height:0;//$stretch-cat-height;
@@ -2561,7 +2562,7 @@ $collapse-cat-2step-time:$stretch-cat-1step-time * .75;
 $collapse-cat-2step-time-height:$collapse-cat-2step-time;
 $collapse-cat-delay:$stretch-cat-delay * .75;
 
-@media(max-width:800px) {
+@media(max-width:800px) and (min-width:550px) {
 	#programs {
 		max-width:500px;
 		
@@ -2613,7 +2614,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 				position:absolute;
 				margin:14.4px 40px;
 				top:7px;
-				right:-47px;
+				right:-54px;
 				width:60px;
 				height:16px;
 				@include opacity(0);
@@ -2892,11 +2893,11 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 					}
 				}
 							
-				&:nth-of-type(4n - 3),&:nth-of-type(4n - 2),&:nth-of-type(4n - 1),&:nth-of-type(4n - 0){
+				&:nth-of-type(-n + 4):nth-of-type(n){
 					top:-16px;
 					left:0;
 					height:$stretch-cat-height;
-					width:#{$std-cat-width * 2 + $std-cat-margin * 2};
+					width:#{$std-cat-width * 2 + $std-cat-margin * 1};
 					
 					& .tl:before {
 						height:0;//$stretch-cat-height;
@@ -2934,7 +2935,51 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 						height:0px;
 						bottom:0;
 					}
-				}					
+				}	
+				
+				&:nth-of-type(n + 4){
+					top:250px;
+					left:0;
+					height:$stretch-cat-height;
+					width:#{$std-cat-width * 2 + $std-cat-margin * 1};
+					
+					& .tl:before {
+						height:0;//$stretch-cat-height;
+						top:0px;
+					}
+					
+					& .tl:after {
+						height:0;//$stretch-cat-height;
+						top:0px;
+					}
+					
+					& .tr:before {
+						height:0;//$stretch-cat-height;
+						top:0;
+					}
+					
+					& .tr:after {
+						width:$stretch-cat-width-length;
+						height:2px;	
+					}
+					
+					& .bl:before {
+						height:0px;
+						bottom:0;
+					}
+					
+					& .br:after {
+						width:$stretch-cat-width-length;
+						height:2px;
+						bottom:0;
+					}
+					
+					& .br:before{
+						width:2px;
+						height:0px;
+						bottom:0;
+					}
+				}								
 										
 				&:nth-of-type(4n - 3),&:nth-of-type(4n - 2){
 					@include transition(left $stretch-cat-1step-time 0s,width $stretch-cat-1step-time 0s ease,height $stretch-cat-2step-time $stretch-cat-delay ease,top $stretch-cat-2step-time $stretch-cat-delay);
@@ -3071,7 +3116,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 				position:absolute;
 				margin:14.4px 40px;
 				top:7px;
-				right:-47px;
+				right:-54px;
 				width:60px;
 				height:16px;
 				@include opacity(0);
@@ -3366,11 +3411,11 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 					}
 				}
 							
-				&:nth-of-type(4n - 3),&:nth-of-type(4n - 2),&:nth-of-type(4n - 1),&:nth-of-type(4n - 0){
+				&:nth-of-type(4n - 3),&:nth-of-type(4n - 2),&:nth-of-type(4n - 1),&:nth-of-type(4n - 0),&:nth-of-type(-n + 4):nth-of-type(n){
 					//top:-16px;
 					left:calc(1 * ((100% - 100vw) / 2));
 					height:100vh;//$stretch-cat-height;
-					max-height:450px;
+					max-height:500px;
 					width:100vw;//#{$std-cat-width * 2 + $std-cat-margin * 2};
 					
 					& .tl:before {
@@ -3409,7 +3454,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 						height:0px;
 						bottom:0;
 					}
-				}					
+				}				
 										
 				&:nth-of-type(4n - 3),&:nth-of-type(4n - 2){
 					@include transition(left $stretch-cat-1step-time 0s,width $stretch-cat-1step-time 0s ease,height $stretch-cat-2step-time $stretch-cat-delay ease,top $stretch-cat-2step-time $stretch-cat-delay);

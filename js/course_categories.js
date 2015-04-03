@@ -26,6 +26,11 @@ $(document).ready(function(){
 		clickExpand($this);
 		$(".course-category").off("click.ccclick").on("click.ccclick",e.data,e.data.eh);
 		$this.off(".ccclick");
+		if ($(window).width() < 550) {
+			$("body, html").animate({ 
+	            scrollTop: ($(this).offset().top - 12)
+	        }, 600);
+		}
 	};
 	var dataDefaultObject = {eh:exitHandler,ch:clickHander};
 	$(".course-category").on("click.ccclick",dataDefaultObject,clickHander);
