@@ -590,6 +590,7 @@ $b2-hover-transition-duration: .2s;
 		width:$quarter-width;
 		min-height:120px;
 		margin:#{$med-gutter / 2};
+		margin-bottom:0;
 		padding-top:$small-gutter;
 		
 		&:nth-of-type(4n - 3) {
@@ -611,6 +612,7 @@ $b2-hover-transition-duration: .2s;
 		@include box-sizing(border-box);
 		width:#{$quarter-width * 2 + $med-gutter};
 		margin:#{$med-gutter / 2};
+		margin-bottom:0;
 		padding-top:$small-gutter;
 		
 		&:first-of-type {
@@ -661,6 +663,7 @@ $b2-hover-transition-duration: .2s;
 			@include box-sizing(border-box);
 			width:#{$quarter-width};
 			margin:#{$med-gutter / 2};
+			margin-bottom:0;
 			padding-top:$small-gutter;
 			
 			&:first-of-type {
@@ -712,6 +715,8 @@ $b2-hover-transition-duration: .2s;
 			& h1 {
 				font-size:2.25rem;
 				font-weight:600;
+				text-align:right;
+				padding:0 2rem;
 			}
 			
 			& h2 {
@@ -793,6 +798,10 @@ $b2-hover-transition-duration: .2s;
 			& .header-container {
 				max-width:450px;
 				padding-top:3rem;
+				
+				& h1 {
+					text-align:center;
+				}
 			}
 		}
 	}
@@ -849,10 +858,12 @@ $b2-hover-transition-duration: .2s;
 				max-width:450px;
 				padding-top:0rem;
 				margin-right:0;
-				padding-right:3rem;
+				padding-right:0rem;
 								
 				& h1 {
 					font-size:2rem;
+					text-align:right;
+					padding:0;
 				}
 				
 				& h2 {
@@ -1591,6 +1602,18 @@ $slant-line-width:(sin($slant-line-angle)) * $slant-line-length;
 	}
 }
 
+@media(max-width: 550px) {
+	#programs {
+		padding-left:4rem;
+		
+		& h1 {
+			font-size:1.85rem;
+			min-width:245px;
+		}
+	}
+}
+
+
 /********************************** A B O U T  S E C T I O N ***************************************************/
 
 #programs {
@@ -1603,6 +1626,13 @@ $slant-line-width:(sin($slant-line-angle)) * $slant-line-length;
 			font-weight:200;
 		}
 		
+		& .quad-container .half:last-of-type {
+			margin:0;
+			padding:0;
+			line-height:0;
+			border:none;
+		}
+	
 		& .quarter,& .half {
 			
 			&:first-of-type{
@@ -1612,17 +1642,43 @@ $slant-line-width:(sin($slant-line-angle)) * $slant-line-length;
 	}	
 }
 
+@media(max-width: 800px) {
+	#programs {
+		& #about {
+			& h2 {
+				font-size:1.55rem;
+				min-width:221px;
+			}
+			& .quad-container .half:last-of-type {
+				margin:0;
+				padding:0;
+				line-height:0;
+				border:none;
+			}
+		}
+	}
+}
+
+@media(max-width: 550px) {
+	#programs {
+		& #about h2 {
+			font-size:1.55rem;
+			min-width:221px;
+		}
+	}
+}
+
 /********************************** C O U R S E S  S E C T I O N ***************************************************/
 
 #programs {
 	& #courses {
-		padding:0 4rem;
+		padding:0 0rem;
 		min-height:500px;
 		padding-left:0;
 		
 		& h2 {
 			text-align:left;
-			padding-top:4rem;
+			padding-top:2rem;
 			font-weight:200;
 			max-width:$quarter-width;
 			white-space:nowrap;
@@ -2113,13 +2169,13 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 		max-width:750px;
 		
 		& #courses {
-			padding:0 4rem;
+			padding:0 0rem;
 			min-height:650px;
 			padding-left:0;
 			
 			& h2 {
 				text-align:left;
-				padding-top:4rem;
+				padding-top:2rem;
 				font-weight:200;
 				max-width:$quarter-width;
 				white-space:nowrap;
@@ -2567,13 +2623,13 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 		max-width:500px;
 		
 		& #courses {
-			padding:0 4rem;
+			padding:0 0rem;
 			min-height:900px;
 			padding-left:0;
 			
 			& h2 {
 				text-align:left;
-				padding-top:4rem;
+				padding-top:2rem;
 				font-weight:200;
 				max-width:$quarter-width;
 				white-space:nowrap;
@@ -3075,12 +3131,13 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			
 			& h2 {
 				text-align:left;
-				padding-top:4rem;
+				padding-top:2rem;
 				font-weight:200;
 				max-width:$quarter-width;
 				white-space:normal;
 				padding-bottom:#{$med-gutter / 2 + 2px};
 				border-bottom:2px solid #555;
+				font-size:1.55rem;
 			}
 		}
 	}
@@ -3105,7 +3162,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 				display:block;
 				text-align:center;
 				font-weight:200;
-				font-size:1.35rem;
+				font-size:1.25rem;
 				margin-top:1.5rem;
 				margin-bottom:1rem;
 				line-height: 1.2em;
