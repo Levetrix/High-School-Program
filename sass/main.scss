@@ -3860,14 +3860,14 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 				font-weight:200;
 				color:#3a3a3a;
 			}
+				
+			& p {
+				padding-bottom:1em;
+			}
 			
 			& .quarter {
 				& h4 {
 					text-align:center;
-				}
-				
-				& .half {
-					margin-top:0;
 				}
 				
 				& .icon {
@@ -3887,6 +3887,15 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 	}
 }
 
+@media(max-width:1138px) {
+	#resources {
+		& .quad-container .half {
+			margin-left:0;
+			margin-right:15px;
+		}
+	}
+}
+
 @media(max-width:1100px) {
 	#resources {
 		max-width:810px;
@@ -3902,6 +3911,12 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 @media(max-width:800px) {
 	#resources {
 		max-width:560px;
+		
+		& .quad-container {
+			& .half {
+				width:#{$quarter-width * 2 + $med-gutter};
+			}
+		}
 	}
 }
 
@@ -3919,6 +3934,12 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			
 			& h2 {
 				font-size:1.55rem;
+			}
+		}
+		
+		& .quad-container {
+			& .half {
+				width:$quarter-width;
 			}
 		}
 	}
