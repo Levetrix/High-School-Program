@@ -84,8 +84,10 @@ $blue: #66B9E3;
 $charcoal: #323232;
 
 $actGreen:rgb(57,181,74);
-$byuBlue:rgb(4, 30, 66);
-$gray:#aaa;
+$byuBlue:#1c3764;
+$byuMediumBlue:#33588a;
+$byuLightBlue:#6990b5;
+$gray:#6a6a6a;
 
 $quarter-width:221px;
 $med-gutter:32.24px;
@@ -830,7 +832,7 @@ $b2-hover-transition-duration: .2s;
 			left:0;
 			right:0;
 			text-align:right;
-			color:$byuBlue;
+			color:$byuMediumBlue;
 			padding-top:4rem;
 		
 			& h1 {
@@ -1600,7 +1602,7 @@ $slant-line-width:(sin($slant-line-angle)) * $slant-line-length;
 				 
 				 & h2 {
 				 	font-size:1.55rem;
-				 	color:$byuBlue;
+				 	color:$byuMediumBlue;
 			 	 }
 			}
 			
@@ -1650,7 +1652,7 @@ $slant-line-width:(sin($slant-line-angle)) * $slant-line-length;
 					margin-left:1rem;
 					
 					& a button {
-						color:$byuBlue;
+						color:$byuMediumBlue;
 					}
 				}
 			}
@@ -1664,7 +1666,7 @@ $slant-line-width:(sin($slant-line-angle)) * $slant-line-length;
 				
 				& h2 {
 				 	font-size:1.55rem;
-				 	color:$byuBlue;
+				 	color:$byuMediumBlue;
 				}
 				& button {
 					color:#5a5a5a;
@@ -1784,7 +1786,7 @@ $slant-line-width:(sin($slant-line-angle)) * $slant-line-length;
 					 
 					 & h2 {
 					 	font-size:1.55rem;
-					 	color:$byuBlue;
+					 	color:$byuMediumBlue;
 					 }
 				}
 				
@@ -1859,7 +1861,7 @@ $slant-line-width:(sin($slant-line-angle)) * $slant-line-length;
 		
 		& h1 {
 			font-weight:400;
-			color:$byuBlue;
+			color:$byuMediumBlue;
 		}
 		
 		& h3 {
@@ -1942,23 +1944,7 @@ $slant-line-width:(sin($slant-line-angle)) * $slant-line-length;
 
 /********************************** C O U R S E S  S E C T I O N ***************************************************/
 
-#programs {
-	& #courses {
-		padding:0 0rem;
-		min-height:500px;
-		padding-left:0;
-		
-		& h2 {
-			text-align:left;
-			padding-top:2rem;
-			font-weight:200;
-			max-width:$quarter-width;
-			white-space:nowrap;
-			padding-bottom:#{$med-gutter / 2 + 2px};
-			border-bottom:2px solid #555;
-		}
-	}
-}
+
 
 $std-cat-height:85px;
 $std-cat-width:$quarter-width;
@@ -2003,11 +1989,120 @@ $collapse-cat-2step-time:$stretch-cat-1step-time * .75;
 $collapse-cat-2step-time-height:$collapse-cat-2step-time;
 $collapse-cat-delay:$stretch-cat-delay * .75;
 
+#programs {
+	& #courses {
+		padding:0 0rem;
+		min-height:500px;
+		padding-left:0;
+		@include transition(min-height $collapse-cat-2step-time-height 0s);
+		
+		&.courses-collapsed {
+			min-height:200px;
+		}
+		
+		&.courses-expanded {
+			min-height:3000px;
+			@include transition(min-height $stretch-cat-2step-time $stretch-cat-delay);
+		}
+		
+		&.courses-expanded, &.courses-collapsed {
+			
+			& > div > figure > h3 {
+				//font-size:1.85rem;
+				color:$gray;
+			}
+			
+			& > div > figure.stretch > h3 {
+				color:#444;
+			}
+			
+			& .course-category .course-category {
+				position:relative;
+				left:#{$quarter-width + $med-gutter};
+				top:0;
+				padding-top:3rem;
+				margin-bottom:2rem;
+				width:#{$quarter-width * 2 + $med-gutter};
+				
+				& h3 {
+					position:absolute;
+					top:0;
+					left:#{-$quarter-width - $med-gutter};
+					text-align:left;
+					width:$quarter-width;
+					padding-bottom:4px;
+					border-bottom:2px solid $std-cat-line-color;
+					white-space:nowrap;
+					
+					&.credits {
+						text-align:right;
+						border:none;
+						margin-top:4.075rem;
+						font-size:1.2rem;
+						color:$gray;
+						//color:$byuLightBlue;
+					}
+				}
+			
+				& section {
+					vertical-align:top;
+					display:inline-block;
+					width:30.8%;
+					margin:0 1.25%;
+					text-align:left;
+					
+					&:first-of-type {
+						
+					}
+					
+					& .italicized {
+						margin-top:1.5em;
+						margin-bottom:.75rem;
+						font-style:italic;
+						display:inline-block;
+						height:2.5rem;
+					}
+					
+					& .category {
+						font-size:1rem;
+						color:#5a5a5a;
+						line-height:1.15rem;
+						margin-top:.75rem;
+						padding:0;
+					}
+					
+					& .classes {
+						font-weight:200;
+						letter-spacing:.25px;
+						
+						&.class-list {
+							margin-top:1.05rem
+						}
+						
+						& a {
+							color:$actGreen;
+						}
+					}
+				}
+			}
+		}
+		
+		& h2 {
+			text-align:center;
+			padding-top:2rem;
+			font-weight:200;
+			max-width:$quarter-width;
+			white-space:nowrap;
+			padding-bottom:#{$med-gutter / 2 + 2px};
+			border-bottom:2px solid #555;
+		}
+	}
+}
 
 #course-category-container {
 	position:relative;
 	
-	& .course-category {
+	& > .course-category {
 		position:absolute;
 		height:$std-cat-height;
 		width:$std-cat-width;
@@ -2029,6 +2124,10 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			margin-top:1.5rem;
 			margin-bottom:1rem;
 			line-height: 1.2em;
+				
+			&.highlighted {
+				color:$byuMediumBlue;
+			}
 		}
 		
 		& figure.close-button{
@@ -2072,7 +2171,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 		& > section {
 			vertical-align:top;
 			display:inline-block;
-			width:30%;
+			width:30.8%;
 			margin:0 1.25%;
 			text-align:left;
 			
@@ -2391,6 +2490,33 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			}
 		}
 	}
+	
+	&.expand-box {
+		& figure.course-category {
+			width:$quarter-width;
+			left:#{$quarter-width * 3 + $med-gutter * 3};
+			top:-154px;
+			padding-left:0;
+			padding-right:0;
+				
+			& div:before {
+				background-color:$gray;
+				@include opacity(.75);
+			}
+			
+			&.corners.stretch {
+				width:#{$quarter-width * 4 + $med-gutter *3};
+				height:3000px;
+				left:0;
+				
+				& .tr:after, & .br:after {
+					width:#{$quarter-width * 4 + $med-gutter * 3};
+					height:2px;
+					@include opacity(1);
+				}
+			}
+		}
+	}
 }
 
 $std-cat-height:85px;
@@ -2444,6 +2570,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			padding:0 0rem;
 			min-height:650px;
 			padding-left:0;
+			@include transition(min-height $collapse-cat-2step-time-height 0s);
 			
 			& h2 {
 				text-align:left;
@@ -2458,6 +2585,32 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 	}
 	
 	#course-category-container {
+		&.expand-box {
+			& figure.course-category {
+				width:$quarter-width;
+				left:#{$quarter-width * 2 + $med-gutter * 2};
+				top:-178px;
+					
+				& div:before {
+					height:#{$std-cat-line-br-v + .5px};
+				}
+				
+				&.corners.stretch {
+					width:#{$quarter-width * 3 + $med-gutter * 2};
+					height:3000px;
+					left:0;
+					
+					& .tr:after, & .br:after {
+						width:#{$quarter-width * 3 + $med-gutter * 2};
+						height:2px;
+						@include opacity(1);
+					}
+				}
+			}
+		}
+	}
+	
+	#course-category-container:not(.expand-box) {
 		position:relative;
 		
 		& .course-category {
@@ -2524,7 +2677,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			& > section {
 				vertical-align:top;
 				display:inline-block;
-				width:30%;
+				width:30.8%;
 				margin:0 1.25%;
 				text-align:left;
 				
@@ -2698,7 +2851,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			}
 			
 			&.fade {
-				@include opacity(.065);
+				@include opacity(.05);
 			}
 			
 		
@@ -2844,6 +2997,17 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 				}
 			}
 		}
+		
+		/*&.expand-box {
+			& figure.course-category {
+				left:#{$quarter-width * 2 + $med-gutter * 2};
+				top:-178px;
+					
+				& div:before {
+					height:#{$std-cat-line-br-v + 1px};
+				}
+			}
+		}*/
 	}
 }
 
@@ -2899,6 +3063,25 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			min-height:900px;
 			padding-left:0;
 			
+			&.courses-expanded, &.courses-collapsed {
+			
+				& .course-category .course-category {
+					left:0; 
+					
+					& h3 {
+						width:#{$quarter-width * 2 + $med-gutter};
+						left:0;
+						padding-bottom:2px;
+						
+						&.credits {
+							text-align:right;
+							margin-top:1.9rem;
+							font-size:1.1rem;
+						}
+					}
+				}
+			}
+				
 			& h2 {
 				text-align:left;
 				padding-top:2rem;
@@ -2912,6 +3095,32 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 	}
 	
 	#course-category-container {
+		&.expand-box {
+			& figure.course-category {
+				width:$quarter-width;
+				left:#{$quarter-width + $med-gutter};
+				top:-178px;
+					
+				& div:before {
+					height:#{$std-cat-line-br-v + .5px};
+				}
+				
+				&.corners.stretch {
+					width:#{$quarter-width * 2 + $med-gutter * 1};
+					height:3000px;
+					left:0;
+					
+					& .tr:after, & .br:after {
+						width:0;
+						height:2px;
+						@include opacity(1);
+					}
+				}
+			}
+		}
+	}
+	
+	#course-category-container:not(.expand-box) {
 		position:relative;
 		
 		& .course-category {
@@ -2978,7 +3187,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			& > section {
 				vertical-align:top;
 				display:inline-block;
-				width:30%;
+				width:30.8%;
 				margin:0 1.25%;
 				text-align:left;
 				
@@ -3401,6 +3610,30 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			padding-left:0;
 			width:212px;
 			
+			&.courses-expanded, &.courses-collapsed {
+			
+				& .course-category .course-category {
+					left:0; 
+					
+					& h3 {
+						width:100vw;
+						left:0;
+						padding-bottom:2px;
+						padding-left:5px;
+						padding-right:5px;
+						
+						&.credits {
+							text-align:right;
+							margin-top:1.9rem;
+							font-size:1.1rem;
+							padding-right:0;
+							padding-left:0;
+							width:calc(100vw - 5px);
+						}
+					}
+				}
+			}
+			
 			& h2 {
 				text-align:left;
 				padding-top:2rem;
@@ -3415,6 +3648,32 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 	}
 	
 	#course-category-container {
+		&.expand-box {
+			& figure.course-category {
+				width:$quarter-width;
+				left:0;
+				top:-55px;
+					
+				& div:before {
+					height:#{$std-cat-line-br-v + .5px};
+				}
+				
+				&.corners.stretch {
+					width:100vw;
+					height:3000px;
+					left:calc(1 * ((100% - 100vw) / 2));
+					
+					& .tr:after, & .br:after {
+						width:0;
+						height:2px;
+						@include opacity(1);
+					}
+				}
+			}
+		}
+	}
+	
+	#course-category-container:not(.expand-box) {
 		position:relative;
 		
 		& .course-category {
@@ -3481,7 +3740,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			& > section {
 				vertical-align:top;
 				display:inline-block;
-				width:30%;
+				width:30.8%;
 				margin:0 1.25%;
 				text-align:left;
 				
@@ -3839,7 +4098,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 		& h1 {
 			text-align:left;
 			font-weight:400;
-			color:$byuBlue;
+			color:$byuMediumBlue;
 			margin-bottom:1rem;
 		}
 		
@@ -3961,7 +4220,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 		& h1 {
 			text-align:left;
 			font-weight:400;
-			color:$byuBlue;
+			color:$byuMediumBlue;
 			margin-bottom:1rem;
 		}
 		
