@@ -3614,6 +3614,9 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			
 				& .course-category .course-category {
 					left:0; 
+					width:100vw;
+					padding-left:8px;
+					padding-right:8px;
 					
 					& h3 {
 						width:100vw;
