@@ -2010,14 +2010,15 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 		
 		&.courses-collapsed {
 			min-height:10px;
+			
+			& > div > figure > h3 {
+				color:$actGreen;
+			}
 		}
 		
 		&.courses-expanded {
 			min-height:3000px;
 			@include transition(min-height $stretch-cat-2step-time $stretch-cat-delay);
-		}
-		
-		&.courses-expanded, &.courses-collapsed {
 			
 			& > div > figure > h3 {
 				//font-size:1.85rem;
@@ -2534,8 +2535,8 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			padding-right:0;
 				
 			& div:before,& div:after {
-				background-color:$actGreen;
-				@include opacity(.65);
+				background-color:$std-cat-line-color;
+				//@include opacity(.65);
 			}
 			
 			&.corners.stretch {
@@ -2547,7 +2548,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 					width:#{$quarter-width * 4 + $med-gutter * 3};
 					height:2px;
 					@include opacity(1);
-					background-color:$actGreen;
+					background-color:$byuLightBlue;
 				}
 			}
 		}
