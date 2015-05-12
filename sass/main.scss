@@ -4157,6 +4157,24 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 				
 				& .year {
 					padding-top:.55rem;
+					border-top:2px solid $byuBlue;
+					border-bottom:2px solid $byuBlue;
+					
+					&:last-of-type{
+						position:relative;
+						
+					
+						&:after {
+							display:block;
+							content:"";
+							position:absolute;
+							top:0;
+							right:0;
+							height:100%;
+							width:2px;
+							background-color:$byuBlue;
+						}
+					}
 					
 					&:nth-of-type(odd) {
 						background-color:$byuBlue;
@@ -4200,12 +4218,22 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 					}
 					
 					& section {
-						padding-left:.75rem;
+						margin-left:.75rem;
+						width:calc(100% - .75rem);
 					}
 				}					
 				
 				&:last-of-type {
-					padding-right:0;
+					padding-right:0rem;
+					
+					& h3 {
+						margin-right:.75rem;
+						width:calc(100% - .75rem);
+					}
+					
+					& section {
+						width:calc(100% - .75rem);
+					}
 				}	
 				
 				& h3 {
