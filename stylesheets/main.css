@@ -2365,12 +2365,57 @@ div#content.wrapper {
   background-color: #6990b5;
 }
 
+/*
+$std-cat-height:85px;
+$std-cat-width:$quarter-width;
+$std-cat-margin:$med-gutter;
+$std-cat-line-weight:2px;
+$std-cat-line-color:#666;
+$std-cat-line-length:($std-cat-height * .66);
+$std-cat-line-position:0px;
+
+$std-cat-line-tl-v:$std-cat-line-length / 2;
+$std-cat-line-tl-h:0;
+$std-cat-line-tr-v:$std-cat-line-length / 2;
+$std-cat-line-tr-h:0;
+$std-cat-line-bl-v:$std-cat-line-length / 2;
+$std-cat-line-bl-h:0;
+$std-cat-line-br-v:$std-cat-line-length / 2;
+$std-cat-line-br-h:0;
+
+$hover-cat-line-length:($std-cat-height * .5);
+$hover-cat-line-position:0px;
+$hover-cat-transition-time:.2s;
+
+$hover-cat-line-tl-v:$hover-cat-line-length / 2;
+$hover-cat-line-tl-h:0;
+$hover-cat-line-tr-v:$hover-cat-line-length / 2;
+$hover-cat-line-tr-h:0;
+$hover-cat-line-bl-v:$hover-cat-line-length / 2;
+$hover-cat-line-bl-h:0;
+$hover-cat-line-br-v:$hover-cat-line-length / 2;
+$hover-cat-line-br-h:0;
+		
+$stretch-cat-width:474.24px;
+$stretch-cat-height:337.84px;
+$stretch-cat-width-length:538.72px;
+$stretch-cat-height-length:214.48px;
+$stretch-cat-1step-time:.5s;
+$stretch-cat-2step-time:.5s;
+$stretch-cat-delay:$stretch-cat-1step-time * .65;
+
+$collapse-cat-1step-time:$stretch-cat-1step-time * .75;
+$collapse-cat-2step-time:$stretch-cat-1step-time * .75;
+$collapse-cat-2step-time-height:$collapse-cat-2step-time;
+$collapse-cat-delay:$stretch-cat-delay * .75;
+
+*/
 @media (max-width: 1100px) {
-  /* line 2602, ../sass/main.scss */
+  /* line 2605, ../sass/main.scss */
   #programs {
     max-width: 750px;
   }
-  /* line 2605, ../sass/main.scss */
+  /* line 2608, ../sass/main.scss */
   #programs #courses {
     padding: 0 0rem;
     min-height: 650px;
@@ -2381,7 +2426,7 @@ div#content.wrapper {
     -webkit-transition-delay: 0s;
     transition: min-height 0.375s 0s;
   }
-  /* line 2611, ../sass/main.scss */
+  /* line 2614, ../sass/main.scss */
   #programs #courses h2 {
     text-align: left;
     padding-top: 2rem;
@@ -2389,26 +2434,25 @@ div#content.wrapper {
     max-width: 221px;
     white-space: nowrap;
     padding-bottom: 18.12px;
-    border-bottom: 2px solid #555;
   }
 
-  /* line 2625, ../sass/main.scss */
+  /* line 2627, ../sass/main.scss */
   #course-category-container.expand-box figure.course-category {
     width: 221px;
     left: 506.48px;
     top: -178px;
   }
-  /* line 2630, ../sass/main.scss */
+  /* line 2632, ../sass/main.scss */
   #course-category-container.expand-box figure.course-category div:before {
-    height: 28.55px;
+    height: 38px;
   }
-  /* line 2634, ../sass/main.scss */
+  /* line 2636, ../sass/main.scss */
   #course-category-container.expand-box figure.course-category.corners.stretch {
     width: 727.48px;
     height: 3000px;
     left: 0;
   }
-  /* line 2639, ../sass/main.scss */
+  /* line 2641, ../sass/main.scss */
   #course-category-container.expand-box figure.course-category.corners.stretch .tr:after, #course-category-container.expand-box figure.course-category.corners.stretch .br:after {
     width: 727.48px;
     height: 2px;
@@ -2416,7 +2460,7 @@ div#content.wrapper {
     opacity: 1;
   }
 
-  /* line 2649, ../sass/main.scss */
+  /* line 2651, ../sass/main.scss */
   #course-category-container:not(.expand-box) {
     position: relative;
     /*&.expand-box {
@@ -2425,15 +2469,15 @@ div#content.wrapper {
     		top:-178px;
     			
     		& div:before {
-    			height:29.05px;
+    			height:38.5px;
     		}
     	}
     }*/
   }
-  /* line 2652, ../sass/main.scss */
+  /* line 2654, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category {
     position: absolute;
-    height: 85px;
+    height: 75px;
     width: 221px;
     margin-left: 0;
     margin-right: 0;
@@ -2443,20 +2487,29 @@ div#content.wrapper {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    -moz-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
     overflow: hidden;
     text-align: left;
+    line-height: 75px;
   }
-  /* line 2665, ../sass/main.scss */
+  /* line 2669, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category h3 {
-    display: block;
+    display: inline-block;
     text-align: center;
     font-weight: 200;
     font-size: 1.35rem;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
-    line-height: 1.2em;
+    line-height: normal;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    width: 100%;
   }
-  /* line 2675, ../sass/main.scss */
+  /* line 2684, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category figure.close-button {
     display: none;
     position: absolute;
@@ -2468,7 +2521,7 @@ div#content.wrapper {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
   }
-  /* line 2685, ../sass/main.scss */
+  /* line 2694, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category figure.close-button:before {
     content: "";
     display: block;
@@ -2486,7 +2539,7 @@ div#content.wrapper {
     transform: skew(45deg, 5deg);
     background-color: #5a5a5a;
   }
-  /* line 2698, ../sass/main.scss */
+  /* line 2707, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category figure.close-button:after {
     content: "";
     display: block;
@@ -2504,7 +2557,7 @@ div#content.wrapper {
     transform: skew(-45deg, 5deg);
     background-color: #5a5a5a;
   }
-  /* line 2713, ../sass/main.scss */
+  /* line 2722, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category > section {
     vertical-align: top;
     display: inline-block;
@@ -2512,7 +2565,7 @@ div#content.wrapper {
     margin: 0 1.25%;
     text-align: left;
   }
-  /* line 2720, ../sass/main.scss */
+  /* line 2729, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category > section .italicized {
     margin-top: 1.5em;
     margin-bottom: .75rem;
@@ -2520,7 +2573,7 @@ div#content.wrapper {
     display: inline-block;
     height: 2.5rem;
   }
-  /* line 2728, ../sass/main.scss */
+  /* line 2737, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category > section .category {
     font-size: 1rem;
     color: #5a5a5a;
@@ -2528,20 +2581,20 @@ div#content.wrapper {
     margin-top: .75rem;
     padding: 0;
   }
-  /* line 2736, ../sass/main.scss */
+  /* line 2745, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category > section .classes {
     font-weight: 200;
     letter-spacing: .25px;
   }
-  /* line 2740, ../sass/main.scss */
+  /* line 2749, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category > section .classes.class-list {
     margin-top: 1.05rem;
   }
-  /* line 2744, ../sass/main.scss */
+  /* line 2753, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category > section .classes a {
     color: #39b54a;
   }
-  /* line 2750, ../sass/main.scss */
+  /* line 2759, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category div:before, #course-category-container:not(.expand-box) .course-category div:after {
     -moz-transition: height, 0.2s;
     -o-transition: height, 0.2s;
@@ -2556,143 +2609,151 @@ div#content.wrapper {
     -webkit-transition: bottom, 0.2s;
     transition: bottom, 0.2s;
   }
-  /* line 2756, ../sass/main.scss */
+  /* line 2765, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:nth-of-type(-n + 3) {
     top: 0;
   }
-  /* line 2760, ../sass/main.scss */
+  /* line 2768, ../sass/main.scss */
+  #course-category-container:not(.expand-box) .course-category:nth-of-type(-n + 3) .tl:after {
+    background-color: #6990b5;
+  }
+  /* line 2773, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:nth-of-type(-n + 6):nth-of-type(n + 4) {
     top: 125px;
   }
-  /* line 2764, ../sass/main.scss */
+  /* line 2776, ../sass/main.scss */
+  #course-category-container:not(.expand-box) .course-category:nth-of-type(-n + 6):nth-of-type(n + 4) .tl:after {
+    background-color: #888;
+  }
+  /* line 2781, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:nth-of-type(-n + 9):nth-of-type(n + 7) {
     top: 250px;
   }
-  /* line 2769, ../sass/main.scss */
+  /* line 2786, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:nth-of-type(-n + 12):nth-of-type(n + 10) {
     top: 375px;
   }
-  /* line 2773, ../sass/main.scss */
+  /* line 2790, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:nth-of-type(3n - 2) {
     left: 0;
   }
-  /* line 2777, ../sass/main.scss */
+  /* line 2794, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:nth-of-type(3n - 1) {
     left: 253.24px;
   }
-  /* line 2781, ../sass/main.scss */
+  /* line 2798, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:nth-of-type(3n - 0) {
     left: 506.48px;
   }
-  /* line 2785, ../sass/main.scss */
+  /* line 2802, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category div {
     position: absolute;
   }
-  /* line 2788, ../sass/main.scss */
+  /* line 2805, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category div:before, #course-category-container:not(.expand-box) .course-category div:after {
     content: "";
     display: block;
     position: absolute;
-    background-color: #666;
+    background-color: #888;
   }
-  /* line 2796, ../sass/main.scss */
+  /* line 2813, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .tl {
     top: 0;
     left: 0;
   }
-  /* line 2800, ../sass/main.scss */
+  /* line 2817, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .tl:after {
-    width: 0;
+    width: 221px;
     height: 2px;
   }
-  /* line 2805, ../sass/main.scss */
+  /* line 2822, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .tl:before {
     width: 2px;
-    height: 28.05px;
-    top: 14.45px;
+    height: 37.5px;
+    top: 0px;
   }
-  /* line 2812, ../sass/main.scss */
+  /* line 2829, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .tr {
     top: 0;
     right: 2px;
   }
-  /* line 2816, ../sass/main.scss */
+  /* line 2833, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .tr:after {
     right: 0;
     top: 0;
     width: 0;
     height: 2px;
   }
-  /* line 2823, ../sass/main.scss */
+  /* line 2840, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .tr:before {
     width: 2px;
-    height: 28.05px;
-    top: 14.45px;
+    height: 37.5px;
+    top: 0px;
   }
-  /* line 2830, ../sass/main.scss */
+  /* line 2847, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .bl {
     bottom: 0;
     left: 0;
   }
-  /* line 2834, ../sass/main.scss */
+  /* line 2851, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .bl:after {
     width: 0;
     height: 2px;
   }
-  /* line 2839, ../sass/main.scss */
+  /* line 2856, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .bl:before {
     width: 2px;
-    height: 28.05px;
-    bottom: 14.45px;
+    height: 37.5px;
+    bottom: 0px;
   }
-  /* line 2846, ../sass/main.scss */
+  /* line 2863, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .br {
     bottom: 0;
     right: 2px;
   }
-  /* line 2850, ../sass/main.scss */
+  /* line 2867, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .br:after {
     bottom: 0;
     right: 0;
-    width: 0;
+    width: 221px;
     height: 2px;
   }
-  /* line 2857, ../sass/main.scss */
+  /* line 2874, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .br:before {
     width: 2px;
-    height: 28.05px;
-    bottom: 14.45px;
+    height: 37.5px;
+    bottom: 0px;
   }
-  /* line 2864, ../sass/main.scss */
+  /* line 2881, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:hover {
     cursor: pointer;
   }
-  /* line 2868, ../sass/main.scss */
+  /* line 2885, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:hover .tl:before {
-    height: 21.25px;
-    top: 21.25px;
+    height: 37.5px;
+    top: 0px;
   }
-  /* line 2873, ../sass/main.scss */
+  /* line 2890, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:hover .tr:before {
-    height: 21.25px;
-    top: 21.25px;
+    height: 37.5px;
+    top: 0px;
   }
-  /* line 2878, ../sass/main.scss */
+  /* line 2895, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:hover .bl:before {
-    height: 21.25px;
-    bottom: 21.25px;
+    height: 37.5px;
+    bottom: 0px;
   }
-  /* line 2883, ../sass/main.scss */
+  /* line 2900, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:hover .br:before {
-    height: 21.25px;
-    bottom: 21.25px;
+    height: 37.5px;
+    bottom: 0px;
   }
-  /* line 2889, ../sass/main.scss */
+  /* line 2906, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.fade {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=5);
     opacity: 0.05;
   }
-  /* line 2894, ../sass/main.scss */
+  /* line 2911, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.corners {
     -moz-transition: left 0.375s 0.24375s, width 0.375s ease 0.24375s, height 0.375s ease, top 0.375s;
     -o-transition: left 0.375s 0.24375s, width 0.375s ease 0.24375s, height 0.375s ease, top 0.375s;
@@ -2700,7 +2761,7 @@ div#content.wrapper {
     -webkit-transition-delay: 0.24375s, 0.24375s, 0s, 0s;
     transition: left 0.375s 0.24375s, width 0.375s ease 0.24375s, height 0.375s ease, top 0.375s;
   }
-  /* line 2898, ../sass/main.scss */
+  /* line 2915, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.corners .tr:after {
     -moz-transition: width 0.375s 0.24375s;
     -o-transition: width 0.375s 0.24375s;
@@ -2708,7 +2769,7 @@ div#content.wrapper {
     -webkit-transition-delay: 0.24375s;
     transition: width 0.375s 0.24375s;
   }
-  /* line 2902, ../sass/main.scss */
+  /* line 2919, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.corners .br:after {
     -moz-transition: width 0.375s 0.24375s;
     -o-transition: width 0.375s 0.24375s;
@@ -2716,27 +2777,27 @@ div#content.wrapper {
     -webkit-transition-delay: 0.24375s;
     transition: width 0.375s 0.24375s;
   }
-  /* line 2906, ../sass/main.scss */
+  /* line 2923, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.corners .tl:before {
     height: 2px;
     top: 0;
   }
-  /* line 2911, ../sass/main.scss */
+  /* line 2928, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.corners .tr:before {
     height: 2px;
     top: 0;
   }
-  /* line 2916, ../sass/main.scss */
+  /* line 2933, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.corners .bl:before {
     height: 2px;
     bottom: 0;
   }
-  /* line 2921, ../sass/main.scss */
+  /* line 2938, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.corners .br:before {
     height: 2px;
     bottom: 0;
   }
-  /* line 2926, ../sass/main.scss */
+  /* line 2943, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.corners .close-button {
     display: block;
     -moz-transition: opacity 0.25s 0s, height 0.25s 0s;
@@ -2748,11 +2809,11 @@ div#content.wrapper {
     opacity: 0;
     height: 16px;
   }
-  /* line 2935, ../sass/main.scss */
+  /* line 2952, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch {
     z-index: 1;
   }
-  /* line 2938, ../sass/main.scss */
+  /* line 2955, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch .close-button {
     height: 26px;
     filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
@@ -2763,97 +2824,64 @@ div#content.wrapper {
     -webkit-transition-delay: 0.5s, 0.5s;
     transition: opacity 0.25s 0.5s, height 0.25s 0.5s;
   }
-  /* line 2943, ../sass/main.scss */
+  /* line 2960, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch .close-button:before {
     height: 100%;
   }
-  /* line 2947, ../sass/main.scss */
+  /* line 2964, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch .close-button:after {
     height: 100%;
   }
-  /* line 2951, ../sass/main.scss */
+  /* line 2968, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch .close-button:hover {
     cursor: pointer;
   }
-  /* line 2956, ../sass/main.scss */
+  /* line 2973, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3), #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2), #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1), #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) {
     top: -16px;
     left: 221px;
-    height: 367.84px;
+    height: 362.02px;
     width: 506.48px;
   }
-  /* line 2962, ../sass/main.scss */
+  /* line 2979, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3) .tl:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) .tl:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1) .tl:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) .tl:before {
     height: 0;
     top: 0px;
   }
-  /* line 2967, ../sass/main.scss */
+  /* line 2984, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3) .tl:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) .tl:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1) .tl:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) .tl:after {
     height: 0;
     top: 0px;
   }
-  /* line 2972, ../sass/main.scss */
+  /* line 2989, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3) .tr:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) .tr:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1) .tr:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) .tr:before {
     height: 0;
     top: 0;
   }
-  /* line 2977, ../sass/main.scss */
+  /* line 2994, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3) .tr:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) .tr:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1) .tr:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) .tr:after {
     width: 538.72px;
     height: 2px;
   }
-  /* line 2982, ../sass/main.scss */
+  /* line 2999, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3) .bl:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) .bl:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1) .bl:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) .bl:before {
     height: 0px;
     bottom: 0;
   }
-  /* line 2987, ../sass/main.scss */
+  /* line 3004, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3) .br:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) .br:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1) .br:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) .br:after {
-    width: 538.72px;
+    width: 0;
     height: 2px;
     bottom: 0;
   }
-  /* line 2993, ../sass/main.scss */
+  /* line 3010, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3) .br:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) .br:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1) .br:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) .br:before {
     width: 2px;
     height: 0px;
     bottom: 0;
   }
-  /* line 3000, ../sass/main.scss */
-  #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3), #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) {
-    -moz-transition: left 0.5s 0s, width 0.5s ease 0s, height 0.5s ease 0.325s, top 0.5s 0.325s;
-    -o-transition: left 0.5s 0s, width 0.5s ease 0s, height 0.5s ease 0.325s, top 0.5s 0.325s;
-    -webkit-transition: left 0.5s, width 0.5s ease, height 0.5s ease, top 0.5s;
-    -webkit-transition-delay: 0s, 0s, 0.325s, 0.325s;
-    transition: left 0.5s 0s, width 0.5s ease 0s, height 0.5s ease 0.325s, top 0.5s 0.325s;
-    cursor: default;
-  }
-  /* line 3004, ../sass/main.scss */
-  #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3) .tr:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) .tr:after {
-    -moz-transition: width 0.5s 0s;
-    -o-transition: width 0.5s 0s;
-    -webkit-transition: width 0.5s;
-    -webkit-transition-delay: 0s;
-    transition: width 0.5s 0s;
-  }
-  /* line 3008, ../sass/main.scss */
-  #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3) .br:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) .br:after {
-    -moz-transition: width 0.5s 0s;
-    -o-transition: width 0.5s 0s;
-    -webkit-transition: width 0.5s;
-    -webkit-transition-delay: 0s;
-    transition: width 0.5s 0s;
-  }
-  /* line 3012, ../sass/main.scss */
-  #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3) .tr:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) .tr:before {
-    -moz-transition: height 0.5s 0.325s;
-    -o-transition: height 0.5s 0.325s;
-    -webkit-transition: height 0.5s;
-    -webkit-transition-delay: 0.325s;
-    transition: height 0.5s 0.325s;
-  }
   /* line 3017, ../sass/main.scss */
-  #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1), #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) {
+  #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3), #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) {
     -moz-transition: left 0.5s 0s, width 0.5s ease 0s, height 0.5s ease 0.325s, top 0.5s 0.325s;
     -o-transition: left 0.5s 0s, width 0.5s ease 0s, height 0.5s ease 0.325s, top 0.5s 0.325s;
     -webkit-transition: left 0.5s, width 0.5s ease, height 0.5s ease, top 0.5s;
@@ -2862,7 +2890,7 @@ div#content.wrapper {
     cursor: default;
   }
   /* line 3021, ../sass/main.scss */
-  #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1) .tr:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) .tr:after {
+  #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3) .tr:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) .tr:after {
     -moz-transition: width 0.5s 0s;
     -o-transition: width 0.5s 0s;
     -webkit-transition: width 0.5s;
@@ -2870,7 +2898,7 @@ div#content.wrapper {
     transition: width 0.5s 0s;
   }
   /* line 3025, ../sass/main.scss */
-  #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1) .br:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) .br:after {
+  #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3) .br:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) .br:after {
     -moz-transition: width 0.5s 0s;
     -o-transition: width 0.5s 0s;
     -webkit-transition: width 0.5s;
@@ -2878,6 +2906,39 @@ div#content.wrapper {
     transition: width 0.5s 0s;
   }
   /* line 3029, ../sass/main.scss */
+  #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3) .tr:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) .tr:before {
+    -moz-transition: height 0.5s 0.325s;
+    -o-transition: height 0.5s 0.325s;
+    -webkit-transition: height 0.5s;
+    -webkit-transition-delay: 0.325s;
+    transition: height 0.5s 0.325s;
+  }
+  /* line 3034, ../sass/main.scss */
+  #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1), #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) {
+    -moz-transition: left 0.5s 0s, width 0.5s ease 0s, height 0.5s ease 0.325s, top 0.5s 0.325s;
+    -o-transition: left 0.5s 0s, width 0.5s ease 0s, height 0.5s ease 0.325s, top 0.5s 0.325s;
+    -webkit-transition: left 0.5s, width 0.5s ease, height 0.5s ease, top 0.5s;
+    -webkit-transition-delay: 0s, 0s, 0.325s, 0.325s;
+    transition: left 0.5s 0s, width 0.5s ease 0s, height 0.5s ease 0.325s, top 0.5s 0.325s;
+    cursor: default;
+  }
+  /* line 3038, ../sass/main.scss */
+  #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1) .tr:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) .tr:after {
+    -moz-transition: width 0.5s 0s;
+    -o-transition: width 0.5s 0s;
+    -webkit-transition: width 0.5s;
+    -webkit-transition-delay: 0s;
+    transition: width 0.5s 0s;
+  }
+  /* line 3042, ../sass/main.scss */
+  #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1) .br:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) .br:after {
+    -moz-transition: width 0.5s 0s;
+    -o-transition: width 0.5s 0s;
+    -webkit-transition: width 0.5s;
+    -webkit-transition-delay: 0s;
+    transition: width 0.5s 0s;
+  }
+  /* line 3046, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1) .tr:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) .tr:before {
     -moz-transition: height 0.5s 0.325s;
     -o-transition: height 0.5s 0.325s;
@@ -2886,34 +2947,78 @@ div#content.wrapper {
     transition: height 0.5s 0.325s;
   }
 }
+/*
+$std-cat-height:85px;
+$std-cat-width:$quarter-width;
+$std-cat-margin:$med-gutter;
+$std-cat-line-weight:2px;
+$std-cat-line-color:#666;
+$std-cat-line-length:($std-cat-height * .66);
+$std-cat-line-position:0px;
+
+$std-cat-line-tl-v:$std-cat-line-length / 2;
+$std-cat-line-tl-h:0;
+$std-cat-line-tr-v:$std-cat-line-length / 2;
+$std-cat-line-tr-h:0;
+$std-cat-line-bl-v:$std-cat-line-length / 2;
+$std-cat-line-bl-h:0;
+$std-cat-line-br-v:$std-cat-line-length / 2;
+$std-cat-line-br-h:0;
+
+$hover-cat-line-length:($std-cat-height * .5);
+$hover-cat-line-position:0px;
+$hover-cat-transition-time:.2s;
+
+$hover-cat-line-tl-v:$hover-cat-line-length / 2;
+$hover-cat-line-tl-h:0;
+$hover-cat-line-tr-v:$hover-cat-line-length / 2;
+$hover-cat-line-tr-h:0;
+$hover-cat-line-bl-v:$hover-cat-line-length / 2;
+$hover-cat-line-bl-h:0;
+$hover-cat-line-br-v:$hover-cat-line-length / 2;
+$hover-cat-line-br-h:0;
+		
+$stretch-cat-width:474.24px;
+$stretch-cat-height:353.96px;
+$stretch-cat-width-length:538.72px;
+$stretch-cat-height-length:321.72px;
+$stretch-cat-1step-time:.5s;
+$stretch-cat-2step-time:.5s;
+$stretch-cat-delay:$stretch-cat-1step-time * .65;
+
+$collapse-cat-1step-time:$stretch-cat-1step-time * .75;
+$collapse-cat-2step-time:$stretch-cat-1step-time * .75;
+$collapse-cat-2step-time-height:$collapse-cat-2step-time;
+$collapse-cat-delay:$stretch-cat-delay * .75;
+*/
 @media (max-width: 800px) and (min-width: 550px) {
-  /* line 3094, ../sass/main.scss */
+  /* line 3111, ../sass/main.scss */
   #programs {
     max-width: 500px;
   }
-  /* line 3097, ../sass/main.scss */
+  /* line 3114, ../sass/main.scss */
   #programs #courses {
     padding: 0 0rem;
     min-height: 900px;
     padding-left: 0;
   }
-  /* line 3104, ../sass/main.scss */
+  /* line 3121, ../sass/main.scss */
   #programs #courses.courses-expanded .course-category .course-category, #programs #courses.courses-collapsed .course-category .course-category {
     left: 0;
   }
-  /* line 3107, ../sass/main.scss */
+  /* line 3124, ../sass/main.scss */
   #programs #courses.courses-expanded .course-category .course-category h3, #programs #courses.courses-collapsed .course-category .course-category h3 {
     width: 474.24px;
     left: 0;
     padding-bottom: 2px;
   }
-  /* line 3112, ../sass/main.scss */
+  /* line 3129, ../sass/main.scss */
   #programs #courses.courses-expanded .course-category .course-category h3.credits, #programs #courses.courses-collapsed .course-category .course-category h3.credits {
     text-align: right;
     margin-top: 1.9rem;
     font-size: 1.1rem;
   }
-  /* line 3121, ../sass/main.scss */
+  /* line 3138, ../sass/main.scss */
   #programs #courses h2 {
     text-align: left;
     padding-top: 2rem;
@@ -2921,26 +3026,25 @@ div#content.wrapper {
     max-width: 221px;
     white-space: nowrap;
     padding-bottom: 18.12px;
-    border-bottom: 2px solid #555;
   }
 
-  /* line 3135, ../sass/main.scss */
+  /* line 3151, ../sass/main.scss */
   #course-category-container.expand-box figure.course-category {
     width: 221px;
     left: 253.24px;
     top: -178px;
   }
-  /* line 3140, ../sass/main.scss */
+  /* line 3156, ../sass/main.scss */
   #course-category-container.expand-box figure.course-category div:before {
-    height: 28.55px;
+    height: 38px;
   }
-  /* line 3144, ../sass/main.scss */
+  /* line 3160, ../sass/main.scss */
   #course-category-container.expand-box figure.course-category.corners.stretch {
     width: 474.24px;
     height: 3000px;
     left: 0;
   }
-  /* line 3149, ../sass/main.scss */
+  /* line 3165, ../sass/main.scss */
   #course-category-container.expand-box figure.course-category.corners.stretch .tr:after, #course-category-container.expand-box figure.course-category.corners.stretch .br:after {
     width: 0;
     height: 2px;
@@ -2948,14 +3052,14 @@ div#content.wrapper {
     opacity: 1;
   }
 
-  /* line 3159, ../sass/main.scss */
+  /* line 3175, ../sass/main.scss */
   #course-category-container:not(.expand-box) {
     position: relative;
   }
-  /* line 3162, ../sass/main.scss */
+  /* line 3178, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category {
     position: absolute;
-    height: 85px;
+    height: 75px;
     width: 221px;
     margin-left: 0;
     margin-right: 0;
@@ -2965,20 +3069,29 @@ div#content.wrapper {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    -moz-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
     overflow: hidden;
     text-align: left;
+    line-height: 75px;
   }
-  /* line 3175, ../sass/main.scss */
+  /* line 3193, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category h3 {
-    display: block;
+    display: inline-block;
     text-align: center;
     font-weight: 200;
     font-size: 1.35rem;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
-    line-height: 1.2em;
+    line-height: normal;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    width: 100%;
   }
-  /* line 3185, ../sass/main.scss */
+  /* line 3207, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category figure.close-button {
     display: none;
     position: absolute;
@@ -2990,7 +3103,7 @@ div#content.wrapper {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
   }
-  /* line 3195, ../sass/main.scss */
+  /* line 3217, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category figure.close-button:before {
     content: "";
     display: block;
@@ -3008,7 +3121,7 @@ div#content.wrapper {
     transform: skew(45deg, 5deg);
     background-color: #5a5a5a;
   }
-  /* line 3208, ../sass/main.scss */
+  /* line 3230, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category figure.close-button:after {
     content: "";
     display: block;
@@ -3026,7 +3139,7 @@ div#content.wrapper {
     transform: skew(-45deg, 5deg);
     background-color: #5a5a5a;
   }
-  /* line 3223, ../sass/main.scss */
+  /* line 3245, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category > section {
     vertical-align: top;
     display: inline-block;
@@ -3034,7 +3147,7 @@ div#content.wrapper {
     margin: 0 1.25%;
     text-align: left;
   }
-  /* line 3230, ../sass/main.scss */
+  /* line 3252, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category > section .italicized {
     margin-top: 1.5em;
     margin-bottom: .75rem;
@@ -3042,7 +3155,7 @@ div#content.wrapper {
     display: inline-block;
     height: 2.5rem;
   }
-  /* line 3238, ../sass/main.scss */
+  /* line 3260, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category > section .category {
     font-size: 1rem;
     color: #5a5a5a;
@@ -3050,20 +3163,20 @@ div#content.wrapper {
     margin-top: .75rem;
     padding: 0;
   }
-  /* line 3246, ../sass/main.scss */
+  /* line 3268, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category > section .classes {
     font-weight: 200;
     letter-spacing: .25px;
   }
-  /* line 3250, ../sass/main.scss */
+  /* line 3272, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category > section .classes.class-list {
     margin-top: 1.05rem;
   }
-  /* line 3254, ../sass/main.scss */
+  /* line 3276, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category > section .classes a {
     color: #39b54a;
   }
-  /* line 3260, ../sass/main.scss */
+  /* line 3282, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category div:before, #course-category-container:not(.expand-box) .course-category div:after {
     -moz-transition: height, 0.2s;
     -o-transition: height, 0.2s;
@@ -3078,147 +3191,151 @@ div#content.wrapper {
     -webkit-transition: bottom, 0.2s;
     transition: bottom, 0.2s;
   }
-  /* line 3266, ../sass/main.scss */
+  /* line 3288, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:nth-of-type(-n + 2) {
     top: 0;
   }
-  /* line 3270, ../sass/main.scss */
+  /* line 3292, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:nth-of-type(-n + 4):nth-of-type(n + 3) {
     top: 125px;
   }
-  /* line 3274, ../sass/main.scss */
+  /* line 3295, ../sass/main.scss */
+  #course-category-container:not(.expand-box) .course-category:nth-of-type(-n + 4):nth-of-type(n + 3) .tl:after {
+    background-color: #888;
+  }
+  /* line 3300, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:nth-of-type(-n + 6):nth-of-type(n + 5) {
     top: 250px;
   }
-  /* line 3278, ../sass/main.scss */
+  /* line 3304, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:nth-of-type(-n + 8):nth-of-type(n + 7) {
     top: 375px;
   }
-  /* line 3282, ../sass/main.scss */
+  /* line 3308, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:nth-of-type(-n + 10):nth-of-type(n + 9) {
     top: 500px;
   }
-  /* line 3286, ../sass/main.scss */
+  /* line 3312, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:nth-of-type(-n + 12):nth-of-type(n + 11) {
     top: 625px;
   }
-  /* line 3290, ../sass/main.scss */
+  /* line 3316, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:nth-of-type(2n - 1) {
     left: 0;
   }
-  /* line 3294, ../sass/main.scss */
+  /* line 3320, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:nth-of-type(2n - 0) {
     left: 253.24px;
   }
-  /* line 3298, ../sass/main.scss */
+  /* line 3324, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category div {
     position: absolute;
   }
-  /* line 3301, ../sass/main.scss */
+  /* line 3327, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category div:before, #course-category-container:not(.expand-box) .course-category div:after {
     content: "";
     display: block;
     position: absolute;
-    background-color: #666;
+    background-color: #888;
   }
-  /* line 3309, ../sass/main.scss */
+  /* line 3335, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .tl {
     top: 0;
     left: 0;
   }
-  /* line 3313, ../sass/main.scss */
+  /* line 3339, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .tl:after {
-    width: 0;
+    width: 221px;
     height: 2px;
   }
-  /* line 3318, ../sass/main.scss */
+  /* line 3344, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .tl:before {
     width: 2px;
-    height: 28.05px;
-    top: 14.45px;
+    height: 37.5px;
+    top: 0px;
   }
-  /* line 3325, ../sass/main.scss */
+  /* line 3351, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .tr {
     top: 0;
     right: 2px;
   }
-  /* line 3329, ../sass/main.scss */
+  /* line 3355, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .tr:after {
     right: 0;
     top: 0;
     width: 0;
     height: 2px;
   }
-  /* line 3336, ../sass/main.scss */
+  /* line 3362, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .tr:before {
     width: 2px;
-    height: 28.05px;
-    top: 14.45px;
+    height: 37.5px;
+    top: 0px;
   }
-  /* line 3343, ../sass/main.scss */
+  /* line 3369, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .bl {
     bottom: 0;
     left: 0;
   }
-  /* line 3347, ../sass/main.scss */
+  /* line 3373, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .bl:after {
     width: 0;
     height: 2px;
   }
-  /* line 3352, ../sass/main.scss */
+  /* line 3378, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .bl:before {
     width: 2px;
-    height: 28.05px;
-    bottom: 14.45px;
+    height: 37.5px;
+    bottom: 0px;
   }
-  /* line 3359, ../sass/main.scss */
+  /* line 3385, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .br {
     bottom: 0;
     right: 2px;
   }
-  /* line 3363, ../sass/main.scss */
+  /* line 3389, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .br:after {
     bottom: 0;
     right: 0;
-    width: 0;
+    width: 221px;
     height: 2px;
   }
-  /* line 3370, ../sass/main.scss */
+  /* line 3396, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .br:before {
     width: 2px;
-    height: 28.05px;
-    bottom: 14.45px;
+    height: 37.5px;
+    bottom: 0px;
   }
-  /* line 3377, ../sass/main.scss */
+  /* line 3403, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:hover {
     cursor: pointer;
   }
-  /* line 3381, ../sass/main.scss */
+  /* line 3407, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:hover .tl:before {
-    height: 21.25px;
-    top: 21.25px;
+    height: 37.5px;
+    top: 0px;
   }
-  /* line 3386, ../sass/main.scss */
+  /* line 3412, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:hover .tr:before {
-    height: 21.25px;
-    top: 21.25px;
+    height: 37.5px;
+    top: 0px;
   }
-  /* line 3391, ../sass/main.scss */
+  /* line 3417, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:hover .bl:before {
-    height: 21.25px;
-    bottom: 21.25px;
+    height: 37.5px;
+    bottom: 0px;
   }
-  /* line 3396, ../sass/main.scss */
+  /* line 3422, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:hover .br:before {
-    height: 21.25px;
-    bottom: 21.25px;
+    height: 37.5px;
+    bottom: 0px;
   }
-  /* line 3402, ../sass/main.scss */
+  /* line 3428, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.fade {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=7);
     opacity: 0.065;
   }
-  /* line 3407, ../sass/main.scss */
+  /* line 3433, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.corners {
     -moz-transition: left 0.375s 0.24375s, width 0.375s ease 0.24375s, height 0.375s ease, top 0.375s;
     -o-transition: left 0.375s 0.24375s, width 0.375s ease 0.24375s, height 0.375s ease, top 0.375s;
@@ -3226,7 +3343,7 @@ div#content.wrapper {
     -webkit-transition-delay: 0.24375s, 0.24375s, 0s, 0s;
     transition: left 0.375s 0.24375s, width 0.375s ease 0.24375s, height 0.375s ease, top 0.375s;
   }
-  /* line 3411, ../sass/main.scss */
+  /* line 3437, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.corners .tr:after {
     -moz-transition: width 0.375s 0.24375s;
     -o-transition: width 0.375s 0.24375s;
@@ -3234,7 +3351,7 @@ div#content.wrapper {
     -webkit-transition-delay: 0.24375s;
     transition: width 0.375s 0.24375s;
   }
-  /* line 3415, ../sass/main.scss */
+  /* line 3441, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.corners .br:after {
     -moz-transition: width 0.375s 0.24375s;
     -o-transition: width 0.375s 0.24375s;
@@ -3242,27 +3359,27 @@ div#content.wrapper {
     -webkit-transition-delay: 0.24375s;
     transition: width 0.375s 0.24375s;
   }
-  /* line 3419, ../sass/main.scss */
+  /* line 3445, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.corners .tl:before {
     height: 2px;
     top: 0;
   }
-  /* line 3424, ../sass/main.scss */
+  /* line 3450, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.corners .tr:before {
     height: 2px;
     top: 0;
   }
-  /* line 3429, ../sass/main.scss */
+  /* line 3455, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.corners .bl:before {
     height: 2px;
     bottom: 0;
   }
-  /* line 3434, ../sass/main.scss */
+  /* line 3460, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.corners .br:before {
     height: 2px;
     bottom: 0;
   }
-  /* line 3439, ../sass/main.scss */
+  /* line 3465, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.corners .close-button {
     display: block;
     -moz-transition: opacity 0.25s 0s, height 0.25s 0s;
@@ -3274,11 +3391,11 @@ div#content.wrapper {
     opacity: 0;
     height: 16px;
   }
-  /* line 3448, ../sass/main.scss */
+  /* line 3474, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch {
     z-index: 1;
   }
-  /* line 3451, ../sass/main.scss */
+  /* line 3477, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch .close-button {
     height: 26px;
     filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
@@ -3289,107 +3406,107 @@ div#content.wrapper {
     -webkit-transition-delay: 0.5s, 0.5s;
     transition: opacity 0.25s 0.5s, height 0.25s 0.5s;
   }
-  /* line 3456, ../sass/main.scss */
+  /* line 3482, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch .close-button:before {
     height: 100%;
   }
-  /* line 3460, ../sass/main.scss */
+  /* line 3486, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch .close-button:after {
     height: 100%;
   }
-  /* line 3464, ../sass/main.scss */
+  /* line 3490, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch .close-button:hover {
     cursor: pointer;
   }
-  /* line 3469, ../sass/main.scss */
+  /* line 3495, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(-n + 4):nth-of-type(n) {
     top: -16px;
     left: 0;
-    height: 383.96px;
+    height: 362.02px;
     width: 474.24px;
   }
-  /* line 3475, ../sass/main.scss */
+  /* line 3501, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(-n + 4):nth-of-type(n) .tl:before {
     height: 0;
     top: 0px;
   }
-  /* line 3480, ../sass/main.scss */
+  /* line 3506, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(-n + 4):nth-of-type(n) .tl:after {
     height: 0;
     top: 0px;
   }
-  /* line 3485, ../sass/main.scss */
+  /* line 3511, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(-n + 4):nth-of-type(n) .tr:before {
     height: 0;
     top: 0;
   }
-  /* line 3490, ../sass/main.scss */
+  /* line 3516, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(-n + 4):nth-of-type(n) .tr:after {
     width: 538.72px;
     height: 2px;
   }
-  /* line 3495, ../sass/main.scss */
+  /* line 3521, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(-n + 4):nth-of-type(n) .bl:before {
     height: 0px;
     bottom: 0;
   }
-  /* line 3500, ../sass/main.scss */
+  /* line 3526, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(-n + 4):nth-of-type(n) .br:after {
     width: 538.72px;
     height: 2px;
     bottom: 0;
   }
-  /* line 3506, ../sass/main.scss */
+  /* line 3532, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(-n + 4):nth-of-type(n) .br:before {
     width: 2px;
     height: 0px;
     bottom: 0;
   }
-  /* line 3513, ../sass/main.scss */
+  /* line 3539, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(n + 4) {
     top: 250px;
     left: 0;
-    height: 383.96px;
+    height: 362.02px;
     width: 474.24px;
   }
-  /* line 3519, ../sass/main.scss */
+  /* line 3545, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(n + 4) .tl:before {
     height: 0;
     top: 0px;
   }
-  /* line 3524, ../sass/main.scss */
+  /* line 3550, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(n + 4) .tl:after {
     height: 0;
     top: 0px;
   }
-  /* line 3529, ../sass/main.scss */
+  /* line 3555, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(n + 4) .tr:before {
     height: 0;
     top: 0;
   }
-  /* line 3534, ../sass/main.scss */
+  /* line 3560, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(n + 4) .tr:after {
     width: 538.72px;
     height: 2px;
   }
-  /* line 3539, ../sass/main.scss */
+  /* line 3565, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(n + 4) .bl:before {
     height: 0px;
     bottom: 0;
   }
-  /* line 3544, ../sass/main.scss */
+  /* line 3570, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(n + 4) .br:after {
     width: 538.72px;
     height: 2px;
     bottom: 0;
   }
-  /* line 3550, ../sass/main.scss */
+  /* line 3576, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(n + 4) .br:before {
     width: 2px;
     height: 0px;
     bottom: 0;
   }
-  /* line 3557, ../sass/main.scss */
+  /* line 3583, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3), #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) {
     -moz-transition: left 0.5s 0s, width 0.5s ease 0s, height 0.5s ease 0.325s, top 0.5s 0.325s;
     -o-transition: left 0.5s 0s, width 0.5s ease 0s, height 0.5s ease 0.325s, top 0.5s 0.325s;
@@ -3398,7 +3515,7 @@ div#content.wrapper {
     transition: left 0.5s 0s, width 0.5s ease 0s, height 0.5s ease 0.325s, top 0.5s 0.325s;
     cursor: default;
   }
-  /* line 3561, ../sass/main.scss */
+  /* line 3587, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3) .tr:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) .tr:after {
     -moz-transition: width 0.5s 0s;
     -o-transition: width 0.5s 0s;
@@ -3406,7 +3523,7 @@ div#content.wrapper {
     -webkit-transition-delay: 0s;
     transition: width 0.5s 0s;
   }
-  /* line 3565, ../sass/main.scss */
+  /* line 3591, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3) .br:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) .br:after {
     -moz-transition: width 0.5s 0s;
     -o-transition: width 0.5s 0s;
@@ -3414,7 +3531,7 @@ div#content.wrapper {
     -webkit-transition-delay: 0s;
     transition: width 0.5s 0s;
   }
-  /* line 3569, ../sass/main.scss */
+  /* line 3595, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3) .tr:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) .tr:before {
     -moz-transition: height 0.5s 0.325s;
     -o-transition: height 0.5s 0.325s;
@@ -3422,7 +3539,7 @@ div#content.wrapper {
     -webkit-transition-delay: 0.325s;
     transition: height 0.5s 0.325s;
   }
-  /* line 3574, ../sass/main.scss */
+  /* line 3600, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1), #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) {
     -moz-transition: left 0.5s 0s, width 0.5s ease 0s, height 0.5s ease 0.325s, top 0.5s 0.325s;
     -o-transition: left 0.5s 0s, width 0.5s ease 0s, height 0.5s ease 0.325s, top 0.5s 0.325s;
@@ -3431,7 +3548,7 @@ div#content.wrapper {
     transition: left 0.5s 0s, width 0.5s ease 0s, height 0.5s ease 0.325s, top 0.5s 0.325s;
     cursor: default;
   }
-  /* line 3578, ../sass/main.scss */
+  /* line 3604, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1) .tr:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) .tr:after {
     -moz-transition: width 0.5s 0s;
     -o-transition: width 0.5s 0s;
@@ -3439,7 +3556,7 @@ div#content.wrapper {
     -webkit-transition-delay: 0s;
     transition: width 0.5s 0s;
   }
-  /* line 3582, ../sass/main.scss */
+  /* line 3608, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1) .br:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) .br:after {
     -moz-transition: width 0.5s 0s;
     -o-transition: width 0.5s 0s;
@@ -3447,7 +3564,7 @@ div#content.wrapper {
     -webkit-transition-delay: 0s;
     transition: width 0.5s 0s;
   }
-  /* line 3586, ../sass/main.scss */
+  /* line 3612, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1) .tr:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) .tr:before {
     -moz-transition: height 0.5s 0.325s;
     -o-transition: height 0.5s 0.325s;
@@ -3456,26 +3573,70 @@ div#content.wrapper {
     transition: height 0.5s 0.325s;
   }
 }
+/*
+$std-cat-height:85px;
+$std-cat-width:$quarter-width;
+$std-cat-margin:$med-gutter;
+$std-cat-line-weight:2px;
+$std-cat-line-color:#666;
+$std-cat-line-length:($std-cat-height * .66);
+$std-cat-line-position:0px;
+
+$std-cat-line-tl-v:$std-cat-line-length / 2;
+$std-cat-line-tl-h:0;
+$std-cat-line-tr-v:$std-cat-line-length / 2;
+$std-cat-line-tr-h:0;
+$std-cat-line-bl-v:$std-cat-line-length / 2;
+$std-cat-line-bl-h:0;
+$std-cat-line-br-v:$std-cat-line-length / 2;
+$std-cat-line-br-h:0;
+
+$hover-cat-line-length:($std-cat-height * .5);
+$hover-cat-line-position:0px;
+$hover-cat-transition-time:.2s;
+
+$hover-cat-line-tl-v:$hover-cat-line-length / 2;
+$hover-cat-line-tl-h:0;
+$hover-cat-line-tr-v:$hover-cat-line-length / 2;
+$hover-cat-line-tr-h:0;
+$hover-cat-line-bl-v:$hover-cat-line-length / 2;
+$hover-cat-line-bl-h:0;
+$hover-cat-line-br-v:$hover-cat-line-length / 2;
+$hover-cat-line-br-h:0;
+		
+$stretch-cat-width:474.24px;
+$stretch-cat-height:321.72px;
+$stretch-cat-width-length:538.72px;
+$stretch-cat-height-length:321.72px;
+$stretch-cat-1step-time:.5s;
+$stretch-cat-2step-time:.5s;
+$stretch-cat-delay:$stretch-cat-1step-time * .65;
+
+$collapse-cat-1step-time:$stretch-cat-1step-time * .75;
+$collapse-cat-2step-time:$stretch-cat-1step-time * .75;
+$collapse-cat-2step-time-height:$collapse-cat-2step-time;
+$collapse-cat-delay:$stretch-cat-delay * .75;
+*/
 @media (max-width: 550px) {
-  /* line 3640, ../sass/main.scss */
+  /* line 3666, ../sass/main.scss */
   #programs {
     max-width: 250px;
   }
-  /* line 3643, ../sass/main.scss */
+  /* line 3669, ../sass/main.scss */
   #programs #courses {
     padding: 0 0rem;
     min-height: 1550px;
     padding-left: 0;
     width: 212px;
   }
-  /* line 3651, ../sass/main.scss */
+  /* line 3677, ../sass/main.scss */
   #programs #courses.courses-expanded .course-category .course-category, #programs #courses.courses-collapsed .course-category .course-category {
     left: 0;
     width: 100vw;
     padding-left: 8px;
     padding-right: 8px;
   }
-  /* line 3657, ../sass/main.scss */
+  /* line 3683, ../sass/main.scss */
   #programs #courses.courses-expanded .course-category .course-category h3, #programs #courses.courses-collapsed .course-category .course-category h3 {
     width: 100vw;
     left: 0;
@@ -3483,7 +3644,7 @@ div#content.wrapper {
     padding-left: 5px;
     padding-right: 5px;
   }
-  /* line 3664, ../sass/main.scss */
+  /* line 3690, ../sass/main.scss */
   #programs #courses.courses-expanded .course-category .course-category h3.credits, #programs #courses.courses-collapsed .course-category .course-category h3.credits {
     text-align: right;
     margin-top: 1.9rem;
@@ -3492,7 +3653,7 @@ div#content.wrapper {
     padding-left: 0;
     width: calc(100vw - 5px);
   }
-  /* line 3676, ../sass/main.scss */
+  /* line 3702, ../sass/main.scss */
   #programs #courses h2 {
     text-align: left;
     padding-top: 2rem;
@@ -3500,27 +3661,26 @@ div#content.wrapper {
     max-width: 221px;
     white-space: normal;
     padding-bottom: 18.12px;
-    border-bottom: 2px solid #555;
     font-size: 1.55rem;
   }
 
-  /* line 3691, ../sass/main.scss */
+  /* line 3717, ../sass/main.scss */
   #course-category-container.expand-box figure.course-category {
     width: 221px;
     left: 0;
     top: -55px;
   }
-  /* line 3696, ../sass/main.scss */
+  /* line 3722, ../sass/main.scss */
   #course-category-container.expand-box figure.course-category div:before {
-    height: 28.55px;
+    height: 38px;
   }
-  /* line 3700, ../sass/main.scss */
+  /* line 3726, ../sass/main.scss */
   #course-category-container.expand-box figure.course-category.corners.stretch {
     width: 100vw;
     height: 3000px;
     left: calc(1 * ((100% - 100vw) / 2));
   }
-  /* line 3705, ../sass/main.scss */
+  /* line 3731, ../sass/main.scss */
   #course-category-container.expand-box figure.course-category.corners.stretch .tr:after, #course-category-container.expand-box figure.course-category.corners.stretch .br:after {
     width: 0;
     height: 2px;
@@ -3528,14 +3688,14 @@ div#content.wrapper {
     opacity: 1;
   }
 
-  /* line 3715, ../sass/main.scss */
+  /* line 3741, ../sass/main.scss */
   #course-category-container:not(.expand-box) {
     position: relative;
   }
-  /* line 3718, ../sass/main.scss */
+  /* line 3744, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category {
     position: absolute;
-    height: 85px;
+    height: 75px;
     width: 221px;
     margin-left: 0;
     margin-right: 0;
@@ -3545,20 +3705,29 @@ div#content.wrapper {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    -moz-transition: opacity 0.2s;
+    -o-transition: opacity 0.2s;
+    -webkit-transition: opacity 0.2s;
+    transition: opacity 0.2s;
     overflow: hidden;
     text-align: left;
+    line-height: 75px;
   }
-  /* line 3731, ../sass/main.scss */
+  /* line 3759, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category h3 {
-    display: block;
+    display: inline-block;
     text-align: center;
     font-weight: 200;
     font-size: 1.25rem;
     margin-top: 1.5rem;
     margin-bottom: 1rem;
-    line-height: 1.2em;
+    line-height: normal;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    width: 100%;
   }
-  /* line 3741, ../sass/main.scss */
+  /* line 3773, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category figure.close-button {
     display: none;
     position: absolute;
@@ -3570,7 +3739,7 @@ div#content.wrapper {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
   }
-  /* line 3751, ../sass/main.scss */
+  /* line 3783, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category figure.close-button:before {
     content: "";
     display: block;
@@ -3588,7 +3757,7 @@ div#content.wrapper {
     transform: skew(45deg, 5deg);
     background-color: #5a5a5a;
   }
-  /* line 3764, ../sass/main.scss */
+  /* line 3796, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category figure.close-button:after {
     content: "";
     display: block;
@@ -3606,7 +3775,7 @@ div#content.wrapper {
     transform: skew(-45deg, 5deg);
     background-color: #5a5a5a;
   }
-  /* line 3779, ../sass/main.scss */
+  /* line 3811, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category > section {
     vertical-align: top;
     display: inline-block;
@@ -3614,7 +3783,7 @@ div#content.wrapper {
     margin: 0 1.25%;
     text-align: left;
   }
-  /* line 3786, ../sass/main.scss */
+  /* line 3818, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category > section .italicized {
     margin-top: 1.5em;
     margin-bottom: .75rem;
@@ -3622,7 +3791,7 @@ div#content.wrapper {
     display: inline-block;
     height: 2.5rem;
   }
-  /* line 3794, ../sass/main.scss */
+  /* line 3826, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category > section .category {
     font-size: 1rem;
     color: #5a5a5a;
@@ -3630,20 +3799,20 @@ div#content.wrapper {
     margin-top: .75rem;
     padding: 0;
   }
-  /* line 3802, ../sass/main.scss */
+  /* line 3834, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category > section .classes {
     font-weight: 200;
     letter-spacing: .25px;
   }
-  /* line 3806, ../sass/main.scss */
+  /* line 3838, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category > section .classes.class-list {
     margin-top: 1.05rem;
   }
-  /* line 3810, ../sass/main.scss */
+  /* line 3842, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category > section .classes a {
     color: #39b54a;
   }
-  /* line 3816, ../sass/main.scss */
+  /* line 3848, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category div:before, #course-category-container:not(.expand-box) .course-category div:after {
     -moz-transition: height, 0.2s;
     -o-transition: height, 0.2s;
@@ -3658,163 +3827,167 @@ div#content.wrapper {
     -webkit-transition: bottom, 0.2s;
     transition: bottom, 0.2s;
   }
-  /* line 3822, ../sass/main.scss */
+  /* line 3854, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:nth-of-type(-n + 1) {
     top: 0;
   }
-  /* line 3826, ../sass/main.scss */
+  /* line 3858, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:nth-of-type(-n + 2):nth-of-type(n + 2) {
     top: 125px;
   }
-  /* line 3830, ../sass/main.scss */
+  /* line 3861, ../sass/main.scss */
+  #course-category-container:not(.expand-box) .course-category:nth-of-type(-n + 2):nth-of-type(n + 2) .tl:after {
+    background-color: #888;
+  }
+  /* line 3866, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:nth-of-type(-n + 3):nth-of-type(n + 3) {
     top: 250px;
   }
-  /* line 3834, ../sass/main.scss */
+  /* line 3870, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:nth-of-type(-n + 4):nth-of-type(n + 4) {
     top: 375px;
   }
-  /* line 3838, ../sass/main.scss */
+  /* line 3874, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:nth-of-type(-n + 5):nth-of-type(n + 5) {
     top: 500px;
   }
-  /* line 3842, ../sass/main.scss */
+  /* line 3878, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:nth-of-type(-n + 6):nth-of-type(n + 6) {
     top: 625px;
   }
-  /* line 3846, ../sass/main.scss */
+  /* line 3882, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:nth-of-type(-n + 7):nth-of-type(n + 7) {
     top: 750px;
   }
-  /* line 3850, ../sass/main.scss */
+  /* line 3886, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:nth-of-type(-n + 8):nth-of-type(n + 8) {
     top: 875px;
   }
-  /* line 3854, ../sass/main.scss */
+  /* line 3890, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:nth-of-type(-n + 9):nth-of-type(n + 9) {
     top: 1000px;
   }
-  /* line 3858, ../sass/main.scss */
+  /* line 3894, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:nth-of-type(-n + 10):nth-of-type(n + 10) {
     top: 1125px;
   }
-  /* line 3862, ../sass/main.scss */
+  /* line 3898, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:nth-of-type(-n + 11):nth-of-type(n + 11) {
     top: 1250px;
   }
-  /* line 3866, ../sass/main.scss */
+  /* line 3902, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:nth-of-type(n) {
     left: 0;
   }
-  /* line 3870, ../sass/main.scss */
+  /* line 3906, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category div {
     position: absolute;
   }
-  /* line 3873, ../sass/main.scss */
+  /* line 3909, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category div:before, #course-category-container:not(.expand-box) .course-category div:after {
     content: "";
     display: block;
     position: absolute;
-    background-color: #666;
+    background-color: #888;
   }
-  /* line 3881, ../sass/main.scss */
+  /* line 3917, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .tl {
     top: 0;
     left: 0;
   }
-  /* line 3885, ../sass/main.scss */
+  /* line 3921, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .tl:after {
-    width: 0;
+    width: 221px;
     height: 2px;
   }
-  /* line 3890, ../sass/main.scss */
+  /* line 3926, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .tl:before {
     width: 2px;
-    height: 28.05px;
-    top: 14.45px;
+    height: 37.5px;
+    top: 0px;
   }
-  /* line 3897, ../sass/main.scss */
+  /* line 3933, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .tr {
     top: 0;
     right: 2px;
   }
-  /* line 3901, ../sass/main.scss */
+  /* line 3937, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .tr:after {
     right: 0;
     top: 0;
     width: 0;
     height: 2px;
   }
-  /* line 3908, ../sass/main.scss */
+  /* line 3944, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .tr:before {
     width: 2px;
-    height: 28.05px;
-    top: 14.45px;
+    height: 37.5px;
+    top: 0px;
   }
-  /* line 3915, ../sass/main.scss */
+  /* line 3951, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .bl {
     bottom: 0;
     left: 0;
   }
-  /* line 3919, ../sass/main.scss */
+  /* line 3955, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .bl:after {
     width: 0;
     height: 2px;
   }
-  /* line 3924, ../sass/main.scss */
+  /* line 3960, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .bl:before {
     width: 2px;
-    height: 28.05px;
-    bottom: 14.45px;
+    height: 37.5px;
+    bottom: 0px;
   }
-  /* line 3931, ../sass/main.scss */
+  /* line 3967, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .br {
     bottom: 0;
     right: 2px;
   }
-  /* line 3935, ../sass/main.scss */
+  /* line 3971, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .br:after {
     bottom: 0;
     right: 0;
-    width: 0;
+    width: 221px;
     height: 2px;
   }
-  /* line 3942, ../sass/main.scss */
+  /* line 3978, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category .br:before {
     width: 2px;
-    height: 28.05px;
-    bottom: 14.45px;
+    height: 37.5px;
+    bottom: 0px;
   }
-  /* line 3949, ../sass/main.scss */
+  /* line 3985, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:hover {
     cursor: pointer;
   }
-  /* line 3953, ../sass/main.scss */
+  /* line 3989, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:hover .tl:before {
-    height: 21.25px;
-    top: 21.25px;
+    height: 37.5px;
+    top: 0px;
   }
-  /* line 3958, ../sass/main.scss */
+  /* line 3994, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:hover .tr:before {
-    height: 21.25px;
-    top: 21.25px;
+    height: 37.5px;
+    top: 0px;
   }
-  /* line 3963, ../sass/main.scss */
+  /* line 3999, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:hover .bl:before {
-    height: 21.25px;
-    bottom: 21.25px;
+    height: 37.5px;
+    bottom: 0px;
   }
-  /* line 3968, ../sass/main.scss */
+  /* line 4004, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category:hover .br:before {
-    height: 21.25px;
-    bottom: 21.25px;
+    height: 37.5px;
+    bottom: 0px;
   }
-  /* line 3974, ../sass/main.scss */
+  /* line 4010, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.fade {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=7);
     opacity: 0.065;
   }
-  /* line 3979, ../sass/main.scss */
+  /* line 4015, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.corners {
     -moz-transition: left 0.375s 0.24375s, width 0.375s ease 0.24375s, height 0.375s ease, top 0.375s;
     -o-transition: left 0.375s 0.24375s, width 0.375s ease 0.24375s, height 0.375s ease, top 0.375s;
@@ -3822,7 +3995,7 @@ div#content.wrapper {
     -webkit-transition-delay: 0.24375s, 0.24375s, 0s, 0s;
     transition: left 0.375s 0.24375s, width 0.375s ease 0.24375s, height 0.375s ease, top 0.375s;
   }
-  /* line 3983, ../sass/main.scss */
+  /* line 4019, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.corners .tr:after {
     -moz-transition: width 0.375s 0.24375s;
     -o-transition: width 0.375s 0.24375s;
@@ -3830,7 +4003,7 @@ div#content.wrapper {
     -webkit-transition-delay: 0.24375s;
     transition: width 0.375s 0.24375s;
   }
-  /* line 3987, ../sass/main.scss */
+  /* line 4023, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.corners .br:after {
     -moz-transition: width 0.375s 0.24375s;
     -o-transition: width 0.375s 0.24375s;
@@ -3838,27 +4011,27 @@ div#content.wrapper {
     -webkit-transition-delay: 0.24375s;
     transition: width 0.375s 0.24375s;
   }
-  /* line 3991, ../sass/main.scss */
+  /* line 4027, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.corners .tl:before {
     height: 2px;
     top: 0;
   }
-  /* line 3996, ../sass/main.scss */
+  /* line 4032, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.corners .tr:before {
     height: 2px;
     top: 0;
   }
-  /* line 4001, ../sass/main.scss */
+  /* line 4037, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.corners .bl:before {
     height: 2px;
     bottom: 0;
   }
-  /* line 4006, ../sass/main.scss */
+  /* line 4042, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.corners .br:before {
     height: 2px;
     bottom: 0;
   }
-  /* line 4011, ../sass/main.scss */
+  /* line 4047, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.corners .close-button {
     display: block;
     -moz-transition: opacity 0.25s 0s, height 0.25s 0s;
@@ -3870,11 +4043,11 @@ div#content.wrapper {
     opacity: 0;
     height: 16px;
   }
-  /* line 4020, ../sass/main.scss */
+  /* line 4056, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch {
     z-index: 1;
   }
-  /* line 4023, ../sass/main.scss */
+  /* line 4059, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch .close-button {
     height: 26px;
     filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
@@ -3885,63 +4058,63 @@ div#content.wrapper {
     -webkit-transition-delay: 0.5s, 0.5s;
     transition: opacity 0.25s 0.5s, height 0.25s 0.5s;
   }
-  /* line 4028, ../sass/main.scss */
+  /* line 4064, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch .close-button:before {
     height: 100%;
   }
-  /* line 4032, ../sass/main.scss */
+  /* line 4068, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch .close-button:after {
     height: 100%;
   }
-  /* line 4036, ../sass/main.scss */
+  /* line 4072, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch .close-button:hover {
     cursor: pointer;
   }
-  /* line 4041, ../sass/main.scss */
+  /* line 4077, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3), #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2), #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1), #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0), #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(-n + 4):nth-of-type(n) {
     left: calc(1 * ((100% - 100vw) / 2));
     height: 100vh;
     max-height: 500px;
     width: 100vw;
   }
-  /* line 4048, ../sass/main.scss */
+  /* line 4084, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3) .tl:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) .tl:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1) .tl:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) .tl:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(-n + 4):nth-of-type(n) .tl:before {
     height: 0;
     top: 0px;
   }
-  /* line 4053, ../sass/main.scss */
+  /* line 4089, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3) .tl:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) .tl:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1) .tl:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) .tl:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(-n + 4):nth-of-type(n) .tl:after {
     height: 0;
     top: 0px;
   }
-  /* line 4058, ../sass/main.scss */
+  /* line 4094, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3) .tr:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) .tr:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1) .tr:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) .tr:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(-n + 4):nth-of-type(n) .tr:before {
     height: 0;
     top: 0;
   }
-  /* line 4063, ../sass/main.scss */
+  /* line 4099, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3) .tr:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) .tr:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1) .tr:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) .tr:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(-n + 4):nth-of-type(n) .tr:after {
     width: 538.72px;
     height: 2px;
   }
-  /* line 4068, ../sass/main.scss */
+  /* line 4104, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3) .bl:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) .bl:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1) .bl:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) .bl:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(-n + 4):nth-of-type(n) .bl:before {
     height: 0px;
     bottom: 0;
   }
-  /* line 4073, ../sass/main.scss */
+  /* line 4109, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3) .br:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) .br:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1) .br:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) .br:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(-n + 4):nth-of-type(n) .br:after {
     width: 538.72px;
     height: 2px;
     bottom: 0;
   }
-  /* line 4079, ../sass/main.scss */
+  /* line 4115, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3) .br:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) .br:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1) .br:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) .br:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(-n + 4):nth-of-type(n) .br:before {
     width: 2px;
     height: 0px;
     bottom: 0;
   }
-  /* line 4086, ../sass/main.scss */
+  /* line 4122, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3), #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) {
     -moz-transition: left 0.5s 0s, width 0.5s ease 0s, height 0.5s ease 0.325s, top 0.5s 0.325s;
     -o-transition: left 0.5s 0s, width 0.5s ease 0s, height 0.5s ease 0.325s, top 0.5s 0.325s;
@@ -3950,7 +4123,7 @@ div#content.wrapper {
     transition: left 0.5s 0s, width 0.5s ease 0s, height 0.5s ease 0.325s, top 0.5s 0.325s;
     cursor: default;
   }
-  /* line 4090, ../sass/main.scss */
+  /* line 4126, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3) .tr:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) .tr:after {
     -moz-transition: width 0.5s 0s;
     -o-transition: width 0.5s 0s;
@@ -3958,7 +4131,7 @@ div#content.wrapper {
     -webkit-transition-delay: 0s;
     transition: width 0.5s 0s;
   }
-  /* line 4094, ../sass/main.scss */
+  /* line 4130, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3) .br:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) .br:after {
     -moz-transition: width 0.5s 0s;
     -o-transition: width 0.5s 0s;
@@ -3966,7 +4139,7 @@ div#content.wrapper {
     -webkit-transition-delay: 0s;
     transition: width 0.5s 0s;
   }
-  /* line 4098, ../sass/main.scss */
+  /* line 4134, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 3) .tr:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 2) .tr:before {
     -moz-transition: height 0.5s 0.325s;
     -o-transition: height 0.5s 0.325s;
@@ -3974,7 +4147,7 @@ div#content.wrapper {
     -webkit-transition-delay: 0.325s;
     transition: height 0.5s 0.325s;
   }
-  /* line 4103, ../sass/main.scss */
+  /* line 4139, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1), #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) {
     -moz-transition: left 0.5s 0s, width 0.5s ease 0s, height 0.5s ease 0.325s, top 0.5s 0.325s;
     -o-transition: left 0.5s 0s, width 0.5s ease 0s, height 0.5s ease 0.325s, top 0.5s 0.325s;
@@ -3983,7 +4156,7 @@ div#content.wrapper {
     transition: left 0.5s 0s, width 0.5s ease 0s, height 0.5s ease 0.325s, top 0.5s 0.325s;
     cursor: default;
   }
-  /* line 4107, ../sass/main.scss */
+  /* line 4143, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1) .tr:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) .tr:after {
     -moz-transition: width 0.5s 0s;
     -o-transition: width 0.5s 0s;
@@ -3991,7 +4164,7 @@ div#content.wrapper {
     -webkit-transition-delay: 0s;
     transition: width 0.5s 0s;
   }
-  /* line 4111, ../sass/main.scss */
+  /* line 4147, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1) .br:after, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) .br:after {
     -moz-transition: width 0.5s 0s;
     -o-transition: width 0.5s 0s;
@@ -3999,7 +4172,7 @@ div#content.wrapper {
     -webkit-transition-delay: 0s;
     transition: width 0.5s 0s;
   }
-  /* line 4115, ../sass/main.scss */
+  /* line 4151, ../sass/main.scss */
   #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 1) .tr:before, #course-category-container:not(.expand-box) .course-category.stretch:nth-of-type(4n - 0) .tr:before {
     -moz-transition: height 0.5s 0.325s;
     -o-transition: height 0.5s 0.325s;
@@ -4009,21 +4182,22 @@ div#content.wrapper {
   }
 }
 /**********************************     Course-plan Section     ****************************************************/
-/* line 4129, ../sass/main.scss */
+/* line 4165, ../sass/main.scss */
 #programs #course-plan {
   position: relative;
-  min-height: 500px;
+  min-height: 450px;
+  padding-bottom: 32.24px;
 }
-/* line 4133, ../sass/main.scss */
+/* line 4170, ../sass/main.scss */
 #programs #course-plan h2 {
   text-align: left;
   width: 221px;
   font-weight: 200;
   white-space: nowrap;
-  padding-bottom: 18.12px;
+  padding-bottom: 32.24px;
   padding-top: 2rem;
 }
-/* line 4143, ../sass/main.scss */
+/* line 4180, ../sass/main.scss */
 #programs #course-plan .stripe {
   position: absolute;
   left: calc(-1 * (100vw - 100%) / 2);
@@ -4032,22 +4206,22 @@ div#content.wrapper {
   background-color: #fff;
   z-index: -1;
 }
-/* line 4152, ../sass/main.scss */
+/* line 4189, ../sass/main.scss */
 #programs #course-plan .course-table {
   text-align: left;
   width: 980.72px;
 }
-/* line 4159, ../sass/main.scss */
+/* line 4196, ../sass/main.scss */
 #programs #course-plan .course-table.dark .year {
   padding-top: .55rem;
   border-top: 2px solid #1c3764;
   border-bottom: 2px solid #1c3764;
 }
-/* line 4164, ../sass/main.scss */
+/* line 4201, ../sass/main.scss */
 #programs #course-plan .course-table.dark .year:last-of-type {
   position: relative;
 }
-/* line 4168, ../sass/main.scss */
+/* line 4205, ../sass/main.scss */
 #programs #course-plan .course-table.dark .year:last-of-type:after {
   display: block;
   content: "";
@@ -4058,62 +4232,62 @@ div#content.wrapper {
   width: 2px;
   background-color: #1c3764;
 }
-/* line 4180, ../sass/main.scss */
+/* line 4217, ../sass/main.scss */
 #programs #course-plan .course-table.dark .year:nth-of-type(odd) {
   background-color: #1c3764;
 }
-/* line 4183, ../sass/main.scss */
+/* line 4220, ../sass/main.scss */
 #programs #course-plan .course-table.dark .year:nth-of-type(odd) h3 {
   color: #e3e3e3;
   border-bottom: 2px solid #6990b5;
 }
-/* line 4190, ../sass/main.scss */
+/* line 4227, ../sass/main.scss */
 #programs #course-plan .course-table.dark .year:nth-of-type(odd) section h4 {
   color: #eee;
-  font-weight: 200;
 }
-/* line 4195, ../sass/main.scss */
+/* line 4232, ../sass/main.scss */
 #programs #course-plan .course-table.dark .year:nth-of-type(odd) section .credits {
   color: #e3e3e3;
 }
-/* line 4203, ../sass/main.scss */
+/* line 4240, ../sass/main.scss */
 #programs #course-plan .course-table .year {
   display: inline-block;
   width: 221px;
-  min-height: 350px;
+  height: 350px;
+  overflow: hidden;
   padding: 16.12px;
   margin-top: 0;
   margin-bottom: 32.24px;
   vertical-align: top;
 }
-/* line 4213, ../sass/main.scss */
+/* line 4251, ../sass/main.scss */
 #programs #course-plan .course-table .year:first-of-type {
   padding-left: 0;
 }
-/* line 4216, ../sass/main.scss */
+/* line 4254, ../sass/main.scss */
 #programs #course-plan .course-table .year:first-of-type h3 {
   margin-left: .75rem;
   width: calc(100% - .75rem);
 }
-/* line 4221, ../sass/main.scss */
+/* line 4259, ../sass/main.scss */
 #programs #course-plan .course-table .year:first-of-type section {
   margin-left: .75rem;
   width: calc(100% - .75rem);
 }
-/* line 4227, ../sass/main.scss */
+/* line 4265, ../sass/main.scss */
 #programs #course-plan .course-table .year:last-of-type {
   padding-right: 0rem;
 }
-/* line 4230, ../sass/main.scss */
+/* line 4268, ../sass/main.scss */
 #programs #course-plan .course-table .year:last-of-type h3 {
   margin-right: .75rem;
   width: calc(100% - .75rem);
 }
-/* line 4235, ../sass/main.scss */
+/* line 4273, ../sass/main.scss */
 #programs #course-plan .course-table .year:last-of-type section {
   width: calc(100% - .75rem);
 }
-/* line 4240, ../sass/main.scss */
+/* line 4278, ../sass/main.scss */
 #programs #course-plan .course-table .year h3 {
   color: #6a6a6a;
   display: block;
@@ -4123,20 +4297,21 @@ div#content.wrapper {
   border-bottom: 2px solid #6990b5;
   width: 100%;
 }
-/* line 4250, ../sass/main.scss */
+/* line 4288, ../sass/main.scss */
 #programs #course-plan .course-table .year section {
   display: block;
   margin-bottom: .85rem;
 }
-/* line 4254, ../sass/main.scss */
+/* line 4293, ../sass/main.scss */
 #programs #course-plan .course-table .year section h4 {
   display: inline-block;
   font-size: 1rem;
   max-width: 75%;
   line-height: 1.15rem;
   color: #5a5a5a;
+  font-weight: 200;
 }
-/* line 4262, ../sass/main.scss */
+/* line 4302, ../sass/main.scss */
 #programs #course-plan .course-table .year section .credits {
   float: right;
   max-width: 20%;
@@ -4145,27 +4320,127 @@ div#content.wrapper {
   text-align: right;
 }
 
+@media (max-width: 1100px) {
+  /* line 4318, ../sass/main.scss */
+  #programs #course-plan .course-table.dark {
+    -moz-transform: scale(0.735, 0.735);
+    -ms-transform: scale(0.735, 0.735);
+    -webkit-transform: scale(0.735, 0.735);
+    transform: scale(0.735, 0.735);
+    margin-left: -127px;
+    margin-top: -55px;
+  }
+}
+@media (max-width: 800px) {
+  /* line 4342, ../sass/main.scss */
+  #programs #course-plan .course-table.dark {
+    width: 500px;
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    margin-left: 0;
+    margin-top: 0;
+  }
+  /* line 4348, ../sass/main.scss */
+  #programs #course-plan .course-table.dark .year {
+    margin: 0;
+    border-top: none;
+    border-bottom: none;
+  }
+  /* line 4353, ../sass/main.scss */
+  #programs #course-plan .course-table.dark .year:nth-of-type(n) {
+    position: relative;
+    background-color: #fff;
+    border-bottom: 2px solid #1c3764;
+  }
+  /* line 4358, ../sass/main.scss */
+  #programs #course-plan .course-table.dark .year:nth-of-type(n):after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 0;
+    right: -1px;
+    width: 2px;
+    height: 100%;
+    background-color: #1c3764;
+  }
+  /* line 4369, ../sass/main.scss */
+  #programs #course-plan .course-table.dark .year:nth-of-type(n) h3 {
+    color: #6a6a6a;
+  }
+  /* line 4376, ../sass/main.scss */
+  #programs #course-plan .course-table.dark .year:nth-of-type(n) section h4 {
+    color: #5a5a5a;
+  }
+  /* line 4380, ../sass/main.scss */
+  #programs #course-plan .course-table.dark .year:nth-of-type(n) section .credits {
+    color: #5a5a5a;
+  }
+  /* line 4386, ../sass/main.scss */
+  #programs #course-plan .course-table.dark .year:nth-of-type(odd) {
+    padding-left: 0;
+  }
+  /* line 4389, ../sass/main.scss */
+  #programs #course-plan .course-table.dark .year:nth-of-type(odd) h3 {
+    margin-left: .75rem;
+    width: calc(100% - .75rem);
+  }
+  /* line 4394, ../sass/main.scss */
+  #programs #course-plan .course-table.dark .year:nth-of-type(odd) section {
+    margin-left: .75rem;
+    width: calc(100% - .75rem);
+  }
+  /* line 4400, ../sass/main.scss */
+  #programs #course-plan .course-table.dark .year:nth-of-type(even) {
+    padding-right: 0rem;
+  }
+  /* line 4403, ../sass/main.scss */
+  #programs #course-plan .course-table.dark .year:nth-of-type(even) h3 {
+    margin-right: .75rem;
+    width: calc(100% - .75rem);
+  }
+  /* line 4408, ../sass/main.scss */
+  #programs #course-plan .course-table.dark .year:nth-of-type(even) section {
+    width: calc(100% - .75rem);
+  }
+  /* line 4413, ../sass/main.scss */
+  #programs #course-plan .course-table.dark .year:nth-of-type(-n + 2) {
+    border-top: 2px solid #1c3764;
+  }
+  /* line 4417, ../sass/main.scss */
+  #programs #course-plan .course-table.dark .year:nth-of-type(odd):before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    left: -1px;
+    height: 100%;
+    width: 2px;
+    background-color: #1c3764;
+  }
+}
 /**********************************                                          ****************************************************/
 /**********************************        R E S O U R C E S  P A G E        ***************************************************/
 /**********************************                                          ****************************************************/
-/* line 4279, ../sass/main.scss */
+/* line 4437, ../sass/main.scss */
 #resources {
   display: inline-block;
   width: 112%;
 }
-/* line 4283, ../sass/main.scss */
+/* line 4441, ../sass/main.scss */
 #resources #top-section {
   padding: 4rem;
   padding-left: 0;
 }
-/* line 4287, ../sass/main.scss */
+/* line 4445, ../sass/main.scss */
 #resources #top-section h1 {
   text-align: left;
   font-weight: 400;
   color: #33588a;
   margin-bottom: 1rem;
 }
-/* line 4294, ../sass/main.scss */
+/* line 4452, ../sass/main.scss */
 #resources #top-section h2 {
   font-weight: 200;
   text-align: left;
@@ -4176,20 +4451,20 @@ div#content.wrapper {
   letter-spacing: 1px;
   color: #1c3764;
 }
-/* line 4307, ../sass/main.scss */
+/* line 4465, ../sass/main.scss */
 #resources #top-section .quad-container h4 {
   font-weight: 200;
   color: #3a3a3a;
 }
-/* line 4312, ../sass/main.scss */
+/* line 4470, ../sass/main.scss */
 #resources #top-section .quad-container p {
   padding-bottom: 1em;
 }
-/* line 4317, ../sass/main.scss */
+/* line 4475, ../sass/main.scss */
 #resources #top-section .quad-container .quarter h4 {
   text-align: center;
 }
-/* line 4321, ../sass/main.scss */
+/* line 4479, ../sass/main.scss */
 #resources #top-section .quad-container .quarter .icon {
   width: 100%;
   margin: 0;
@@ -4201,59 +4476,59 @@ div#content.wrapper {
   -webkit-transition: fill 0.15s;
   transition: fill 0.15s;
 }
-/* line 4329, ../sass/main.scss */
+/* line 4487, ../sass/main.scss */
 #resources #top-section .quad-container .quarter .icon:hover {
   fill: #39b54a;
 }
 
 @media (max-width: 1138px) {
-  /* line 4340, ../sass/main.scss */
+  /* line 4498, ../sass/main.scss */
   #resources .quad-container .half {
     margin-left: 0;
     margin-right: 15px;
   }
 }
 @media (max-width: 1100px) {
-  /* line 4348, ../sass/main.scss */
+  /* line 4506, ../sass/main.scss */
   #resources {
     max-width: 810px;
   }
 }
 @media (max-width: 1050px) {
-  /* line 4354, ../sass/main.scss */
+  /* line 4512, ../sass/main.scss */
   #resources {
     padding-left: 4rem;
   }
 }
 @media (max-width: 800px) {
-  /* line 4360, ../sass/main.scss */
+  /* line 4518, ../sass/main.scss */
   #resources {
     max-width: 560px;
   }
-  /* line 4364, ../sass/main.scss */
+  /* line 4522, ../sass/main.scss */
   #resources .quad-container .half {
     width: 474.24px;
   }
 }
 @media (max-width: 550px) {
-  /* line 4372, ../sass/main.scss */
+  /* line 4530, ../sass/main.scss */
   #resources {
     max-width: 250px;
   }
-  /* line 4375, ../sass/main.scss */
+  /* line 4533, ../sass/main.scss */
   #resources #top-section {
     padding: 4rem;
     padding-left: 0;
   }
-  /* line 4379, ../sass/main.scss */
+  /* line 4537, ../sass/main.scss */
   #resources #top-section h1 {
     font-size: 1.85rem;
   }
-  /* line 4383, ../sass/main.scss */
+  /* line 4541, ../sass/main.scss */
   #resources #top-section h2 {
     font-size: 1.55rem;
   }
-  /* line 4389, ../sass/main.scss */
+  /* line 4547, ../sass/main.scss */
   #resources .quad-container .half {
     width: 221px;
   }
@@ -4261,28 +4536,28 @@ div#content.wrapper {
 /**********************************                                          ****************************************************/
 /**********************************       A P  C O U R S E S  P A G E        ***************************************************/
 /**********************************                                          ****************************************************/
-/* line 4401, ../sass/main.scss */
+/* line 4559, ../sass/main.scss */
 #ap {
   display: inline-block;
   width: 120%;
 }
-/* line 4405, ../sass/main.scss */
+/* line 4563, ../sass/main.scss */
 #ap #top-section {
   padding: 4rem;
   padding-left: 0;
 }
-/* line 4409, ../sass/main.scss */
+/* line 4567, ../sass/main.scss */
 #ap #top-section h1 {
   text-align: left;
   font-weight: 400;
   color: #33588a;
   margin-bottom: 1rem;
 }
-/* line 4418, ../sass/main.scss */
+/* line 4576, ../sass/main.scss */
 #ap #top-section .quad-container .half {
   margin-top: 0;
 }
-/* line 4423, ../sass/main.scss */
+/* line 4581, ../sass/main.scss */
 #ap #top-section .quad-container .half h2 {
   font-weight: 200;
   text-align: left;
@@ -4293,94 +4568,94 @@ div#content.wrapper {
   color: #1c3764;
   margin-bottom: 1rem;
 }
-/* line 4434, ../sass/main.scss */
+/* line 4592, ../sass/main.scss */
 #ap #top-section .quad-container .half h4 {
   display: block;
   font-weight: 200;
   color: #444;
   vertical-align: top;
 }
-/* line 4441, ../sass/main.scss */
+/* line 4599, ../sass/main.scss */
 #ap #top-section .quad-container .half a {
   color: #39b54a;
   white-space: nowrap;
 }
-/* line 4446, ../sass/main.scss */
+/* line 4604, ../sass/main.scss */
 #ap #top-section .quad-container .half > p {
   line-height: 1.25rem;
 }
-/* line 4450, ../sass/main.scss */
+/* line 4608, ../sass/main.scss */
 #ap #top-section .quad-container .half ul {
   display: inline-block;
   vertical-align: top;
   margin-top: 0;
   margin-left: 18px;
 }
-/* line 4456, ../sass/main.scss */
+/* line 4614, ../sass/main.scss */
 #ap #top-section .quad-container .half ul li {
   margin-bottom: .5rem;
 }
-/* line 4463, ../sass/main.scss */
+/* line 4621, ../sass/main.scss */
 #ap #top-section .quad-container .half ul.course-list {
   display: inline-block;
 }
-/* line 4466, ../sass/main.scss */
+/* line 4624, ../sass/main.scss */
 #ap #top-section .quad-container .half ul.course-list li {
   margin-top: .25rem;
   font-size: 1.02rem;
   font-weight: 200;
 }
-/* line 4473, ../sass/main.scss */
+/* line 4631, ../sass/main.scss */
 #ap #top-section .quad-container .half ul.info-list {
   margin-top: .45rem;
 }
-/* line 4476, ../sass/main.scss */
+/* line 4634, ../sass/main.scss */
 #ap #top-section .quad-container .half ul.info-list li {
   line-height: 1.4rem;
 }
 
 @media (max-width: 1100px) {
-  /* line 4487, ../sass/main.scss */
+  /* line 4645, ../sass/main.scss */
   #ap {
     max-width: 810px;
   }
-  /* line 4492, ../sass/main.scss */
+  /* line 4650, ../sass/main.scss */
   #ap .quad-container .half {
     margin-left: 0;
     margin-bottom: 1rem;
   }
 }
 @media (max-width: 1050px) {
-  /* line 4501, ../sass/main.scss */
+  /* line 4659, ../sass/main.scss */
   #ap {
     padding-left: 4rem;
   }
 }
 @media (max-width: 800px) {
-  /* line 4507, ../sass/main.scss */
+  /* line 4665, ../sass/main.scss */
   #ap {
     max-width: 560px;
   }
-  /* line 4514, ../sass/main.scss */
+  /* line 4672, ../sass/main.scss */
   #ap .quad-container .half:first-of-type {
     margin-right: 32px;
   }
 }
 @media (max-width: 575px) {
-  /* line 4523, ../sass/main.scss */
+  /* line 4681, ../sass/main.scss */
   #ap {
     max-width: 250px;
   }
-  /* line 4526, ../sass/main.scss */
+  /* line 4684, ../sass/main.scss */
   #ap #top-section {
     padding: 4rem;
     padding-left: 0;
   }
-  /* line 4530, ../sass/main.scss */
+  /* line 4688, ../sass/main.scss */
   #ap #top-section h1 {
     font-size: 1.85rem;
   }
-  /* line 4534, ../sass/main.scss */
+  /* line 4692, ../sass/main.scss */
   #ap #top-section h2 {
     font-size: 1.55rem;
   }
