@@ -3672,6 +3672,10 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			padding-left:0;
 			width:212px;
 			
+			&.courses-collapsed {
+				min-height:70px;
+			}
+			
 			&.courses-expanded, &.courses-collapsed {
 			
 				& .course-category .course-category {
@@ -3865,6 +3869,10 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 				
 			&:nth-of-type(-n + 3):nth-of-type(n + 3){
 				top:250px;
+				
+				& .tl:after {
+					background-color:$std-cat-line-color;
+				}
 			}
 				
 			&:nth-of-type(-n + 4):nth-of-type(n + 4){
@@ -4240,9 +4248,10 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			& .year {
 				display:inline-block;
 				width:$quarter-width;
-				height:350px;
+				min-height:350px;
 				overflow:hidden;
 				padding:#{$med-gutter / 2};
+				padding-bottom:.75rem;
 				margin-top:0;
 				margin-bottom:$med-gutter;
 				//@include box-sizing(border-box);
@@ -4355,12 +4364,13 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 						background-color:#fff;
 						border-bottom:2px solid $byuBlue;
 						
+						
 						&:after {
 							display:block;
 							position:absolute;
 							content:"";
 							top:0;
-							right:-1px;
+							right:0;
 							width:2px;
 							height:100%;
 							background-color:$byuBlue;
@@ -4414,15 +4424,76 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 						border-top:2px solid $byuBlue;
 					}
 					
+					&:nth-of-type(n - 2) {
+						//margin-bottom:1px;
+					}
+					
 					&:nth-of-type(odd):before {
 						position:absolute;
 						display:block;
 						content:"";
 						top:0;
-						left:-1px;
+						left:0;
 						height:100%;
 						width:2px;
 						background-color:$byuBlue;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width:550px){
+	#programs {
+		
+		#course-plan {
+			
+			& h2 {
+				max-width:$quarter-width;
+				font-size:1.55rem;
+				white-space:normal;
+				padding-bottom:#{$med-gutter / 2};
+			}
+			
+			.course-table.dark {
+				width:$quarter-width;
+				
+				
+				& .year {
+					
+					&:nth-of-type(n){
+						border-bottom:2px solid $byuBlue;
+						border-top:none;
+						@include box-sizing(border-box);
+						margin-bottom:0;
+						padding-bottom:1rem;
+						
+						&:after{
+							position:absolute;
+							display:block;
+							content:"";
+							top:0;
+							right:0;
+							height:100%;
+							width:2px;
+							background-color:$byuBlue;
+						}
+						
+						&:before {
+							position:absolute;
+							display:block;
+							content:"";
+							top:0;
+							left:0;
+							height:100%;
+							width:2px;
+							background-color:$byuBlue;
+						}
+					}
+					
+					&:first-of-type {
+						border-top:2px solid $byuBlue;
 					}
 				}
 			}
