@@ -2058,6 +2058,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 				}
 			
 				& section {
+					position:relative;
 					vertical-align:top;
 					display:inline-block;
 					width:30.8%;
@@ -2070,11 +2071,24 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 					}
 					
 					& .italicized {
+						position:absolute;
 						margin-top:1.5em;
 						margin-bottom:.75rem;
 						font-style:italic;
 						display:inline-block;
 						height:2.5rem;
+						
+						&.two-col {
+							width:200%;
+						}
+					}
+					
+					& p:nth-of-type(2){
+						margin-top:5.5rem;
+					}
+			
+					& p.extra-margin {
+						margin-top:10rem;
 					}
 					
 					& .category {
@@ -2088,10 +2102,6 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 					& .classes {
 						font-weight:200;
 						letter-spacing:.25px;
-						
-						&.class-list {
-							margin-top:1.05rem
-						}
 						
 						& a {
 							color:$actGreen;
@@ -2188,6 +2198,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 		}
 		
 		& > section {
+			position:relative;
 			vertical-align:top;
 			display:inline-block;
 			width:30.8%;
@@ -2196,11 +2207,24 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			line-height:1.2rem;
 			
 			& .italicized {
+				position:absolute;
 				margin-top:1.5em;
 				margin-bottom:.75rem;
 				font-style:italic;
 				display:inline-block;
 				height:2.5rem;
+						
+				&.two-col {
+					width:200%;
+				}
+			}
+					
+			& p:nth-of-type(2){
+				margin-top:5.5rem;
+			}
+			
+			& p.extra-margin {
+				margin-top:10rem;
 			}
 			
 			& .category {
@@ -2214,10 +2238,6 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			& .classes {
 				font-weight:200;
 				letter-spacing:.25px;
-				
-				&.class-list {
-					margin-top:1.05rem
-				}
 				
 				& a {
 					color:$actGreen;
@@ -2720,6 +2740,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			}
 			
 			& > section {
+				position:relative;
 				vertical-align:top;
 				display:inline-block;
 				width:30.8%;
@@ -2727,6 +2748,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 				text-align:left;
 				
 				& .italicized {
+					position:absolute;	
 					margin-top:1.5em;
 					margin-bottom:.75rem;
 					font-style:italic;
@@ -2741,14 +2763,18 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 					margin-top:.75rem;
 					padding:0;
 				}
-				
+					
+				& p:nth-of-type(2){
+					margin-top:5.5rem;
+				}
+			
+				& p.extra-margin {
+					margin-top:10rem;
+				}
+			
 				& .classes {
 					font-weight:200;
 					letter-spacing:.25px;
-					
-					&.class-list {
-						margin-top:1.05rem
-					}
 					
 					& a {
 						color:$actGreen;
@@ -3243,6 +3269,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			}
 			
 			& > section {
+				position:relative;
 				vertical-align:top;
 				display:inline-block;
 				width:30.8%;
@@ -3250,6 +3277,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 				text-align:left;
 				
 				& .italicized {
+					position:absolute;
 					margin-top:1.5em;
 					margin-bottom:.75rem;
 					font-style:italic;
@@ -3268,10 +3296,6 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 				& .classes {
 					font-weight:200;
 					letter-spacing:.25px;
-					
-					&.class-list {
-						margin-top:1.05rem
-					}
 					
 					& a {
 						color:$actGreen;
@@ -3826,7 +3850,11 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 					display:inline-block;
 					height:2.5rem;
 				}
-				
+			
+				& p.extra-margin {
+					margin-top:13rem;
+				}
+					
 				& .category {
 					font-size:1rem;
 					color:#5a5a5a;
@@ -3838,10 +3866,6 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 				& .classes {
 					font-weight:200;
 					letter-spacing:.25px;
-					
-					&.class-list {
-						margin-top:1.05rem
-					}
 					
 					& a {
 						color:$actGreen;
