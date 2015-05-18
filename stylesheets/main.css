@@ -1653,7 +1653,7 @@ div#content.wrapper {
 /* line 1864, ../sass/main.scss */
 #programs #top-section h1 {
   font-weight: 400;
-  color: #555;
+  color: #33588a;
 }
 /* line 1869, ../sass/main.scss */
 #programs #top-section h3 {
@@ -4511,42 +4511,50 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   width: 112%;
 }
 /* line 4536, ../sass/main.scss */
+#resources a {
+  color: #39b54a;
+}
+/* line 4540, ../sass/main.scss */
 #resources #top-section {
   padding: 4rem;
   padding-left: 0;
 }
-/* line 4540, ../sass/main.scss */
+/* line 4544, ../sass/main.scss */
 #resources #top-section h1 {
   text-align: left;
   font-weight: 400;
   color: #33588a;
   margin-bottom: 1rem;
 }
-/* line 4547, ../sass/main.scss */
+/* line 4551, ../sass/main.scss */
 #resources #top-section h2 {
   font-weight: 200;
   text-align: left;
-  border-bottom: 2px solid #5a5a5a;
+  border-bottom: 2px solid #byuLightBlue;
   padding-bottom: .25rem;
   margin-top: 2rem;
   max-width: 474.24px;
   letter-spacing: 1px;
   color: #1c3764;
 }
-/* line 4560, ../sass/main.scss */
+/* line 4564, ../sass/main.scss */
+#resources #top-section .quad-container .half:first-of-type {
+  border-top: 2px solid #6990b5;
+}
+/* line 4568, ../sass/main.scss */
 #resources #top-section .quad-container h4 {
   font-weight: 200;
   color: #3a3a3a;
 }
-/* line 4565, ../sass/main.scss */
+/* line 4573, ../sass/main.scss */
 #resources #top-section .quad-container p {
   padding-bottom: 1em;
 }
-/* line 4570, ../sass/main.scss */
+/* line 4578, ../sass/main.scss */
 #resources #top-section .quad-container .quarter h4 {
   text-align: center;
 }
-/* line 4574, ../sass/main.scss */
+/* line 4582, ../sass/main.scss */
 #resources #top-section .quad-container .quarter .icon {
   width: 100%;
   margin: 0;
@@ -4558,59 +4566,59 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   -webkit-transition: fill 0.15s;
   transition: fill 0.15s;
 }
-/* line 4582, ../sass/main.scss */
+/* line 4590, ../sass/main.scss */
 #resources #top-section .quad-container .quarter .icon:hover {
   fill: #39b54a;
 }
 
 @media (max-width: 1138px) {
-  /* line 4593, ../sass/main.scss */
+  /* line 4601, ../sass/main.scss */
   #resources .quad-container .half {
     margin-left: 0;
     margin-right: 15px;
   }
 }
 @media (max-width: 1100px) {
-  /* line 4601, ../sass/main.scss */
+  /* line 4609, ../sass/main.scss */
   #resources {
     max-width: 810px;
   }
 }
 @media (max-width: 1050px) {
-  /* line 4607, ../sass/main.scss */
+  /* line 4615, ../sass/main.scss */
   #resources {
     padding-left: 4rem;
   }
 }
 @media (max-width: 800px) {
-  /* line 4613, ../sass/main.scss */
+  /* line 4621, ../sass/main.scss */
   #resources {
     max-width: 560px;
   }
-  /* line 4617, ../sass/main.scss */
+  /* line 4625, ../sass/main.scss */
   #resources .quad-container .half {
     width: 474.24px;
   }
 }
 @media (max-width: 550px) {
-  /* line 4625, ../sass/main.scss */
+  /* line 4633, ../sass/main.scss */
   #resources {
     max-width: 250px;
   }
-  /* line 4628, ../sass/main.scss */
+  /* line 4636, ../sass/main.scss */
   #resources #top-section {
     padding: 4rem;
     padding-left: 0;
   }
-  /* line 4632, ../sass/main.scss */
+  /* line 4640, ../sass/main.scss */
   #resources #top-section h1 {
     font-size: 1.85rem;
   }
-  /* line 4636, ../sass/main.scss */
+  /* line 4644, ../sass/main.scss */
   #resources #top-section h2 {
     font-size: 1.55rem;
   }
-  /* line 4642, ../sass/main.scss */
+  /* line 4650, ../sass/main.scss */
   #resources .quad-container .half {
     width: 221px;
   }
@@ -4618,126 +4626,126 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 /**********************************                                          ****************************************************/
 /**********************************       A P  C O U R S E S  P A G E        ***************************************************/
 /**********************************                                          ****************************************************/
-/* line 4654, ../sass/main.scss */
+/* line 4662, ../sass/main.scss */
 #ap {
   display: inline-block;
   width: 120%;
 }
-/* line 4658, ../sass/main.scss */
+/* line 4666, ../sass/main.scss */
 #ap #top-section {
   padding: 4rem;
   padding-left: 0;
 }
-/* line 4662, ../sass/main.scss */
+/* line 4670, ../sass/main.scss */
 #ap #top-section h1 {
   text-align: left;
   font-weight: 400;
   color: #33588a;
   margin-bottom: 1rem;
 }
-/* line 4671, ../sass/main.scss */
+/* line 4679, ../sass/main.scss */
 #ap #top-section .quad-container .half {
   margin-top: 0;
 }
-/* line 4676, ../sass/main.scss */
+/* line 4682, ../sass/main.scss */
 #ap #top-section .quad-container .half h2 {
   font-weight: 200;
   text-align: left;
-  border-bottom: 2px solid #5a5a5a;
-  padding-bottom: .25rem;
+  border-bottom: 2px solid #6990b5;
+  padding-bottom: 1.25rem;
   max-width: 474.24px;
   letter-spacing: 1px;
   color: #1c3764;
   margin-bottom: 1rem;
 }
-/* line 4687, ../sass/main.scss */
+/* line 4693, ../sass/main.scss */
 #ap #top-section .quad-container .half h4 {
   display: block;
   font-weight: 200;
   color: #444;
   vertical-align: top;
 }
-/* line 4694, ../sass/main.scss */
+/* line 4700, ../sass/main.scss */
 #ap #top-section .quad-container .half a {
   color: #39b54a;
   white-space: nowrap;
 }
-/* line 4699, ../sass/main.scss */
+/* line 4705, ../sass/main.scss */
 #ap #top-section .quad-container .half > p {
   line-height: 1.25rem;
 }
-/* line 4703, ../sass/main.scss */
+/* line 4709, ../sass/main.scss */
 #ap #top-section .quad-container .half ul {
   display: inline-block;
   vertical-align: top;
   margin-top: 0;
   margin-left: 18px;
 }
-/* line 4709, ../sass/main.scss */
+/* line 4715, ../sass/main.scss */
 #ap #top-section .quad-container .half ul li {
   margin-bottom: .5rem;
 }
-/* line 4716, ../sass/main.scss */
+/* line 4722, ../sass/main.scss */
 #ap #top-section .quad-container .half ul.course-list {
   display: inline-block;
 }
-/* line 4719, ../sass/main.scss */
+/* line 4725, ../sass/main.scss */
 #ap #top-section .quad-container .half ul.course-list li {
   margin-top: .25rem;
   font-size: 1.02rem;
   font-weight: 200;
 }
-/* line 4726, ../sass/main.scss */
+/* line 4732, ../sass/main.scss */
 #ap #top-section .quad-container .half ul.info-list {
   margin-top: .45rem;
 }
-/* line 4729, ../sass/main.scss */
+/* line 4735, ../sass/main.scss */
 #ap #top-section .quad-container .half ul.info-list li {
   line-height: 1.4rem;
 }
 
 @media (max-width: 1100px) {
-  /* line 4740, ../sass/main.scss */
+  /* line 4746, ../sass/main.scss */
   #ap {
     max-width: 810px;
   }
-  /* line 4745, ../sass/main.scss */
+  /* line 4751, ../sass/main.scss */
   #ap .quad-container .half {
     margin-left: 0;
     margin-bottom: 1rem;
   }
 }
 @media (max-width: 1050px) {
-  /* line 4754, ../sass/main.scss */
+  /* line 4760, ../sass/main.scss */
   #ap {
     padding-left: 4rem;
   }
 }
 @media (max-width: 800px) {
-  /* line 4760, ../sass/main.scss */
+  /* line 4766, ../sass/main.scss */
   #ap {
     max-width: 560px;
   }
-  /* line 4767, ../sass/main.scss */
+  /* line 4773, ../sass/main.scss */
   #ap .quad-container .half:first-of-type {
     margin-right: 32px;
   }
 }
 @media (max-width: 575px) {
-  /* line 4776, ../sass/main.scss */
+  /* line 4782, ../sass/main.scss */
   #ap {
     max-width: 250px;
   }
-  /* line 4779, ../sass/main.scss */
+  /* line 4785, ../sass/main.scss */
   #ap #top-section {
     padding: 4rem;
     padding-left: 0;
   }
-  /* line 4783, ../sass/main.scss */
+  /* line 4789, ../sass/main.scss */
   #ap #top-section h1 {
     font-size: 1.85rem;
   }
-  /* line 4787, ../sass/main.scss */
+  /* line 4793, ../sass/main.scss */
   #ap #top-section h2 {
     font-size: 1.55rem;
   }

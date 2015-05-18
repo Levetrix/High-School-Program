@@ -1863,7 +1863,7 @@ $slant-line-width:(sin($slant-line-angle)) * $slant-line-length;
 		
 		& h1 {
 			font-weight:400;
-			color:#555;
+			color:$byuMediumBlue;
 		}
 		
 		& h3 {
@@ -4533,6 +4533,10 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 	display:inline-block;
 	width:112%;
 	
+	& a {
+		color:$actGreen;
+	}
+	
 	& #top-section {
 		padding:4rem;
 		padding-left:0;
@@ -4547,7 +4551,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 		& h2 {
 			font-weight:200;
 			text-align:left;
-			border-bottom:2px solid #5a5a5a;
+			border-bottom:2px solid #byuLightBlue;
 			padding-bottom:.25rem;
 			margin-top:2rem;
 			max-width:#{$quarter-width * 2 + $med-gutter};
@@ -4556,6 +4560,10 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 		}
 		
 		& .quad-container {
+			
+			& .half:first-of-type{
+				border-top:2px solid $byuLightBlue;
+			}
 			
 			& h4 {
 				font-weight:200;
@@ -4671,13 +4679,11 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			& .half {
 				margin-top:0;
 				
-				
-				
 				& h2 {
 					font-weight:200;
 					text-align:left;
-					border-bottom:2px solid #5a5a5a;
-					padding-bottom:.25rem;
+					border-bottom:2px solid $byuLightBlue;
+					padding-bottom:1.25rem;
 					max-width:#{$quarter-width * 2 + $med-gutter};
 					letter-spacing:1px;
 					color:$byuBlue;
