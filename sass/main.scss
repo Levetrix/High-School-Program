@@ -2008,6 +2008,10 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			z-index:-2;
 		}
 		
+		&.advanced #course-category-container.expand-box figure.course-category.corners.stretch {
+			height:3250px;
+		}
+		
 		&.courses-collapsed {
 			min-height:10px;
 			
@@ -2019,6 +2023,10 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 		&.courses-expanded {
 			min-height:3000px;
 			@include transition(min-height $stretch-cat-2step-time $stretch-cat-delay);
+			
+			&.advanced {
+				min-height:3250px;
+			}
 			
 			& > div > figure > h3 {
 				//font-size:1.85rem;
@@ -2547,6 +2555,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 	}
 	
 	&.expand-box {
+		
 		& figure.course-category {
 			width:$quarter-width;
 			left:#{$quarter-width * 3 + $med-gutter * 3};
