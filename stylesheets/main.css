@@ -1451,7 +1451,6 @@ div#content.wrapper {
     width: 250px;
     left: 0;
     width: 200px;
-    margin-left: 1rem;
   }
   /* line 1656, ../sass/main.scss */
   #home-page .program .program-description-container .button-container a button {
@@ -4756,5 +4755,123 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   /* line 4802, ../sass/main.scss */
   #ap #top-section h2 {
     font-size: 1.55rem;
+  }
+}
+/**********************************                                          ****************************************************/
+/**********************************       C O N T A C T   P A G E            ***************************************************/
+/**********************************                                          ****************************************************/
+/* line 4819, ../sass/main.scss */
+#resources.contact #top-section .half h4 {
+  padding-bottom: 4px;
+}
+/* line 4823, ../sass/main.scss */
+#resources.contact #top-section .half address {
+  font-size: 1.05rem;
+  letter-spacing: 0px;
+  line-height: 1.45em;
+  font-weight: 200;
+}
+/* line 4830, ../sass/main.scss */
+#resources.contact #top-section .half img {
+  width: 47%;
+  padding-left: 3%;
+  float: right;
+}
+/* line 4838, ../sass/main.scss */
+#resources.contact #contact-form {
+  text-align: left;
+  margin-top: 4rem;
+}
+/* line 4842, ../sass/main.scss */
+#resources.contact #contact-form h2 {
+  padding-bottom: 20.64px;
+  border-bottom: 2px solid #6990b5;
+  margin-bottom: 12.32px;
+}
+/* line 4848, ../sass/main.scss */
+#resources.contact #contact-form h4 {
+  font-weight: 200;
+  padding-bottom: 6.16px;
+}
+/* line 4853, ../sass/main.scss */
+#resources.contact #contact-form input, #resources.contact #contact-form .contactSmall {
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 474.24px;
+  font-family: "Open Sans";
+  font-weight: 200;
+}
+/* line 4861, ../sass/main.scss */
+#resources.contact #contact-form .contactSmall {
+  margin-bottom: 24px;
+}
+/* line 4864, ../sass/main.scss */
+#resources.contact #contact-form .contactSmall:nth-of-type(2) {
+  margin-left: 32.24px;
+}
+/* line 4868, ../sass/main.scss */
+#resources.contact #contact-form .contactSmall input {
+  font-size: 1.1rem;
+  height: 2.25em;
+  border: 1px solid #5a5a5a;
+  padding-left: 4px;
+}
+/* line 4876, ../sass/main.scss */
+#resources.contact #contact-form textarea, #resources.contact #contact-form .contactLarge {
+  display: block;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 980.72px;
+  font-family: "Open Sans";
+  font-weight: 200;
+  margin-bottom: 32.24px;
+}
+/* line 4884, ../sass/main.scss */
+#resources.contact #contact-form textarea textarea, #resources.contact #contact-form .contactLarge textarea {
+  font-size: 1.1rem;
+  min-height: 6.25rem;
+  padding-left: 5px;
+}
+/* line 4891, ../sass/main.scss */
+#resources.contact #contact-form .submitButton {
+  width: 221px;
+  border: 1px solid #6990b5;
+  font-size: 1.1rem;
+  height: 2.25em;
+  text-align: center;
+  line-height: 2.45rem;
+  cursor: pointer;
+  font-weight: 200;
+}
+
+@media (max-width: 1137px) {
+  /* line 4906, ../sass/main.scss */
+  #resources.contact {
+    max-width: 506.48px;
+  }
+  /* line 4911, ../sass/main.scss */
+  #resources.contact #contact-form .contactSmall:nth-of-type(2) {
+    margin-left: 0;
+  }
+  /* line 4915, ../sass/main.scss */
+  #resources.contact #contact-form textarea, #resources.contact #contact-form .contactLarge {
+    width: 474.24px;
+  }
+}
+@media (max-width: 550px) {
+  /* line 4924, ../sass/main.scss */
+  #resources.contact {
+    max-width: 253.24px;
+  }
+  /* line 4929, ../sass/main.scss */
+  #resources.contact #contact-form input, #resources.contact #contact-form .contactSmall {
+    width: 221px;
+  }
+  /* line 4933, ../sass/main.scss */
+  #resources.contact #contact-form textarea, #resources.contact #contact-form .contactLarge {
+    width: 221px;
   }
 }

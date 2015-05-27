@@ -563,7 +563,7 @@ $b2-hover-transition-duration: .2s;
 				@include transition-duration($b2-hover-transition-duration);
 			
 			}
-			
+
 			&:after {
 				display:block;
 				width:$b2-line-weight;
@@ -1651,7 +1651,7 @@ $slant-line-width:(sin($slant-line-angle)) * $slant-line-length;
 					left:0;
 					width:200px;
 					//padding-bottom:1rem;
-					margin-left:1rem;
+					//margin-left:1rem;
 					
 					& a button {
 						color:$byuMediumBlue;
@@ -4805,3 +4805,155 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 		}
 	}
 }
+
+/**********************************                                          ****************************************************/
+/**********************************       C O N T A C T   P A G E            ***************************************************/
+/**********************************                                          ****************************************************/
+
+#resources.contact {
+	
+	#top-section {
+		
+		& .half {
+			
+			& h4 {
+				padding-bottom:4px;
+			}
+			
+			& address {
+				font-size:1.05rem;
+				letter-spacing:0px;
+				line-height:1.45em;
+				font-weight:200;
+			}
+			
+			& img {
+				width:47%;
+				padding-left:3%;
+				float:right;
+			}
+		}
+	}
+	
+	#contact-form {
+		text-align:left;
+		margin-top:4rem;
+		
+		& h2 {
+			padding-bottom:#{$small-gutter * 2 - 4px};
+			border-bottom:2px solid $byuLightBlue;
+			margin-bottom:$small-gutter;
+		}
+		
+		& h4 {
+			font-weight:200;
+			padding-bottom:#{$small-gutter / 2};
+		}
+		
+		& input,& .contactSmall {
+			display:inline-block;
+			@include box-sizing(border-box);
+			width:#{$quarter-width * 2 + $med-gutter};
+			font-family:"Open Sans";
+			font-weight:200;
+		}
+		
+		.contactSmall {
+			margin-bottom:24px;
+			
+			&:nth-of-type(2) {
+				margin-left:$med-gutter;
+			}	
+			
+			& input {
+				font-size:1.1rem;
+				height:2.25em;
+				border:1px solid #5a5a5a;
+				padding-left:4px;
+			}
+		}
+		
+		& textarea,& .contactLarge {
+			display:block;
+			@include box-sizing(border-box);
+			width:#{$quarter-width * 4 + $med-gutter * 3};
+			font-family:"Open Sans";
+			font-weight:200;
+			margin-bottom:$med-gutter;
+			
+			& textarea {
+				font-size:1.1rem;
+				min-height:6.25rem;
+				padding-left:5px;
+			}
+		}
+		
+		& .submitButton {
+			width:$quarter-width;
+			border:1px solid $byuLightBlue;
+			font-size:1.1rem;
+			height:2.25em;
+			text-align:center;
+			line-height:2.45rem;
+			cursor:pointer;	
+			font-weight:200;
+		}
+	}
+}
+
+@media (max-width:1137px) {
+	
+	#resources.contact {
+		max-width:#{$quarter-width * 2 + $med-gutter * 2};
+		
+		& #contact-form {
+			
+			& .contactSmall:nth-of-type(2) {
+				margin-left:0;
+			}
+			
+			& textarea,& .contactLarge {
+				width:#{$quarter-width * 2 + $med-gutter};
+			}
+		}
+	}	
+}
+
+@media (max-width:550px) {
+	
+	#resources.contact {
+		max-width:#{$quarter-width + $med-gutter};
+		
+		& #contact-form {
+			
+			& input,& .contactSmall {
+				width:$quarter-width;
+			}
+			
+			& textarea,& .contactLarge {
+				width:#{$quarter-width};
+			}
+		}
+	}	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
