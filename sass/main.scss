@@ -1082,7 +1082,7 @@ $b2-hover-transition-duration: .2s;
 			position:absolute;
 			top: $skew-height;
 			left:-$skew-width-offset / 2;
-			min-height:450px;
+			min-height:625px;
 			width:100%;
 			//border-left:2px solid $b2-line-color;
 			@include box-sizing(border-box);
@@ -4233,6 +4233,9 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			//padding-top:2rem;
 			
 			&.dark {
+				&.long .year {
+					min-height:420px;
+				}
 				
 				& .year {
 					padding-top:.55rem;
