@@ -4902,11 +4902,15 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   #resources.contact {
     max-width: 253.24px;
   }
-  /* line 4965, ../sass/main.scss */
+  /* line 4967, ../sass/main.scss */
+  #resources.contact #top-section .half img {
+    display: none;
+  }
+  /* line 4975, ../sass/main.scss */
   #resources.contact #contact-form input, #resources.contact #contact-form .contactSmall {
     width: 221px;
   }
-  /* line 4969, ../sass/main.scss */
+  /* line 4979, ../sass/main.scss */
   #resources.contact #contact-form textarea, #resources.contact #contact-form .contactLarge {
     width: 221px;
   }

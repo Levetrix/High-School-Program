@@ -4960,6 +4960,16 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 	#resources.contact {
 		max-width:#{$quarter-width + $med-gutter};
 		
+		& #top-section {
+			
+			& .half {
+				
+				& img {
+					display:none;
+				}
+			}
+		}
+		
 		& #contact-form {
 			
 			& input,& .contactSmall {
