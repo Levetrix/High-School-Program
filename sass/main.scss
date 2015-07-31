@@ -1252,7 +1252,7 @@ $slant-line-width:(sin($slant-line-angle)) * $slant-line-length;
 				position:absolute;
 				top: $skew-height;
 				left:-$skew-width-offset / 2;
-				min-height:450px;
+				min-height:550px;
 				width:100%;
 				//border-left:2px solid $b2-line-color;
 				@include box-sizing(border-box);
@@ -2021,7 +2021,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 		}
 		
 		&.courses-expanded {
-			min-height:3000px;
+			min-height:3200px;
 			@include transition(min-height $stretch-cat-2step-time $stretch-cat-delay);
 			
 			&.advanced {
@@ -2117,6 +2117,10 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 						
 						& a {
 							color:$actGreen;
+						}
+						
+						&.three-col {
+							width:300%;
 						}
 					}
 				}
@@ -2257,6 +2261,10 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 				
 				& a {
 					color:$actGreen;
+				}
+				
+				&.three-col {
+					width:300%;
 				}
 			}
 		}
@@ -2582,7 +2590,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			
 			&.corners.stretch {
 				width:#{$quarter-width * 4 + $med-gutter *3};
-				height:3000px;
+				height:3200px;
 				left:0;
 				
 				& .tr:after, & .br:after {
@@ -2807,6 +2815,10 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 					
 					& a {
 						color:$actGreen;
+					}
+					
+					&.three-col {
+						width:300%;
 					}
 				}
 			}
@@ -3733,6 +3745,30 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			min-height:1550px;
 			padding-left:0;
 			width:212px;
+			
+			& #course-category-container.expand-box figure.course-category.corners.stretch {
+				height:3500px;
+			}
+			
+			&.courses-expanded {
+				min-height:3500px;
+			}
+			
+			&.adult #course-category-container.expand-box figure.course-category.corners.stretch {
+				height:3400px;
+			}
+			
+			&.courses-expanded.adult {
+				min-height:3400px;
+			}
+			
+			&.advanced #course-category-container.expand-box figure.course-category.corners.stretch {
+				height:3500px;
+			}
+			
+			&.courses-expanded.advanced {
+				min-height:3500px;
+			}
 			
 			&.courses-collapsed {
 				min-height:70px;
@@ -4867,7 +4903,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 				width:47%;
 				padding-left:3%;
 				float:right;
-			}
+			} 
 		}
 	}
 	
