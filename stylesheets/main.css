@@ -4288,14 +4288,31 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
     transition: height 0.5s 0.325s;
   }
 }
+@media print {
+  /* line 4280, ../sass/main.scss */
+  #programs #courses.courses-expanded, #programs #courses.courses-collapsed {
+    min-height: 3200px;
+  }
+  /* line 4283, ../sass/main.scss */
+  #programs #courses.courses-expanded figure.course-category.corners.stretch, #programs #courses.courses-collapsed figure.course-category.corners.stretch {
+    width: 474.24px;
+    height: 3000px;
+    left: 0;
+  }
+
+  /* line 4290, ../sass/main.scss */
+  #courses:nth-of-type(3) {
+    display: none;
+  }
+}
 /**********************************     Course-plan Section     ****************************************************/
-/* line 4275, ../sass/main.scss */
+/* line 4299, ../sass/main.scss */
 #programs #course-plan {
   position: relative;
   min-height: 450px;
   padding-bottom: 32.24px;
 }
-/* line 4280, ../sass/main.scss */
+/* line 4304, ../sass/main.scss */
 #programs #course-plan h2 {
   text-align: left;
   width: 221px;
@@ -4304,7 +4321,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   padding-bottom: 32.24px;
   padding-top: 2rem;
 }
-/* line 4290, ../sass/main.scss */
+/* line 4314, ../sass/main.scss */
 #programs #course-plan .stripe {
   position: absolute;
   left: calc(-1 * (100vw - 100%) / 2);
@@ -4313,26 +4330,26 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   background-color: #fff;
   z-index: -1;
 }
-/* line 4299, ../sass/main.scss */
+/* line 4323, ../sass/main.scss */
 #programs #course-plan .course-table {
   text-align: left;
   width: 980.72px;
 }
-/* line 4305, ../sass/main.scss */
+/* line 4329, ../sass/main.scss */
 #programs #course-plan .course-table.dark.long .year {
   min-height: 420px;
 }
-/* line 4309, ../sass/main.scss */
+/* line 4333, ../sass/main.scss */
 #programs #course-plan .course-table.dark .year {
   padding-top: .55rem;
   border-top: 2px solid #1c3764;
   border-bottom: 2px solid #1c3764;
 }
-/* line 4314, ../sass/main.scss */
+/* line 4338, ../sass/main.scss */
 #programs #course-plan .course-table.dark .year:last-of-type {
   position: relative;
 }
-/* line 4318, ../sass/main.scss */
+/* line 4342, ../sass/main.scss */
 #programs #course-plan .course-table.dark .year:last-of-type:after {
   display: block;
   content: "";
@@ -4343,24 +4360,24 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   width: 2px;
   background-color: #1c3764;
 }
-/* line 4330, ../sass/main.scss */
+/* line 4354, ../sass/main.scss */
 #programs #course-plan .course-table.dark .year:nth-of-type(odd) {
   background-color: #1c3764;
 }
-/* line 4333, ../sass/main.scss */
+/* line 4357, ../sass/main.scss */
 #programs #course-plan .course-table.dark .year:nth-of-type(odd) h3 {
   color: #e3e3e3;
   border-bottom: 2px solid #6990b5;
 }
-/* line 4340, ../sass/main.scss */
+/* line 4364, ../sass/main.scss */
 #programs #course-plan .course-table.dark .year:nth-of-type(odd) section h4 {
   color: #eee;
 }
-/* line 4345, ../sass/main.scss */
+/* line 4369, ../sass/main.scss */
 #programs #course-plan .course-table.dark .year:nth-of-type(odd) section .credits {
   color: #e3e3e3;
 }
-/* line 4353, ../sass/main.scss */
+/* line 4377, ../sass/main.scss */
 #programs #course-plan .course-table .year {
   display: inline-block;
   width: 221px;
@@ -4372,34 +4389,34 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   margin-bottom: 32.24px;
   vertical-align: top;
 }
-/* line 4365, ../sass/main.scss */
+/* line 4389, ../sass/main.scss */
 #programs #course-plan .course-table .year:first-of-type {
   padding-left: 0;
 }
-/* line 4368, ../sass/main.scss */
+/* line 4392, ../sass/main.scss */
 #programs #course-plan .course-table .year:first-of-type h3 {
   margin-left: .75rem;
   width: calc(100% - .75rem);
 }
-/* line 4373, ../sass/main.scss */
+/* line 4397, ../sass/main.scss */
 #programs #course-plan .course-table .year:first-of-type section {
   margin-left: .75rem;
   width: calc(100% - .75rem);
 }
-/* line 4379, ../sass/main.scss */
+/* line 4403, ../sass/main.scss */
 #programs #course-plan .course-table .year:last-of-type {
   padding-right: 0rem;
 }
-/* line 4382, ../sass/main.scss */
+/* line 4406, ../sass/main.scss */
 #programs #course-plan .course-table .year:last-of-type h3 {
   margin-right: .75rem;
   width: calc(100% - .75rem);
 }
-/* line 4387, ../sass/main.scss */
+/* line 4411, ../sass/main.scss */
 #programs #course-plan .course-table .year:last-of-type section {
   width: calc(100% - .75rem);
 }
-/* line 4392, ../sass/main.scss */
+/* line 4416, ../sass/main.scss */
 #programs #course-plan .course-table .year h3 {
   color: #6a6a6a;
   display: block;
@@ -4409,12 +4426,12 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   border-bottom: 2px solid #6990b5;
   width: 100%;
 }
-/* line 4402, ../sass/main.scss */
+/* line 4426, ../sass/main.scss */
 #programs #course-plan .course-table .year section {
   display: block;
   margin-bottom: .85rem;
 }
-/* line 4407, ../sass/main.scss */
+/* line 4431, ../sass/main.scss */
 #programs #course-plan .course-table .year section h4 {
   display: inline-block;
   font-size: 1rem;
@@ -4423,7 +4440,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   color: #5a5a5a;
   font-weight: 200;
 }
-/* line 4416, ../sass/main.scss */
+/* line 4440, ../sass/main.scss */
 #programs #course-plan .course-table .year section .credits {
   float: right;
   max-width: 20%;
@@ -4433,7 +4450,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 }
 
 @media (max-width: 1100px) {
-  /* line 4432, ../sass/main.scss */
+  /* line 4456, ../sass/main.scss */
   #programs #course-plan .course-table.dark {
     -moz-transform: scale(0.735, 0.735);
     -ms-transform: scale(0.735, 0.735);
@@ -4444,7 +4461,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   }
 }
 @media (max-width: 800px) {
-  /* line 4456, ../sass/main.scss */
+  /* line 4480, ../sass/main.scss */
   #programs #course-plan .course-table.dark {
     width: 500px;
     -moz-transform: scale(1, 1);
@@ -4454,19 +4471,19 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
     margin-left: 0;
     margin-top: 0;
   }
-  /* line 4462, ../sass/main.scss */
+  /* line 4486, ../sass/main.scss */
   #programs #course-plan .course-table.dark .year {
     margin: 0;
     border-top: none;
     border-bottom: none;
   }
-  /* line 4467, ../sass/main.scss */
+  /* line 4491, ../sass/main.scss */
   #programs #course-plan .course-table.dark .year:nth-of-type(n) {
     position: relative;
     background-color: #fff;
     border-bottom: 2px solid #1c3764;
   }
-  /* line 4473, ../sass/main.scss */
+  /* line 4497, ../sass/main.scss */
   #programs #course-plan .course-table.dark .year:nth-of-type(n):after {
     display: block;
     position: absolute;
@@ -4477,50 +4494,50 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
     height: 100%;
     background-color: #1c3764;
   }
-  /* line 4484, ../sass/main.scss */
+  /* line 4508, ../sass/main.scss */
   #programs #course-plan .course-table.dark .year:nth-of-type(n) h3 {
     color: #6a6a6a;
   }
-  /* line 4491, ../sass/main.scss */
+  /* line 4515, ../sass/main.scss */
   #programs #course-plan .course-table.dark .year:nth-of-type(n) section h4 {
     color: #5a5a5a;
   }
-  /* line 4495, ../sass/main.scss */
+  /* line 4519, ../sass/main.scss */
   #programs #course-plan .course-table.dark .year:nth-of-type(n) section .credits {
     color: #5a5a5a;
   }
-  /* line 4501, ../sass/main.scss */
+  /* line 4525, ../sass/main.scss */
   #programs #course-plan .course-table.dark .year:nth-of-type(odd) {
     padding-left: 0;
   }
-  /* line 4504, ../sass/main.scss */
+  /* line 4528, ../sass/main.scss */
   #programs #course-plan .course-table.dark .year:nth-of-type(odd) h3 {
     margin-left: .75rem;
     width: calc(100% - .75rem);
   }
-  /* line 4509, ../sass/main.scss */
+  /* line 4533, ../sass/main.scss */
   #programs #course-plan .course-table.dark .year:nth-of-type(odd) section {
     margin-left: .75rem;
     width: calc(100% - .75rem);
   }
-  /* line 4515, ../sass/main.scss */
+  /* line 4539, ../sass/main.scss */
   #programs #course-plan .course-table.dark .year:nth-of-type(even) {
     padding-right: 0rem;
   }
-  /* line 4518, ../sass/main.scss */
+  /* line 4542, ../sass/main.scss */
   #programs #course-plan .course-table.dark .year:nth-of-type(even) h3 {
     margin-right: .75rem;
     width: calc(100% - .75rem);
   }
-  /* line 4523, ../sass/main.scss */
+  /* line 4547, ../sass/main.scss */
   #programs #course-plan .course-table.dark .year:nth-of-type(even) section {
     width: calc(100% - .75rem);
   }
-  /* line 4528, ../sass/main.scss */
+  /* line 4552, ../sass/main.scss */
   #programs #course-plan .course-table.dark .year:nth-of-type(-n + 2) {
     border-top: 2px solid #1c3764;
   }
-  /* line 4536, ../sass/main.scss */
+  /* line 4560, ../sass/main.scss */
   #programs #course-plan .course-table.dark .year:nth-of-type(odd):before {
     position: absolute;
     display: block;
@@ -4533,18 +4550,18 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   }
 }
 @media (max-width: 550px) {
-  /* line 4557, ../sass/main.scss */
+  /* line 4581, ../sass/main.scss */
   #programs #course-plan h2 {
     max-width: 221px;
     font-size: 1.55rem;
     white-space: normal;
     padding-bottom: 16.12px;
   }
-  /* line 4564, ../sass/main.scss */
+  /* line 4588, ../sass/main.scss */
   #programs #course-plan .course-table.dark {
     width: 221px;
   }
-  /* line 4570, ../sass/main.scss */
+  /* line 4594, ../sass/main.scss */
   #programs #course-plan .course-table.dark .year:nth-of-type(n) {
     border-bottom: 2px solid #1c3764;
     border-top: none;
@@ -4554,7 +4571,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
     margin-bottom: 0;
     padding-bottom: 1rem;
   }
-  /* line 4577, ../sass/main.scss */
+  /* line 4601, ../sass/main.scss */
   #programs #course-plan .course-table.dark .year:nth-of-type(n):after {
     position: absolute;
     display: block;
@@ -4565,7 +4582,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
     width: 2px;
     background-color: #1c3764;
   }
-  /* line 4588, ../sass/main.scss */
+  /* line 4612, ../sass/main.scss */
   #programs #course-plan .course-table.dark .year:nth-of-type(n):before {
     position: absolute;
     display: block;
@@ -4576,7 +4593,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
     width: 2px;
     background-color: #1c3764;
   }
-  /* line 4600, ../sass/main.scss */
+  /* line 4624, ../sass/main.scss */
   #programs #course-plan .course-table.dark .year:first-of-type {
     border-top: 2px solid #1c3764;
   }
@@ -4584,28 +4601,28 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 /**********************************                                          ****************************************************/
 /**********************************        R E S O U R C E S  P A G E        ***************************************************/
 /**********************************                                          ****************************************************/
-/* line 4613, ../sass/main.scss */
+/* line 4637, ../sass/main.scss */
 #resources {
   display: inline-block;
   width: 112%;
 }
-/* line 4617, ../sass/main.scss */
+/* line 4641, ../sass/main.scss */
 #resources a {
   color: #39b54a;
 }
-/* line 4621, ../sass/main.scss */
+/* line 4645, ../sass/main.scss */
 #resources #top-section {
   padding: 4rem;
   padding-left: 0;
 }
-/* line 4625, ../sass/main.scss */
+/* line 4649, ../sass/main.scss */
 #resources #top-section h1 {
   text-align: left;
   font-weight: 400;
   color: #33588a;
   margin-bottom: 1rem;
 }
-/* line 4632, ../sass/main.scss */
+/* line 4656, ../sass/main.scss */
 #resources #top-section h2 {
   font-weight: 200;
   text-align: left;
@@ -4616,24 +4633,24 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   letter-spacing: 1px;
   color: #1c3764;
 }
-/* line 4645, ../sass/main.scss */
+/* line 4669, ../sass/main.scss */
 #resources #top-section .quad-container .half:first-of-type {
   border-top: 2px solid #6990b5;
 }
-/* line 4649, ../sass/main.scss */
+/* line 4673, ../sass/main.scss */
 #resources #top-section .quad-container h4 {
   font-weight: 200;
   color: #3a3a3a;
 }
-/* line 4654, ../sass/main.scss */
+/* line 4678, ../sass/main.scss */
 #resources #top-section .quad-container p {
   padding-bottom: 1em;
 }
-/* line 4659, ../sass/main.scss */
+/* line 4683, ../sass/main.scss */
 #resources #top-section .quad-container .quarter h4 {
   text-align: center;
 }
-/* line 4663, ../sass/main.scss */
+/* line 4687, ../sass/main.scss */
 #resources #top-section .quad-container .quarter .icon {
   width: 100%;
   margin: 0;
@@ -4645,59 +4662,59 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   -webkit-transition: fill 0.15s;
   transition: fill 0.15s;
 }
-/* line 4671, ../sass/main.scss */
+/* line 4695, ../sass/main.scss */
 #resources #top-section .quad-container .quarter .icon:hover {
   fill: #39b54a;
 }
 
 @media (max-width: 1138px) {
-  /* line 4682, ../sass/main.scss */
+  /* line 4706, ../sass/main.scss */
   #resources .quad-container .half {
     margin-left: 0;
     margin-right: 15px;
   }
 }
 @media (max-width: 1100px) {
-  /* line 4690, ../sass/main.scss */
+  /* line 4714, ../sass/main.scss */
   #resources {
     max-width: 810px;
   }
 }
 @media (max-width: 1050px) {
-  /* line 4696, ../sass/main.scss */
+  /* line 4720, ../sass/main.scss */
   #resources {
     padding-left: 4rem;
   }
 }
 @media (max-width: 800px) {
-  /* line 4702, ../sass/main.scss */
+  /* line 4726, ../sass/main.scss */
   #resources {
     max-width: 560px;
   }
-  /* line 4706, ../sass/main.scss */
+  /* line 4730, ../sass/main.scss */
   #resources .quad-container .half {
     width: 474.24px;
   }
 }
 @media (max-width: 550px) {
-  /* line 4714, ../sass/main.scss */
+  /* line 4738, ../sass/main.scss */
   #resources {
     max-width: 250px;
   }
-  /* line 4717, ../sass/main.scss */
+  /* line 4741, ../sass/main.scss */
   #resources #top-section {
     padding: 4rem;
     padding-left: 0;
   }
-  /* line 4721, ../sass/main.scss */
+  /* line 4745, ../sass/main.scss */
   #resources #top-section h1 {
     font-size: 1.85rem;
   }
-  /* line 4725, ../sass/main.scss */
+  /* line 4749, ../sass/main.scss */
   #resources #top-section h2 {
     font-size: 1.55rem;
   }
-  /* line 4731, ../sass/main.scss */
+  /* line 4755, ../sass/main.scss */
   #resources .quad-container .half {
     width: 221px;
   }
@@ -4705,28 +4722,28 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 /**********************************                                          ****************************************************/
 /**********************************       A P  C O U R S E S  P A G E        ***************************************************/
 /**********************************                                          ****************************************************/
-/* line 4743, ../sass/main.scss */
+/* line 4767, ../sass/main.scss */
 #ap {
   display: inline-block;
   width: 120%;
 }
-/* line 4747, ../sass/main.scss */
+/* line 4771, ../sass/main.scss */
 #ap #top-section {
   padding: 4rem;
   padding-left: 0;
 }
-/* line 4751, ../sass/main.scss */
+/* line 4775, ../sass/main.scss */
 #ap #top-section h1 {
   text-align: left;
   font-weight: 400;
   color: #33588a;
   margin-bottom: 1rem;
 }
-/* line 4760, ../sass/main.scss */
+/* line 4784, ../sass/main.scss */
 #ap #top-section .quad-container .half {
   margin-top: 0;
 }
-/* line 4763, ../sass/main.scss */
+/* line 4787, ../sass/main.scss */
 #ap #top-section .quad-container .half h2 {
   font-weight: 200;
   text-align: left;
@@ -4737,94 +4754,94 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   color: #1c3764;
   margin-bottom: 1rem;
 }
-/* line 4774, ../sass/main.scss */
+/* line 4798, ../sass/main.scss */
 #ap #top-section .quad-container .half h4 {
   display: block;
   font-weight: 200;
   color: #444;
   vertical-align: top;
 }
-/* line 4781, ../sass/main.scss */
+/* line 4805, ../sass/main.scss */
 #ap #top-section .quad-container .half a {
   color: #39b54a;
   white-space: nowrap;
 }
-/* line 4786, ../sass/main.scss */
+/* line 4810, ../sass/main.scss */
 #ap #top-section .quad-container .half > p {
   line-height: 1.25rem;
 }
-/* line 4790, ../sass/main.scss */
+/* line 4814, ../sass/main.scss */
 #ap #top-section .quad-container .half ul {
   display: inline-block;
   vertical-align: top;
   margin-top: 0;
   margin-left: 18px;
 }
-/* line 4796, ../sass/main.scss */
+/* line 4820, ../sass/main.scss */
 #ap #top-section .quad-container .half ul li {
   margin-bottom: .5rem;
 }
-/* line 4803, ../sass/main.scss */
+/* line 4827, ../sass/main.scss */
 #ap #top-section .quad-container .half ul.course-list {
   display: inline-block;
 }
-/* line 4806, ../sass/main.scss */
+/* line 4830, ../sass/main.scss */
 #ap #top-section .quad-container .half ul.course-list li {
   margin-top: .25rem;
   font-size: 1.02rem;
   font-weight: 200;
 }
-/* line 4813, ../sass/main.scss */
+/* line 4837, ../sass/main.scss */
 #ap #top-section .quad-container .half ul.info-list {
   margin-top: .45rem;
 }
-/* line 4816, ../sass/main.scss */
+/* line 4840, ../sass/main.scss */
 #ap #top-section .quad-container .half ul.info-list li {
   line-height: 1.4rem;
 }
 
 @media (max-width: 1100px) {
-  /* line 4827, ../sass/main.scss */
+  /* line 4851, ../sass/main.scss */
   #ap {
     max-width: 810px;
   }
-  /* line 4832, ../sass/main.scss */
+  /* line 4856, ../sass/main.scss */
   #ap .quad-container .half {
     margin-left: 0;
     margin-bottom: 1rem;
   }
 }
 @media (max-width: 1050px) {
-  /* line 4841, ../sass/main.scss */
+  /* line 4865, ../sass/main.scss */
   #ap {
     padding-left: 4rem;
   }
 }
 @media (max-width: 800px) {
-  /* line 4847, ../sass/main.scss */
+  /* line 4871, ../sass/main.scss */
   #ap {
     max-width: 560px;
   }
-  /* line 4854, ../sass/main.scss */
+  /* line 4878, ../sass/main.scss */
   #ap .quad-container .half:first-of-type {
     margin-right: 32px;
   }
 }
 @media (max-width: 575px) {
-  /* line 4863, ../sass/main.scss */
+  /* line 4887, ../sass/main.scss */
   #ap {
     max-width: 250px;
   }
-  /* line 4866, ../sass/main.scss */
+  /* line 4890, ../sass/main.scss */
   #ap #top-section {
     padding: 4rem;
     padding-left: 0;
   }
-  /* line 4870, ../sass/main.scss */
+  /* line 4894, ../sass/main.scss */
   #ap #top-section h1 {
     font-size: 1.85rem;
   }
-  /* line 4874, ../sass/main.scss */
+  /* line 4898, ../sass/main.scss */
   #ap #top-section h2 {
     font-size: 1.55rem;
   }
@@ -4832,40 +4849,40 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 /**********************************                                          ****************************************************/
 /**********************************       C O N T A C T   P A G E            ***************************************************/
 /**********************************                                          ****************************************************/
-/* line 4891, ../sass/main.scss */
+/* line 4915, ../sass/main.scss */
 #resources.contact #top-section .half h4 {
   padding-bottom: 4px;
 }
-/* line 4895, ../sass/main.scss */
+/* line 4919, ../sass/main.scss */
 #resources.contact #top-section .half address {
   font-size: 1.05rem;
   letter-spacing: 0px;
   line-height: 1.45em;
   font-weight: 200;
 }
-/* line 4902, ../sass/main.scss */
+/* line 4926, ../sass/main.scss */
 #resources.contact #top-section .half img {
   width: 47%;
   padding-left: 3%;
   float: right;
 }
-/* line 4910, ../sass/main.scss */
+/* line 4934, ../sass/main.scss */
 #resources.contact #contact-form {
   text-align: left;
   margin-top: 4rem;
 }
-/* line 4914, ../sass/main.scss */
+/* line 4938, ../sass/main.scss */
 #resources.contact #contact-form h2 {
   padding-bottom: 20.64px;
   border-bottom: 2px solid #6990b5;
   margin-bottom: 12.32px;
 }
-/* line 4920, ../sass/main.scss */
+/* line 4944, ../sass/main.scss */
 #resources.contact #contact-form h4 {
   font-weight: 200;
   padding-bottom: 6.16px;
 }
-/* line 4925, ../sass/main.scss */
+/* line 4949, ../sass/main.scss */
 #resources.contact #contact-form input, #resources.contact #contact-form .contactSmall {
   display: inline-block;
   -moz-box-sizing: border-box;
@@ -4875,22 +4892,22 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   font-family: "Open Sans";
   font-weight: 200;
 }
-/* line 4933, ../sass/main.scss */
+/* line 4957, ../sass/main.scss */
 #resources.contact #contact-form .contactSmall {
   margin-bottom: 24px;
 }
-/* line 4936, ../sass/main.scss */
+/* line 4960, ../sass/main.scss */
 #resources.contact #contact-form .contactSmall:nth-of-type(2) {
   margin-left: 32.24px;
 }
-/* line 4940, ../sass/main.scss */
+/* line 4964, ../sass/main.scss */
 #resources.contact #contact-form .contactSmall input {
   font-size: 1.1rem;
   height: 2.25em;
   border: 1px solid #5a5a5a;
   padding-left: 4px;
 }
-/* line 4948, ../sass/main.scss */
+/* line 4972, ../sass/main.scss */
 #resources.contact #contact-form textarea, #resources.contact #contact-form .contactLarge {
   display: block;
   -moz-box-sizing: border-box;
@@ -4901,13 +4918,13 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   font-weight: 200;
   margin-bottom: 32.24px;
 }
-/* line 4956, ../sass/main.scss */
+/* line 4980, ../sass/main.scss */
 #resources.contact #contact-form textarea textarea, #resources.contact #contact-form .contactLarge textarea {
   font-size: 1.1rem;
   min-height: 6.25rem;
   padding-left: 5px;
 }
-/* line 4963, ../sass/main.scss */
+/* line 4987, ../sass/main.scss */
 #resources.contact #contact-form .submitButton {
   width: 221px;
   border: 1px solid #6990b5;
@@ -4920,33 +4937,33 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 }
 
 @media (max-width: 1137px) {
-  /* line 4978, ../sass/main.scss */
+  /* line 5002, ../sass/main.scss */
   #resources.contact {
     max-width: 506.48px;
   }
-  /* line 4983, ../sass/main.scss */
+  /* line 5007, ../sass/main.scss */
   #resources.contact #contact-form .contactSmall:nth-of-type(2) {
     margin-left: 0;
   }
-  /* line 4987, ../sass/main.scss */
+  /* line 5011, ../sass/main.scss */
   #resources.contact #contact-form textarea, #resources.contact #contact-form .contactLarge {
     width: 474.24px;
   }
 }
 @media (max-width: 550px) {
-  /* line 4996, ../sass/main.scss */
+  /* line 5020, ../sass/main.scss */
   #resources.contact {
     max-width: 253.24px;
   }
-  /* line 5003, ../sass/main.scss */
+  /* line 5027, ../sass/main.scss */
   #resources.contact #top-section .half img {
     display: none;
   }
-  /* line 5011, ../sass/main.scss */
+  /* line 5035, ../sass/main.scss */
   #resources.contact #contact-form input, #resources.contact #contact-form .contactSmall {
     width: 221px;
   }
-  /* line 5015, ../sass/main.scss */
+  /* line 5039, ../sass/main.scss */
   #resources.contact #contact-form textarea, #resources.contact #contact-form .contactLarge {
     width: 221px;
   }

@@ -4268,6 +4268,30 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 	}
 }
 
+@media print {
+	//.nav-container {
+	//	display:none;
+	//}
+	
+	//header {
+	//	display:none;
+	//}
+	
+	#programs #courses.courses-expanded, #programs #courses.courses-collapsed {
+    	min-height: 3200px;
+    
+	    & figure.course-category.corners.stretch {
+		    width: 474.24px;
+		    height: 3000px;
+		    left: 0;
+	    }
+    }
+
+	#courses:nth-of-type(3) {
+		display:none;
+	}
+}
+
 /**********************************     Course-plan Section     ****************************************************/
 
 #programs {
