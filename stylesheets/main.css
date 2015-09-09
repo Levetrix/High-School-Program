@@ -4367,30 +4367,50 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   }
 }
 @media print {
+<<<<<<< HEAD
   /* line 4365, ../sass/main.scss */
   #programs #courses.courses-expanded, #programs #courses.courses-collapsed {
     min-height: 3200px;
   }
   /* line 4368, ../sass/main.scss */
+=======
+  /* line 4280, ../sass/main.scss */
+  #programs #courses.courses-expanded, #programs #courses.courses-collapsed {
+    min-height: 3200px;
+  }
+  /* line 4283, ../sass/main.scss */
+>>>>>>> origin/gh-pages
   #programs #courses.courses-expanded figure.course-category.corners.stretch, #programs #courses.courses-collapsed figure.course-category.corners.stretch {
     width: 474.24px;
     height: 3000px;
     left: 0;
   }
 
+<<<<<<< HEAD
   /* line 4375, ../sass/main.scss */
+=======
+  /* line 4290, ../sass/main.scss */
+>>>>>>> origin/gh-pages
   #courses:nth-of-type(3) {
     display: none;
   }
 }
 /**********************************     Course-plan Section     ****************************************************/
+<<<<<<< HEAD
 /* line 4384, ../sass/main.scss */
+=======
+/* line 4299, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #programs #course-plan {
   position: relative;
   min-height: 450px;
   padding-bottom: 32.24px;
 }
+<<<<<<< HEAD
 /* line 4389, ../sass/main.scss */
+=======
+/* line 4304, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #programs #course-plan h2 {
   text-align: left;
   width: 221px;
@@ -4399,7 +4419,11 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   padding-bottom: 32.24px;
   padding-top: 2rem;
 }
+<<<<<<< HEAD
 /* line 4399, ../sass/main.scss */
+=======
+/* line 4314, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #programs #course-plan .stripe {
   position: absolute;
   left: calc(-1 * (100vw - 100%) / 2);
@@ -4408,26 +4432,46 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   background-color: #fff;
   z-index: -1;
 }
+<<<<<<< HEAD
 /* line 4408, ../sass/main.scss */
+=======
+/* line 4323, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #programs #course-plan .course-table {
   text-align: left;
   width: 980.72px;
 }
+<<<<<<< HEAD
 /* line 4414, ../sass/main.scss */
 #programs #course-plan .course-table.dark.long .year {
   min-height: 420px;
 }
 /* line 4418, ../sass/main.scss */
+=======
+/* line 4329, ../sass/main.scss */
+#programs #course-plan .course-table.dark.long .year {
+  min-height: 420px;
+}
+/* line 4333, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #programs #course-plan .course-table.dark .year {
   padding-top: .55rem;
   border-top: 2px solid #1c3764;
   border-bottom: 2px solid #1c3764;
 }
+<<<<<<< HEAD
 /* line 4423, ../sass/main.scss */
 #programs #course-plan .course-table.dark .year:last-of-type {
   position: relative;
 }
 /* line 4427, ../sass/main.scss */
+=======
+/* line 4338, ../sass/main.scss */
+#programs #course-plan .course-table.dark .year:last-of-type {
+  position: relative;
+}
+/* line 4342, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #programs #course-plan .course-table.dark .year:last-of-type:after {
   display: block;
   content: "";
@@ -4438,15 +4482,24 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   width: 2px;
   background-color: #1c3764;
 }
+<<<<<<< HEAD
 /* line 4439, ../sass/main.scss */
 #programs #course-plan .course-table.dark .year:nth-of-type(odd) {
   background-color: #1c3764;
 }
 /* line 4442, ../sass/main.scss */
+=======
+/* line 4354, ../sass/main.scss */
+#programs #course-plan .course-table.dark .year:nth-of-type(odd) {
+  background-color: #1c3764;
+}
+/* line 4357, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #programs #course-plan .course-table.dark .year:nth-of-type(odd) h3 {
   color: #e3e3e3;
   border-bottom: 2px solid #6990b5;
 }
+<<<<<<< HEAD
 /* line 4449, ../sass/main.scss */
 #programs #course-plan .course-table.dark .year:nth-of-type(odd) section h4 {
   color: #eee;
@@ -4456,6 +4509,17 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   color: #e3e3e3;
 }
 /* line 4462, ../sass/main.scss */
+=======
+/* line 4364, ../sass/main.scss */
+#programs #course-plan .course-table.dark .year:nth-of-type(odd) section h4 {
+  color: #eee;
+}
+/* line 4369, ../sass/main.scss */
+#programs #course-plan .course-table.dark .year:nth-of-type(odd) section .credits {
+  color: #e3e3e3;
+}
+/* line 4377, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #programs #course-plan .course-table .year {
   display: inline-block;
   width: 221px;
@@ -4467,34 +4531,62 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   margin-bottom: 32.24px;
   vertical-align: top;
 }
+<<<<<<< HEAD
 /* line 4474, ../sass/main.scss */
 #programs #course-plan .course-table .year:first-of-type {
   padding-left: 0;
 }
 /* line 4477, ../sass/main.scss */
+=======
+/* line 4389, ../sass/main.scss */
+#programs #course-plan .course-table .year:first-of-type {
+  padding-left: 0;
+}
+/* line 4392, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #programs #course-plan .course-table .year:first-of-type h3 {
   margin-left: .75rem;
   width: calc(100% - .75rem);
 }
+<<<<<<< HEAD
 /* line 4482, ../sass/main.scss */
+=======
+/* line 4397, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #programs #course-plan .course-table .year:first-of-type section {
   margin-left: .75rem;
   width: calc(100% - .75rem);
 }
+<<<<<<< HEAD
 /* line 4488, ../sass/main.scss */
 #programs #course-plan .course-table .year:last-of-type {
   padding-right: 0rem;
 }
 /* line 4491, ../sass/main.scss */
+=======
+/* line 4403, ../sass/main.scss */
+#programs #course-plan .course-table .year:last-of-type {
+  padding-right: 0rem;
+}
+/* line 4406, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #programs #course-plan .course-table .year:last-of-type h3 {
   margin-right: .75rem;
   width: calc(100% - .75rem);
 }
+<<<<<<< HEAD
 /* line 4496, ../sass/main.scss */
 #programs #course-plan .course-table .year:last-of-type section {
   width: calc(100% - .75rem);
 }
 /* line 4501, ../sass/main.scss */
+=======
+/* line 4411, ../sass/main.scss */
+#programs #course-plan .course-table .year:last-of-type section {
+  width: calc(100% - .75rem);
+}
+/* line 4416, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #programs #course-plan .course-table .year h3 {
   color: #6a6a6a;
   display: block;
@@ -4504,12 +4596,20 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   border-bottom: 2px solid #6990b5;
   width: 100%;
 }
+<<<<<<< HEAD
 /* line 4511, ../sass/main.scss */
+=======
+/* line 4426, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #programs #course-plan .course-table .year section {
   display: block;
   margin-bottom: .85rem;
 }
+<<<<<<< HEAD
 /* line 4516, ../sass/main.scss */
+=======
+/* line 4431, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #programs #course-plan .course-table .year section h4 {
   display: inline-block;
   font-size: 1rem;
@@ -4518,7 +4618,11 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   color: #5a5a5a;
   font-weight: 200;
 }
+<<<<<<< HEAD
 /* line 4525, ../sass/main.scss */
+=======
+/* line 4440, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #programs #course-plan .course-table .year section .credits {
   float: right;
   max-width: 20%;
@@ -4528,7 +4632,11 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 }
 
 @media (max-width: 1100px) {
+<<<<<<< HEAD
   /* line 4541, ../sass/main.scss */
+=======
+  /* line 4456, ../sass/main.scss */
+>>>>>>> origin/gh-pages
   #programs #course-plan .course-table.dark {
     -moz-transform: scale(0.735, 0.735);
     -ms-transform: scale(0.735, 0.735);
@@ -4539,7 +4647,11 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   }
 }
 @media (max-width: 800px) {
+<<<<<<< HEAD
   /* line 4565, ../sass/main.scss */
+=======
+  /* line 4480, ../sass/main.scss */
+>>>>>>> origin/gh-pages
   #programs #course-plan .course-table.dark {
     width: 500px;
     -moz-transform: scale(1, 1);
@@ -4549,19 +4661,31 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
     margin-left: 0;
     margin-top: 0;
   }
+<<<<<<< HEAD
   /* line 4571, ../sass/main.scss */
+=======
+  /* line 4486, ../sass/main.scss */
+>>>>>>> origin/gh-pages
   #programs #course-plan .course-table.dark .year {
     margin: 0;
     border-top: none;
     border-bottom: none;
   }
+<<<<<<< HEAD
   /* line 4576, ../sass/main.scss */
+=======
+  /* line 4491, ../sass/main.scss */
+>>>>>>> origin/gh-pages
   #programs #course-plan .course-table.dark .year:nth-of-type(n) {
     position: relative;
     background-color: #fff;
     border-bottom: 2px solid #1c3764;
   }
+<<<<<<< HEAD
   /* line 4582, ../sass/main.scss */
+=======
+  /* line 4497, ../sass/main.scss */
+>>>>>>> origin/gh-pages
   #programs #course-plan .course-table.dark .year:nth-of-type(n):after {
     display: block;
     position: absolute;
@@ -4572,6 +4696,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
     height: 100%;
     background-color: #1c3764;
   }
+<<<<<<< HEAD
   /* line 4593, ../sass/main.scss */
   #programs #course-plan .course-table.dark .year:nth-of-type(n) h3 {
     color: #6a6a6a;
@@ -4589,24 +4714,56 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
     padding-left: 0;
   }
   /* line 4613, ../sass/main.scss */
+=======
+  /* line 4508, ../sass/main.scss */
+  #programs #course-plan .course-table.dark .year:nth-of-type(n) h3 {
+    color: #6a6a6a;
+  }
+  /* line 4515, ../sass/main.scss */
+  #programs #course-plan .course-table.dark .year:nth-of-type(n) section h4 {
+    color: #5a5a5a;
+  }
+  /* line 4519, ../sass/main.scss */
+  #programs #course-plan .course-table.dark .year:nth-of-type(n) section .credits {
+    color: #5a5a5a;
+  }
+  /* line 4525, ../sass/main.scss */
+  #programs #course-plan .course-table.dark .year:nth-of-type(odd) {
+    padding-left: 0;
+  }
+  /* line 4528, ../sass/main.scss */
+>>>>>>> origin/gh-pages
   #programs #course-plan .course-table.dark .year:nth-of-type(odd) h3 {
     margin-left: .75rem;
     width: calc(100% - .75rem);
   }
+<<<<<<< HEAD
   /* line 4618, ../sass/main.scss */
+=======
+  /* line 4533, ../sass/main.scss */
+>>>>>>> origin/gh-pages
   #programs #course-plan .course-table.dark .year:nth-of-type(odd) section {
     margin-left: .75rem;
     width: calc(100% - .75rem);
   }
+<<<<<<< HEAD
   /* line 4624, ../sass/main.scss */
   #programs #course-plan .course-table.dark .year:nth-of-type(even) {
     padding-right: 0rem;
   }
   /* line 4627, ../sass/main.scss */
+=======
+  /* line 4539, ../sass/main.scss */
+  #programs #course-plan .course-table.dark .year:nth-of-type(even) {
+    padding-right: 0rem;
+  }
+  /* line 4542, ../sass/main.scss */
+>>>>>>> origin/gh-pages
   #programs #course-plan .course-table.dark .year:nth-of-type(even) h3 {
     margin-right: .75rem;
     width: calc(100% - .75rem);
   }
+<<<<<<< HEAD
   /* line 4632, ../sass/main.scss */
   #programs #course-plan .course-table.dark .year:nth-of-type(even) section {
     width: calc(100% - .75rem);
@@ -4616,6 +4773,17 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
     border-top: 2px solid #1c3764;
   }
   /* line 4645, ../sass/main.scss */
+=======
+  /* line 4547, ../sass/main.scss */
+  #programs #course-plan .course-table.dark .year:nth-of-type(even) section {
+    width: calc(100% - .75rem);
+  }
+  /* line 4552, ../sass/main.scss */
+  #programs #course-plan .course-table.dark .year:nth-of-type(-n + 2) {
+    border-top: 2px solid #1c3764;
+  }
+  /* line 4560, ../sass/main.scss */
+>>>>>>> origin/gh-pages
   #programs #course-plan .course-table.dark .year:nth-of-type(odd):before {
     position: absolute;
     display: block;
@@ -4628,18 +4796,30 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   }
 }
 @media (max-width: 550px) {
+<<<<<<< HEAD
   /* line 4666, ../sass/main.scss */
+=======
+  /* line 4581, ../sass/main.scss */
+>>>>>>> origin/gh-pages
   #programs #course-plan h2 {
     max-width: 221px;
     font-size: 1.55rem;
     white-space: normal;
     padding-bottom: 16.12px;
   }
+<<<<<<< HEAD
   /* line 4673, ../sass/main.scss */
   #programs #course-plan .course-table.dark {
     width: 221px;
   }
   /* line 4679, ../sass/main.scss */
+=======
+  /* line 4588, ../sass/main.scss */
+  #programs #course-plan .course-table.dark {
+    width: 221px;
+  }
+  /* line 4594, ../sass/main.scss */
+>>>>>>> origin/gh-pages
   #programs #course-plan .course-table.dark .year:nth-of-type(n) {
     border-bottom: 2px solid #1c3764;
     border-top: none;
@@ -4649,7 +4829,11 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
     margin-bottom: 0;
     padding-bottom: 1rem;
   }
+<<<<<<< HEAD
   /* line 4686, ../sass/main.scss */
+=======
+  /* line 4601, ../sass/main.scss */
+>>>>>>> origin/gh-pages
   #programs #course-plan .course-table.dark .year:nth-of-type(n):after {
     position: absolute;
     display: block;
@@ -4660,7 +4844,11 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
     width: 2px;
     background-color: #1c3764;
   }
+<<<<<<< HEAD
   /* line 4697, ../sass/main.scss */
+=======
+  /* line 4612, ../sass/main.scss */
+>>>>>>> origin/gh-pages
   #programs #course-plan .course-table.dark .year:nth-of-type(n):before {
     position: absolute;
     display: block;
@@ -4671,7 +4859,11 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
     width: 2px;
     background-color: #1c3764;
   }
+<<<<<<< HEAD
   /* line 4709, ../sass/main.scss */
+=======
+  /* line 4624, ../sass/main.scss */
+>>>>>>> origin/gh-pages
   #programs #course-plan .course-table.dark .year:first-of-type {
     border-top: 2px solid #1c3764;
   }
@@ -4679,28 +4871,48 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 /**********************************                                          ****************************************************/
 /**********************************        R E S O U R C E S  P A G E        ***************************************************/
 /**********************************                                          ****************************************************/
+<<<<<<< HEAD
 /* line 4722, ../sass/main.scss */
+=======
+/* line 4637, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #resources {
   display: inline-block;
   width: 112%;
 }
+<<<<<<< HEAD
 /* line 4726, ../sass/main.scss */
 #resources a {
   color: #39b54a;
 }
 /* line 4730, ../sass/main.scss */
+=======
+/* line 4641, ../sass/main.scss */
+#resources a {
+  color: #39b54a;
+}
+/* line 4645, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #resources #top-section {
   padding: 4rem;
   padding-left: 0;
 }
+<<<<<<< HEAD
 /* line 4734, ../sass/main.scss */
+=======
+/* line 4649, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #resources #top-section h1 {
   text-align: left;
   font-weight: 400;
   color: #33588a;
   margin-bottom: 1rem;
 }
+<<<<<<< HEAD
 /* line 4741, ../sass/main.scss */
+=======
+/* line 4656, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #resources #top-section h2 {
   font-weight: 200;
   text-align: left;
@@ -4711,15 +4923,24 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   letter-spacing: 1px;
   color: #1c3764;
 }
+<<<<<<< HEAD
 /* line 4754, ../sass/main.scss */
 #resources #top-section .quad-container .half:first-of-type {
   border-top: 2px solid #6990b5;
 }
 /* line 4758, ../sass/main.scss */
+=======
+/* line 4669, ../sass/main.scss */
+#resources #top-section .quad-container .half:first-of-type {
+  border-top: 2px solid #6990b5;
+}
+/* line 4673, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #resources #top-section .quad-container h4 {
   font-weight: 200;
   color: #3a3a3a;
 }
+<<<<<<< HEAD
 /* line 4763, ../sass/main.scss */
 #resources #top-section .quad-container p {
   padding-bottom: 1em;
@@ -4729,6 +4950,17 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   text-align: center;
 }
 /* line 4772, ../sass/main.scss */
+=======
+/* line 4678, ../sass/main.scss */
+#resources #top-section .quad-container p {
+  padding-bottom: 1em;
+}
+/* line 4683, ../sass/main.scss */
+#resources #top-section .quad-container .quarter h4 {
+  text-align: center;
+}
+/* line 4687, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #resources #top-section .quad-container .quarter .icon {
   width: 100%;
   margin: 0;
@@ -4740,50 +4972,83 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   -webkit-transition: fill 0.15s;
   transition: fill 0.15s;
 }
+<<<<<<< HEAD
 /* line 4780, ../sass/main.scss */
+=======
+/* line 4695, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #resources #top-section .quad-container .quarter .icon:hover {
   fill: #39b54a;
 }
 
 @media (max-width: 1138px) {
+<<<<<<< HEAD
   /* line 4791, ../sass/main.scss */
+=======
+  /* line 4706, ../sass/main.scss */
+>>>>>>> origin/gh-pages
   #resources .quad-container .half {
     margin-left: 0;
     margin-right: 15px;
   }
 }
 @media (max-width: 1100px) {
+<<<<<<< HEAD
   /* line 4799, ../sass/main.scss */
+=======
+  /* line 4714, ../sass/main.scss */
+>>>>>>> origin/gh-pages
   #resources {
     max-width: 810px;
   }
 }
 @media (max-width: 1050px) {
+<<<<<<< HEAD
   /* line 4805, ../sass/main.scss */
+=======
+  /* line 4720, ../sass/main.scss */
+>>>>>>> origin/gh-pages
   #resources {
     padding-left: 4rem;
   }
 }
 @media (max-width: 800px) {
+<<<<<<< HEAD
   /* line 4811, ../sass/main.scss */
   #resources {
     max-width: 560px;
   }
   /* line 4815, ../sass/main.scss */
+=======
+  /* line 4726, ../sass/main.scss */
+  #resources {
+    max-width: 560px;
+  }
+  /* line 4730, ../sass/main.scss */
+>>>>>>> origin/gh-pages
   #resources .quad-container .half {
     width: 474.24px;
   }
 }
 @media (max-width: 550px) {
+<<<<<<< HEAD
   /* line 4823, ../sass/main.scss */
   #resources {
     max-width: 250px;
   }
   /* line 4826, ../sass/main.scss */
+=======
+  /* line 4738, ../sass/main.scss */
+  #resources {
+    max-width: 250px;
+  }
+  /* line 4741, ../sass/main.scss */
+>>>>>>> origin/gh-pages
   #resources #top-section {
     padding: 4rem;
     padding-left: 0;
   }
+<<<<<<< HEAD
   /* line 4830, ../sass/main.scss */
   #resources #top-section h1 {
     font-size: 1.85rem;
@@ -4793,6 +5058,17 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
     font-size: 1.55rem;
   }
   /* line 4840, ../sass/main.scss */
+=======
+  /* line 4745, ../sass/main.scss */
+  #resources #top-section h1 {
+    font-size: 1.85rem;
+  }
+  /* line 4749, ../sass/main.scss */
+  #resources #top-section h2 {
+    font-size: 1.55rem;
+  }
+  /* line 4755, ../sass/main.scss */
+>>>>>>> origin/gh-pages
   #resources .quad-container .half {
     width: 221px;
   }
@@ -4800,28 +5076,48 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 /**********************************                                          ****************************************************/
 /**********************************       A P  C O U R S E S  P A G E        ***************************************************/
 /**********************************                                          ****************************************************/
+<<<<<<< HEAD
 /* line 4852, ../sass/main.scss */
+=======
+/* line 4767, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #ap {
   display: inline-block;
   width: 120%;
 }
+<<<<<<< HEAD
 /* line 4856, ../sass/main.scss */
+=======
+/* line 4771, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #ap #top-section {
   padding: 4rem;
   padding-left: 0;
 }
+<<<<<<< HEAD
 /* line 4860, ../sass/main.scss */
+=======
+/* line 4775, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #ap #top-section h1 {
   text-align: left;
   font-weight: 400;
   color: #33588a;
   margin-bottom: 1rem;
 }
+<<<<<<< HEAD
 /* line 4869, ../sass/main.scss */
 #ap #top-section .quad-container .half {
   margin-top: 0;
 }
 /* line 4872, ../sass/main.scss */
+=======
+/* line 4784, ../sass/main.scss */
+#ap #top-section .quad-container .half {
+  margin-top: 0;
+}
+/* line 4787, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #ap #top-section .quad-container .half h2 {
   font-weight: 200;
   text-align: left;
@@ -4832,29 +5128,46 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   color: #1c3764;
   margin-bottom: 1rem;
 }
+<<<<<<< HEAD
 /* line 4883, ../sass/main.scss */
+=======
+/* line 4798, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #ap #top-section .quad-container .half h4 {
   display: block;
   font-weight: 200;
   color: #444;
   vertical-align: top;
 }
+<<<<<<< HEAD
 /* line 4890, ../sass/main.scss */
+=======
+/* line 4805, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #ap #top-section .quad-container .half a {
   color: #39b54a;
   white-space: nowrap;
 }
+<<<<<<< HEAD
 /* line 4895, ../sass/main.scss */
 #ap #top-section .quad-container .half > p {
   line-height: 1.25rem;
 }
 /* line 4899, ../sass/main.scss */
+=======
+/* line 4810, ../sass/main.scss */
+#ap #top-section .quad-container .half > p {
+  line-height: 1.25rem;
+}
+/* line 4814, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #ap #top-section .quad-container .half ul {
   display: inline-block;
   vertical-align: top;
   margin-top: 0;
   margin-left: 18px;
 }
+<<<<<<< HEAD
 /* line 4905, ../sass/main.scss */
 #ap #top-section .quad-container .half ul li {
   margin-bottom: .5rem;
@@ -4864,62 +5177,117 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   display: inline-block;
 }
 /* line 4915, ../sass/main.scss */
+=======
+/* line 4820, ../sass/main.scss */
+#ap #top-section .quad-container .half ul li {
+  margin-bottom: .5rem;
+}
+/* line 4827, ../sass/main.scss */
+#ap #top-section .quad-container .half ul.course-list {
+  display: inline-block;
+}
+/* line 4830, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #ap #top-section .quad-container .half ul.course-list li {
   margin-top: .25rem;
   font-size: 1.02rem;
   font-weight: 200;
 }
+<<<<<<< HEAD
 /* line 4922, ../sass/main.scss */
 #ap #top-section .quad-container .half ul.info-list {
   margin-top: .45rem;
 }
 /* line 4925, ../sass/main.scss */
+=======
+/* line 4837, ../sass/main.scss */
+#ap #top-section .quad-container .half ul.info-list {
+  margin-top: .45rem;
+}
+/* line 4840, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #ap #top-section .quad-container .half ul.info-list li {
   line-height: 1.4rem;
 }
 
 @media (max-width: 1100px) {
+<<<<<<< HEAD
   /* line 4936, ../sass/main.scss */
   #ap {
     max-width: 810px;
   }
   /* line 4941, ../sass/main.scss */
+=======
+  /* line 4851, ../sass/main.scss */
+  #ap {
+    max-width: 810px;
+  }
+  /* line 4856, ../sass/main.scss */
+>>>>>>> origin/gh-pages
   #ap .quad-container .half {
     margin-left: 0;
     margin-bottom: 1rem;
   }
 }
 @media (max-width: 1050px) {
+<<<<<<< HEAD
   /* line 4950, ../sass/main.scss */
+=======
+  /* line 4865, ../sass/main.scss */
+>>>>>>> origin/gh-pages
   #ap {
     padding-left: 4rem;
   }
 }
 @media (max-width: 800px) {
+<<<<<<< HEAD
   /* line 4956, ../sass/main.scss */
   #ap {
     max-width: 560px;
   }
   /* line 4963, ../sass/main.scss */
+=======
+  /* line 4871, ../sass/main.scss */
+  #ap {
+    max-width: 560px;
+  }
+  /* line 4878, ../sass/main.scss */
+>>>>>>> origin/gh-pages
   #ap .quad-container .half:first-of-type {
     margin-right: 32px;
   }
 }
 @media (max-width: 575px) {
+<<<<<<< HEAD
   /* line 4972, ../sass/main.scss */
   #ap {
     max-width: 250px;
   }
   /* line 4975, ../sass/main.scss */
+=======
+  /* line 4887, ../sass/main.scss */
+  #ap {
+    max-width: 250px;
+  }
+  /* line 4890, ../sass/main.scss */
+>>>>>>> origin/gh-pages
   #ap #top-section {
     padding: 4rem;
     padding-left: 0;
   }
+<<<<<<< HEAD
   /* line 4979, ../sass/main.scss */
   #ap #top-section h1 {
     font-size: 1.85rem;
   }
   /* line 4983, ../sass/main.scss */
+=======
+  /* line 4894, ../sass/main.scss */
+  #ap #top-section h1 {
+    font-size: 1.85rem;
+  }
+  /* line 4898, ../sass/main.scss */
+>>>>>>> origin/gh-pages
   #ap #top-section h2 {
     font-size: 1.55rem;
   }
@@ -4927,40 +5295,68 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 /**********************************                                          ****************************************************/
 /**********************************       C O N T A C T   P A G E            ***************************************************/
 /**********************************                                          ****************************************************/
+<<<<<<< HEAD
 /* line 5000, ../sass/main.scss */
 #resources.contact #top-section .half h4 {
   padding-bottom: 4px;
 }
 /* line 5004, ../sass/main.scss */
+=======
+/* line 4915, ../sass/main.scss */
+#resources.contact #top-section .half h4 {
+  padding-bottom: 4px;
+}
+/* line 4919, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #resources.contact #top-section .half address {
   font-size: 1.05rem;
   letter-spacing: 0px;
   line-height: 1.45em;
   font-weight: 200;
 }
+<<<<<<< HEAD
 /* line 5011, ../sass/main.scss */
+=======
+/* line 4926, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #resources.contact #top-section .half img {
   width: 47%;
   padding-left: 3%;
   float: right;
 }
+<<<<<<< HEAD
 /* line 5019, ../sass/main.scss */
+=======
+/* line 4934, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #resources.contact #contact-form {
   text-align: left;
   margin-top: 4rem;
 }
+<<<<<<< HEAD
 /* line 5023, ../sass/main.scss */
+=======
+/* line 4938, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #resources.contact #contact-form h2 {
   padding-bottom: 20.64px;
   border-bottom: 2px solid #6990b5;
   margin-bottom: 12.32px;
 }
+<<<<<<< HEAD
 /* line 5029, ../sass/main.scss */
+=======
+/* line 4944, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #resources.contact #contact-form h4 {
   font-weight: 200;
   padding-bottom: 6.16px;
 }
+<<<<<<< HEAD
 /* line 5034, ../sass/main.scss */
+=======
+/* line 4949, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #resources.contact #contact-form input, #resources.contact #contact-form .contactSmall {
   display: inline-block;
   -moz-box-sizing: border-box;
@@ -4970,6 +5366,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   font-family: "Open Sans";
   font-weight: 200;
 }
+<<<<<<< HEAD
 /* line 5042, ../sass/main.scss */
 #resources.contact #contact-form .contactSmall {
   margin-bottom: 24px;
@@ -4979,13 +5376,28 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   margin-left: 32.24px;
 }
 /* line 5049, ../sass/main.scss */
+=======
+/* line 4957, ../sass/main.scss */
+#resources.contact #contact-form .contactSmall {
+  margin-bottom: 24px;
+}
+/* line 4960, ../sass/main.scss */
+#resources.contact #contact-form .contactSmall:nth-of-type(2) {
+  margin-left: 32.24px;
+}
+/* line 4964, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #resources.contact #contact-form .contactSmall input {
   font-size: 1.1rem;
   height: 2.25em;
   border: 1px solid #5a5a5a;
   padding-left: 4px;
 }
+<<<<<<< HEAD
 /* line 5057, ../sass/main.scss */
+=======
+/* line 4972, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #resources.contact #contact-form textarea, #resources.contact #contact-form .contactLarge {
   display: block;
   -moz-box-sizing: border-box;
@@ -4996,13 +5408,21 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   font-weight: 200;
   margin-bottom: 32.24px;
 }
+<<<<<<< HEAD
 /* line 5065, ../sass/main.scss */
+=======
+/* line 4980, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #resources.contact #contact-form textarea textarea, #resources.contact #contact-form .contactLarge textarea {
   font-size: 1.1rem;
   min-height: 6.25rem;
   padding-left: 5px;
 }
+<<<<<<< HEAD
 /* line 5072, ../sass/main.scss */
+=======
+/* line 4987, ../sass/main.scss */
+>>>>>>> origin/gh-pages
 #resources.contact #contact-form .submitButton {
   width: 221px;
   border: 1px solid #6990b5;
@@ -5015,6 +5435,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 }
 
 @media (max-width: 1137px) {
+<<<<<<< HEAD
   /* line 5087, ../sass/main.scss */
   #resources.contact {
     max-width: 506.48px;
@@ -5024,11 +5445,23 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
     margin-left: 0;
   }
   /* line 5096, ../sass/main.scss */
+=======
+  /* line 5002, ../sass/main.scss */
+  #resources.contact {
+    max-width: 506.48px;
+  }
+  /* line 5007, ../sass/main.scss */
+  #resources.contact #contact-form .contactSmall:nth-of-type(2) {
+    margin-left: 0;
+  }
+  /* line 5011, ../sass/main.scss */
+>>>>>>> origin/gh-pages
   #resources.contact #contact-form textarea, #resources.contact #contact-form .contactLarge {
     width: 474.24px;
   }
 }
 @media (max-width: 550px) {
+<<<<<<< HEAD
   /* line 5105, ../sass/main.scss */
   #resources.contact {
     max-width: 253.24px;
@@ -5042,6 +5475,21 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
     width: 221px;
   }
   /* line 5124, ../sass/main.scss */
+=======
+  /* line 5020, ../sass/main.scss */
+  #resources.contact {
+    max-width: 253.24px;
+  }
+  /* line 5027, ../sass/main.scss */
+  #resources.contact #top-section .half img {
+    display: none;
+  }
+  /* line 5035, ../sass/main.scss */
+  #resources.contact #contact-form input, #resources.contact #contact-form .contactSmall {
+    width: 221px;
+  }
+  /* line 5039, ../sass/main.scss */
+>>>>>>> origin/gh-pages
   #resources.contact #contact-form textarea, #resources.contact #contact-form .contactLarge {
     width: 221px;
   }
