@@ -5059,3 +5059,53 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
     width: 221px;
   }
 }
+/**********************************                                          ****************************************************/
+/**********************************             F A Q   P A G E              ***************************************************/
+/**********************************                                          ****************************************************/
+/* line 5166, ../sass/main.scss */
+#ap.faq #top-section .quad-container .half h4 {
+  margin-bottom: .75rem;
+}
+/* line 5170, ../sass/main.scss */
+#ap.faq #top-section .quad-container .half .list-container div {
+  margin-bottom: .75rem;
+}
+/* line 5174, ../sass/main.scss */
+#ap.faq #top-section .quad-container .half:first-of-type {
+  float: right;
+  margin: 0;
+  margin-left: 32.24px;
+}
+/* line 5180, ../sass/main.scss */
+#ap.faq #top-section .quad-container .half:nth-of-type(2) {
+  margin: 0;
+}
+
+@media (max-width: 1100px) {
+  /* line 5197, ../sass/main.scss */
+  #ap.faq #top-section .quad-container .half:first-of-type {
+    float: none;
+    margin: 0;
+    margin-right: 32.24px;
+  }
+  /* line 5203, ../sass/main.scss */
+  #ap.faq #top-section .quad-container .half:nth-of-type(2) {
+    margin: 0;
+  }
+}
+@media (max-width: 800px) {
+  /* line 5219, ../sass/main.scss */
+  #ap.faq #top-section .quad-container .half {
+    width: 474.24px;
+  }
+}
+@media (max-width: 550px) {
+  /* line 5241, ../sass/main.scss */
+  #ap.faq #top-section .quad-container .half {
+    width: 221px;
+  }
+  /* line 5248, ../sass/main.scss */
+  #ap.faq #top-section .quad-container .half ul li a {
+    white-space: normal;
+  }
+}
