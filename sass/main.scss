@@ -1160,6 +1160,10 @@ $b2-hover-transition-duration: .2s;
 			 & > * {
 			 	//@include skew($skew-angle, 0);
 			 }		 
+			 
+			 & h2 a {
+			 	color:#444;
+			 }
 		}
 		
 		& .program-description-container {
@@ -1211,7 +1215,7 @@ $b2-hover-transition-duration: .2s;
 		&:nth-of-type(odd) .table-header,&:nth-of-type(odd) .program-description-container,{
 			color:#f5f5f5;
 			
-			& h2 {
+			& h2 a {
 				color:#f5f5f5;
 			}
 			& button {
