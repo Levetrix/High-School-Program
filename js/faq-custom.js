@@ -3,7 +3,9 @@ $(document).ready(function(){
 		event.preventDefault();
 		var link = this;
 		$.smoothScroll({
-			scrollTarget: link.hash
+			scrollTarget: link.hash,
+			easing: 'swing',
+			speed: 1050
 		});
 		return false;
 	});
