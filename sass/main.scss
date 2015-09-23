@@ -84,6 +84,7 @@ $white: #f9f9f9;
 $blue: #66B9E3; 
 $charcoal: #323232;
 
+$actDarkGreen:#2ca23d;
 $actGreen:rgb(57,181,74);
 $actLightGreen:rgba(170,214,175,.25);
 $byuBlue:#1c3764;
@@ -1189,7 +1190,7 @@ $b2-hover-transition-duration: .2s;
 			}
 			
 			& ul {
-				padding-left:1.25rem;
+				//padding-left:1.25rem;
 				
 				& li {
 					margin-top:.95rem;
@@ -5167,11 +5168,16 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 		& .quad-container {
 			
 			& .half {
-				h4 {
+					
+				& a {
+					color:$actDarkGreen;
+				}
+				
+				& h4 {
 					margin-bottom:.75rem;
 				}
 				
-				.list-container div {
+				& .list-container div {
 					margin-bottom:.75rem;
 				}
 				
