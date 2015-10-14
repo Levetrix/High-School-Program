@@ -205,7 +205,7 @@ p {
 	color:#4a4a4a;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
 	font-family:"Open Sans";
 	font-weight:400;
 	margin:0;
@@ -1759,6 +1759,10 @@ $slant-line-width:(sin($slant-line-angle)) * $slant-line-length;
 				& h2 {
 				 	font-size:1.55rem;
 				 	color:$byuMediumBlue;
+				 	
+				 	& a {
+				 		color:#444;
+				 	}
 				}
 				& button {
 					color:#5a5a5a;
@@ -4749,6 +4753,11 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 	
 	& a {
 		color:$actGreen;
+	}
+	
+	h5 {
+		font-weight:200;
+		font-size:1.05rem;
 	}
 	
 	& #top-section {
