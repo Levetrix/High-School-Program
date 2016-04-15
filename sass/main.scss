@@ -4439,6 +4439,10 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			z-index:-1;
 		}
 		
+		& .info-key {
+			text-align:left;
+		}
+		
 		& .course-table {
 			text-align:left;
 			width:#{$quarter-width * 4 + $med-gutter * 3};
@@ -5187,6 +5191,17 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 	& #top-section {
 		
 		& .quad-container {
+			
+			&.sticky-menu {
+				position:fixed;
+				top:0;
+				left:calc( 50% - ( ($quarter-width * 2 + $med-gutter) * 2 + $med-gutter) / 2);
+				display: inherit;
+			}
+				
+			&.invis > .half:nth-of-type(1){	
+					visibility:hidden;
+			}
 			
 			& .half {
 					
