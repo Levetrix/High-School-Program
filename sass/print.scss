@@ -1,3 +1,80 @@
-/* Welcome to Compass. Use this file to define print styles.
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+@media print {
+	body {
+		overflow:visible;
+		
+		*  {
+			float: none !important;
+			position: relative !important;
+			box-sizing: content-box !important;
+			overflow:visible !important;
+			margin:initial;
+			font-family: arial;
+    	}
+	}
+	#main-header{
+		display:none;
+	}
+	
+	h1 {
+		font-size:1.3rem;
+	}
+	
+	h2 {
+		font-size:1.19rem;
+	}
+	
+	h3 {
+		font-size:1.15rem;
+	}
+	
+	h4 {
+		font-size:1rem;
+	}
+	
+	p, li, span {
+		font-size:.9rem;
+	}
+	
+	#search-menu{
+		display:none;
+	}
+	
+	.nav-container{
+		display:none;
+	}
+	
+	#page-footer{
+		display:none;
+	} 
+	
+	#programs > section {
+		//page-break-after: always;
+		margin-bottom:1rem;
+		
+		&#course-plan {
+			page-break-inside: avoid;
+		}
+		
+		&#top-section,&#about {
+			page-break-after: avoid;
+		}
+		&#courses {
+			page-break-before:always;
+		}
+		
+		h1,h2,h3,h4,h5 {
+			page-break-after: avoid;
+		}
+		.year,.course-category {
+			page-break-inside: avoid;
+			display: inline-block;
+		    width: 325px;
+		    margin-bottom: 1rem;
+		    vertical-align: top;
+		}
+		&.courses-collapsed,
+		&.courses-expanded {
+			display:none;
+		}
+	}
+}

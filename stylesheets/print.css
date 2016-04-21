@@ -1,3 +1,93 @@
-/* Welcome to Compass. Use this file to define print styles.
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+@media print {
+  /* line 2, ../sass/print.scss */
+  body {
+    overflow: visible;
+  }
+  /* line 5, ../sass/print.scss */
+  body * {
+    float: none !important;
+    position: relative !important;
+    box-sizing: content-box !important;
+    overflow: visible !important;
+    margin: initial;
+    font-family: arial;
+  }
+
+  /* line 14, ../sass/print.scss */
+  #main-header {
+    display: none;
+  }
+
+  /* line 18, ../sass/print.scss */
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  /* line 22, ../sass/print.scss */
+  h2 {
+    font-size: 1.19rem;
+  }
+
+  /* line 26, ../sass/print.scss */
+  h3 {
+    font-size: 1.15rem;
+  }
+
+  /* line 30, ../sass/print.scss */
+  h4 {
+    font-size: 1rem;
+  }
+
+  /* line 34, ../sass/print.scss */
+  p, li, span {
+    font-size: .9rem;
+  }
+
+  /* line 38, ../sass/print.scss */
+  #search-menu {
+    display: none;
+  }
+
+  /* line 42, ../sass/print.scss */
+  .nav-container {
+    display: none;
+  }
+
+  /* line 46, ../sass/print.scss */
+  #page-footer {
+    display: none;
+  }
+
+  /* line 50, ../sass/print.scss */
+  #programs > section {
+    margin-bottom: 1rem;
+  }
+  /* line 54, ../sass/print.scss */
+  #programs > section#course-plan {
+    page-break-inside: avoid;
+  }
+  /* line 58, ../sass/print.scss */
+  #programs > section#top-section, #programs > section#about {
+    page-break-after: avoid;
+  }
+  /* line 61, ../sass/print.scss */
+  #programs > section#courses {
+    page-break-before: always;
+  }
+  /* line 65, ../sass/print.scss */
+  #programs > section h1, #programs > section h2, #programs > section h3, #programs > section h4, #programs > section h5 {
+    page-break-after: avoid;
+  }
+  /* line 68, ../sass/print.scss */
+  #programs > section .year, #programs > section .course-category {
+    page-break-inside: avoid;
+    display: inline-block;
+    width: 325px;
+    margin-bottom: 1rem;
+    vertical-align: top;
+  }
+  /* line 75, ../sass/print.scss */
+  #programs > section.courses-collapsed, #programs > section.courses-expanded {
+    display: none;
+  }
+}

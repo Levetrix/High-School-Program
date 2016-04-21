@@ -127,25 +127,25 @@ div#content.wrapper {
   box-shadow: none;
 }
 
-@media (min-width: 32em) {
+@media screen and (min-width: 32em) {
   /* line 256, ../sass/main.scss */
   .svg #logo a.byu {
     margin-left: -10px;
   }
 }
-@media (min-width: 1110px) {
+@media screen and (min-width: 1110px) {
   /* line 262, ../sass/main.scss */
   .one-sidebar #main-content {
     width: 1110px;
   }
 }
-@media (min-width: 900px) {
+@media screen and (min-width: 900px) {
   /* line 268, ../sass/main.scss */
   .one-sidebar #main-content {
     width: 100%;
   }
 }
-@media (max-width: 1050px) {
+@media screen and (max-width: 1050px) {
   /* line 274, ../sass/main.scss */
   div#content.wrapper {
     padding: 0;
@@ -372,7 +372,7 @@ div#content.wrapper {
   bottom: 0;
 }
 
-@media (max-width: 850px) {
+@media screen and (max-width: 850px) {
   /* line 513, ../sass/main.scss */
   .side-button {
     position: relative;
@@ -500,7 +500,7 @@ div#content.wrapper {
   margin-right: 0;
 }
 
-@media (max-width: 1137px) {
+@media screen and (max-width: 1137px) {
   /* line 639, ../sass/main.scss */
   .quad-container {
     max-width: 980.72px;
@@ -528,7 +528,7 @@ div#content.wrapper {
     margin-right: 0;
   }
 }
-@media (max-width: 1137px) and (min-width: 800px) {
+@media screen and (max-width: 1137px) and (min-width: 800px) {
   /* line 669, ../sass/main.scss */
   .quad-container {
     max-width: 980.72px;
@@ -556,7 +556,7 @@ div#content.wrapper {
     margin-right: 0;
   }
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   /* line 699, ../sass/main.scss */
   .quad-container {
     max-width: 980.72px;
@@ -608,7 +608,7 @@ div#content.wrapper {
     margin-right: 0;
   }
 }
-@media (max-width: 550px) {
+@media screen and (max-width: 550px) {
   /* line 755, ../sass/main.scss */
   .quad-container {
     max-width: 980.72px;
@@ -798,7 +798,7 @@ div#content.wrapper {
   }*/
 }
 
-@media (max-width: 1050px) {
+@media screen and (max-width: 1050px) {
   /* line 957, ../sass/main.scss */
   #home-page {
     padding-left: 1.5rem;
@@ -833,7 +833,7 @@ div#content.wrapper {
     height: 295px;
   }
 }
-@media (max-width: 825px) {
+@media screen and (max-width: 825px) {
   /* line 995, ../sass/main.scss */
   #home-page #top-section {
     height: 325px;
@@ -878,7 +878,7 @@ div#content.wrapper {
     display: none;
   }
 }
-@media (max-width: 635px) {
+@media screen and (max-width: 635px) {
   /* line 1042, ../sass/main.scss */
   #home-page #top-section {
     height: 200px;
@@ -1078,7 +1078,7 @@ div#content.wrapper {
   text-decoration: none;
 }
 
-@media (max-width: 1050px) {
+@media screen and (max-width: 1050px) {
   /* line 1268, ../sass/main.scss */
   #home-page .programs-table {
     width: 800px;
@@ -1233,7 +1233,7 @@ div#content.wrapper {
     text-decoration: none;
   }
 }
-@media (max-width: 850px) {
+@media screen and (max-width: 850px) {
   /* line 1441, ../sass/main.scss */
   #home-page .programs-table {
     width: 100%;
@@ -1400,7 +1400,7 @@ div#content.wrapper {
     text-decoration: none;
   }
 }
-@media (max-width: 850px) {
+@media screen and (max-width: 850px) {
   /* line 1617, ../sass/main.scss */
   #home-page .programs-table {
     width: 400px;
@@ -1580,7 +1580,7 @@ div#content.wrapper {
     text-decoration: none;
   }
 }
-@media (max-width: 550px) {
+@media screen and (max-width: 550px) {
   /* line 1805, ../sass/main.scss */
   #home-page .programs-table {
     width: 400px;
@@ -1750,13 +1750,13 @@ div#content.wrapper {
   font-weight: 200;
 }
 
-@media (max-width: 1050px) {
+@media screen and (max-width: 1050px) {
   /* line 1976, ../sass/main.scss */
   #programs {
     padding-left: 4rem;
   }
 }
-@media (max-width: 550px) {
+@media screen and (max-width: 550px) {
   /* line 1982, ../sass/main.scss */
   #programs {
     padding-left: 4rem;
@@ -1793,7 +1793,7 @@ div#content.wrapper {
   border-top: 2px solid #6990b5;
 }
 
-@media (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
   /* line 2029, ../sass/main.scss */
   #programs #about .quad-container .half:last-of-type {
     margin: 0;
@@ -1803,7 +1803,7 @@ div#content.wrapper {
     border: none;
   }
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   /* line 2043, ../sass/main.scss */
   #programs #about h2 {
     font-size: 1.55rem;
@@ -1817,7 +1817,7 @@ div#content.wrapper {
     border: none;
   }
 }
-@media (max-width: 550px) {
+@media screen and (max-width: 550px) {
   /* line 2059, ../sass/main.scss */
   #programs #about h2 {
     font-size: 1.55rem;
@@ -2561,7 +2561,7 @@ $collapse-cat-2step-time-height:$collapse-cat-2step-time;
 $collapse-cat-delay:$stretch-cat-delay * .75;
 
 */
-@media (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
   /* line 2773, ../sass/main.scss */
   #programs {
     max-width: 750px;
@@ -3160,7 +3160,7 @@ $collapse-cat-2step-time:$stretch-cat-1step-time * .75;
 $collapse-cat-2step-time-height:$collapse-cat-2step-time;
 $collapse-cat-delay:$stretch-cat-delay * .75;
 */
-@media (max-width: 800px) and (min-width: 550px) {
+@media screen and (max-width: 800px) and (min-width: 550px) {
   /* line 3298, ../sass/main.scss */
   #programs {
     max-width: 500px;
@@ -3792,7 +3792,7 @@ $collapse-cat-2step-time:$stretch-cat-1step-time * .75;
 $collapse-cat-2step-time-height:$collapse-cat-2step-time;
 $collapse-cat-delay:$stretch-cat-delay * .75;
 */
-@media (max-width: 550px) {
+@media screen and (max-width: 550px) {
   /* line 3859, ../sass/main.scss */
   #programs {
     max-width: 250px;
@@ -4557,7 +4557,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   text-align: right;
 }
 
-@media (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
   /* line 4579, ../sass/main.scss */
   #programs #course-plan .course-table.dark {
     -moz-transform: scale(0.735, 0.735);
@@ -4568,7 +4568,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
     margin-top: -55px;
   }
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   /* line 4603, ../sass/main.scss */
   #programs #course-plan .course-table.dark {
     width: 500px;
@@ -4657,7 +4657,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
     background-color: #1c3764;
   }
 }
-@media (max-width: 550px) {
+@media screen and (max-width: 550px) {
   /* line 4704, ../sass/main.scss */
   #programs #course-plan h2 {
     max-width: 221px;
@@ -4784,26 +4784,26 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   fill: #39b54a;
 }
 
-@media (max-width: 1138px) {
+@media screen and (max-width: 1138px) {
   /* line 4838, ../sass/main.scss */
   #resources .quad-container .half {
     margin-left: 0;
     margin-right: 15px;
   }
 }
-@media (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
   /* line 4846, ../sass/main.scss */
   #resources {
     max-width: 810px;
   }
 }
-@media (max-width: 1050px) {
+@media screen and (max-width: 1050px) {
   /* line 4852, ../sass/main.scss */
   #resources {
     padding-left: 4rem;
   }
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   /* line 4858, ../sass/main.scss */
   #resources {
     max-width: 560px;
@@ -4813,7 +4813,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
     width: 474.24px;
   }
 }
-@media (max-width: 550px) {
+@media screen and (max-width: 550px) {
   /* line 4870, ../sass/main.scss */
   #resources {
     max-width: 250px;
@@ -4919,7 +4919,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   list-style-type: none;
 }
 
-@media (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
   /* line 4986, ../sass/main.scss */
   #ap {
     max-width: 810px;
@@ -4930,13 +4930,13 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
     margin-bottom: 1rem;
   }
 }
-@media (max-width: 1050px) {
+@media screen and (max-width: 1050px) {
   /* line 5000, ../sass/main.scss */
   #ap {
     padding-left: 4rem;
   }
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   /* line 5006, ../sass/main.scss */
   #ap {
     max-width: 560px;
@@ -4946,7 +4946,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
     margin-right: 32px;
   }
 }
-@media (max-width: 575px) {
+@media screen and (max-width: 575px) {
   /* line 5022, ../sass/main.scss */
   #ap {
     max-width: 250px;
@@ -5055,7 +5055,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   font-weight: 200;
 }
 
-@media (max-width: 1137px) {
+@media screen and (max-width: 1137px) {
   /* line 5137, ../sass/main.scss */
   #resources.contact {
     max-width: 506.48px;
@@ -5069,7 +5069,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
     width: 474.24px;
   }
 }
-@media (max-width: 550px) {
+@media screen and (max-width: 550px) {
   /* line 5155, ../sass/main.scss */
   #resources.contact {
     max-width: 253.24px;
@@ -5124,7 +5124,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
   margin: 0;
 }
 
-@media (max-width: 1100px) {
+@media screen and (max-width: 1100px) {
   /* line 5243, ../sass/main.scss */
   #ap.faq #top-section .quad-container .half:first-of-type {
     float: none;
@@ -5136,13 +5136,13 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
     margin: 0;
   }
 }
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
   /* line 5265, ../sass/main.scss */
   #ap.faq #top-section .quad-container .half {
     width: 474.24px;
   }
 }
-@media (max-width: 550px) {
+@media screen and (max-width: 550px) {
   /* line 5287, ../sass/main.scss */
   #ap.faq #top-section .quad-container .half {
     width: 221px;

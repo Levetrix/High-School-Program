@@ -252,25 +252,25 @@ div#content.wrapper {
 	box-shadow:none;
 }
 
-@media (min-width: 32em){
+@media  screen and (min-width: 32em){
 	.svg #logo a.byu {
 		margin-left:-10px;
 	}
 }
 
-@media (min-width: 1110px) {
+@media  screen and (min-width: 1110px) {
 	.one-sidebar #main-content {
 		width:1110px;
 	}
 }
 
-@media (min-width: 900px) {
+@media  screen and (min-width: 900px) {
 	.one-sidebar #main-content {
 		width:100%;
 	}
 }
 
-@media (max-width: 1050px) {
+@media  screen and (max-width: 1050px) {
 	div#content.wrapper {
 		padding:0;
 	}
@@ -509,7 +509,7 @@ $b2-hover-vertical-length:$b2-height * $b2-hover-side-length-scalar;
 $b2-hover-horizontal-length:$b2-width * $b2-hover-side-length-scalar;
 $b2-hover-transition-duration: .2s;
 
-@media(max-width:850px) {
+@media screen and (max-width:850px) {
 	.side-button {
 		position:relative;
 		display:block;
@@ -635,7 +635,7 @@ $b2-hover-transition-duration: .2s;
 	}
 }
 
-@media(max-width:1137px) {
+@media screen and (max-width:1137px) {
 	.quad-container {
 		max-width:#{$quarter-width * 4 + $med-gutter * 3};
 		font-size:.875rem;
@@ -665,7 +665,7 @@ $b2-hover-transition-duration: .2s;
 	}
 }
 
-@media(max-width:1137px) and (min-width:800px) {
+@media screen and (max-width:1137px) and (min-width:800px) {
 	.quad-container {
 		max-width:#{$quarter-width * 4 + $med-gutter * 3};
 		font-size:.875rem;
@@ -695,7 +695,7 @@ $b2-hover-transition-duration: .2s;
 	}
 }
 
-@media(max-width:800px) {
+@media screen and (max-width:800px) {
 	.quad-container {
 		max-width:#{$quarter-width * 4 + $med-gutter * 3};
 		font-size:.875rem;
@@ -751,7 +751,7 @@ $b2-hover-transition-duration: .2s;
 	}
 }
 
-@media(max-width:550px) {
+@media screen and (max-width:550px) {
 	.quad-container {
 		max-width:#{$quarter-width * 4 + $med-gutter * 3};
 		font-size:.875rem;
@@ -953,7 +953,7 @@ $b2-hover-transition-duration: .2s;
 
 
 
-@media (max-width: 1050px) {
+@media  screen and (max-width: 1050px) {
 	#home-page {
 		padding-left:1.5rem;
 			
@@ -990,7 +990,7 @@ $b2-hover-transition-duration: .2s;
 	}
 }
 
-@media (max-width: 825px) {
+@media  screen and (max-width: 825px) {
 	#home-page {
 		& #top-section{
 			height:325px;
@@ -1037,7 +1037,7 @@ $b2-hover-transition-duration: .2s;
 	}
 }
 
-@media (max-width: 635px) {
+@media  screen and (max-width: 635px) {
 	#home-page {
 		& #top-section{
 			height:200px;
@@ -1263,7 +1263,7 @@ $slant-line-length:300px;//($skew-height) / sin(90deg - $skew-angle);
 $slant-line-height:(cos($slant-line-angle)) * $slant-line-length;
 $slant-line-width:(sin($slant-line-angle)) * $slant-line-length;
 
-@media (max-width: 1050px) {
+@media  screen and (max-width: 1050px) {
 	#home-page {
 		& .programs-table {
 			width:800px;
@@ -1436,7 +1436,7 @@ $slant-line-length:50px;//($skew-height) / sin(90deg - $skew-angle);
 $slant-line-height:(cos($slant-line-angle)) * $slant-line-length;
 $slant-line-width:(sin($slant-line-angle)) * $slant-line-length;
 
-@media (max-width: 850px) {
+@media  screen and (max-width: 850px) {
 	#home-page {
 		& .programs-table {
 			width:100%;
@@ -1612,7 +1612,7 @@ $slant-line-width:(sin($slant-line-angle)) * $slant-line-length;
 	}
 }
 
-@media (max-width: 850px) {
+@media  screen and (max-width: 850px) {
 	#home-page {
 		& .programs-table {
 			width:400px;
@@ -1800,7 +1800,7 @@ $slant-line-width:(sin($slant-line-angle)) * $slant-line-length;
 	}
 }
 
-@media (max-width: 550px) {
+@media  screen and (max-width: 550px) {
 	#home-page {
 		& .programs-table {
 			width:400px;
@@ -1972,13 +1972,13 @@ $slant-line-width:(sin($slant-line-angle)) * $slant-line-length;
 	}
 }
 
-@media(max-width: 1050px) {
+@media screen and (max-width: 1050px) {
 	#programs {
 		padding-left:4rem;
 	}
 }
 
-@media(max-width: 550px) {
+@media screen and (max-width: 550px) {
 	#programs {
 		padding-left:4rem;
 		
@@ -2023,7 +2023,7 @@ $slant-line-width:(sin($slant-line-angle)) * $slant-line-length;
 	}	
 }
 
-@media(max-width: 1100px) {
+@media screen and (max-width: 1100px) {
 	#programs {
 		& #about {
 			& .quad-container .half:last-of-type {
@@ -2037,7 +2037,7 @@ $slant-line-width:(sin($slant-line-angle)) * $slant-line-length;
 	}
 }
 
-@media(max-width: 800px) {
+@media screen and (max-width: 800px) {
 	#programs {
 		& #about {
 			& h2 {
@@ -2054,7 +2054,7 @@ $slant-line-width:(sin($slant-line-angle)) * $slant-line-length;
 	}
 }
 
-@media(max-width: 550px) {
+@media screen and (max-width: 550px) {
 	#programs {
 		& #about h2 {
 			font-size:1.55rem;
@@ -2769,7 +2769,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 
 */
 
-@media(max-width:1100px) {
+@media screen and (max-width:1100px) {
 	#programs {
 		max-width:750px;
 		
@@ -3293,7 +3293,7 @@ $collapse-cat-2step-time:$stretch-cat-1step-time * .75;
 $collapse-cat-2step-time-height:$collapse-cat-2step-time;
 $collapse-cat-delay:$stretch-cat-delay * .75;
 */
-@media(max-width:800px) and (min-width:550px) {
+@media screen and (max-width:800px) and (min-width:550px) {
 $stretch-cat-height:380px;
 	#programs {
 		max-width:500px;
@@ -3855,7 +3855,7 @@ $collapse-cat-2step-time:$stretch-cat-1step-time * .75;
 $collapse-cat-2step-time-height:$collapse-cat-2step-time;
 $collapse-cat-delay:$stretch-cat-delay * .75;
 */
-@media(max-width:550px) {
+@media screen and (max-width:550px) {
 	#programs {
 		max-width:250px;
 		
@@ -4573,7 +4573,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 	}
 }
 
-@media (max-width:1100px) {
+@media  screen and (max-width:1100px) {
 	#programs {
 		#course-plan {
 			.course-table.dark {
@@ -4595,7 +4595,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 	}
 }
 
-@media (max-width:800px) {
+@media  screen and (max-width:800px) {
 	#programs {
 	
 		& #course-plan {
@@ -4696,7 +4696,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 	}
 }
 
-@media (max-width:550px){
+@media  screen and (max-width:550px){
 	#programs {
 		
 		#course-plan {
@@ -4833,7 +4833,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 	}
 }
 
-@media(max-width:1138px) {
+@media screen and (max-width:1138px) {
 	#resources {
 		& .quad-container .half {
 			margin-left:0;
@@ -4842,19 +4842,19 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 	}
 }
 
-@media(max-width:1100px) {
+@media screen and (max-width:1100px) {
 	#resources {
 		max-width:810px;
 	}
 }
 
-@media(max-width:1050px) {
+@media screen and (max-width:1050px) {
 	#resources {
 		padding-left:4rem;
 	}
 }
 
-@media(max-width:800px) {
+@media screen and (max-width:800px) {
 	#resources {
 		max-width:560px;
 		
@@ -4866,7 +4866,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 	}
 }
 
-@media(max-width:550px) {
+@media screen and (max-width:550px) {
 	#resources {
 		max-width:250px;
 		
@@ -4982,7 +4982,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 	}
 }
 
-@media(max-width:1100px) {
+@media screen and (max-width:1100px) {
 	#ap {
 		max-width:810px;
 		
@@ -4996,13 +4996,13 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 	}
 }
 
-@media(max-width:1050px) {
+@media screen and (max-width:1050px) {
 	#ap {
 		padding-left:4rem;
 	}
 }
 
-@media(max-width:800px) {
+@media screen and (max-width:800px) {
 	#ap {
 		max-width:560px;
 		
@@ -5018,7 +5018,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 	}
 }
 
-@media(max-width:575px) {
+@media screen and (max-width:575px) {
 	#ap {
 		max-width:250px;
 		
@@ -5132,7 +5132,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 	}
 }
 
-@media (max-width:1137px) {
+@media  screen and (max-width:1137px) {
 	
 	#resources.contact {
 		max-width:#{$quarter-width * 2 + $med-gutter * 2};
@@ -5150,7 +5150,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 	}	
 }
 
-@media (max-width:550px) {
+@media  screen and (max-width:550px) {
 	
 	#resources.contact {
 		max-width:#{$quarter-width + $med-gutter};
@@ -5232,7 +5232,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 	}
 }		
 
-@media (max-width:1100px) {
+@media  screen and (max-width:1100px) {
 	#ap.faq {
 		& #top-section {
 			
@@ -5256,7 +5256,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 	}
 }
 
-@media (max-width:800px) {
+@media  screen and (max-width:800px) {
 	#ap.faq {
 		& #top-section {
 			
@@ -5278,7 +5278,7 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 	}
 }
 
-@media (max-width:550px) {
+@media  screen and (max-width:550px) {
 	#ap.faq {
 		& #top-section {
 			
@@ -5312,30 +5312,4 @@ $collapse-cat-delay:$stretch-cat-delay * .75;
 			
 			
 			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-
-
-
-
-
-
-
-
-
-
-
-
-
 
